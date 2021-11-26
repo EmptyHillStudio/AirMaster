@@ -10,6 +10,6 @@ public class Startskip : MonoBehaviour
     public void Click() 
     { 
     
-        SceneManager.LoadScene("earth");
+        SceneManager.LoadScene("test");
     }
 }
