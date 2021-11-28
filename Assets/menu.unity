@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 467599488}
   - component: {fileID: 467599487}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button-share
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 591758090}
   - component: {fileID: 591758089}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button-help
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 2032017221}
   - component: {fileID: 2032017220}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button-setting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
