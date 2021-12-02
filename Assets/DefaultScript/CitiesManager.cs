@@ -5,39 +5,48 @@ using UnityEngine;
 public class City
 {
     private string name;
-    private double x;
-    private double y;
-    public City(string name, double x, double y)
+    private float x;
+    private float y;
+    public City(string name, float x, float y)
     {
         this.name = name;
         this.x = x;
         this.y = y;
     }
-    string getName()
+    public string getName()
     {
-        return name;
+        return this.name;
     }
-    double getX()
+    float getX()
     {
         return x;
     }
-    double getY()
+    float getY()
     {
         return y;
     }
 }
 
-public class CitiesManager : MonoBehaviour
+public class CitiesManager
 {
-    // Start is called before the first frame update
-    void Start()
+    List<City> Cities;
+    public CitiesManager()
     {
-        
+        this.Cities = new List<City>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public City getCityByName(string name)
     {
-        
+        foreach(var c in Cities)
+        {
+            if (name.Equals(c.getName()))
+            {
+                return c;
+            }
+        }
+        return null;
+    }
+    public void add(City c)
+    {
+        this.Cities.Add(c);
     }
 }
