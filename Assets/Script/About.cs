@@ -17,6 +17,6 @@ public class About : MonoBehaviour
     }
     public void ClickTest()
     {
-        UnityEditor.EditorUtility.DisplayDialog("关于游戏", "游戏介绍", "关闭");
+
     }
 }

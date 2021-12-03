@@ -16,19 +16,29 @@ public class DataLoader : MonoBehaviour
         CitiesManager cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
-        foreach(var line in Cities_Data)
+        var buttonParent = GameObject.Find("Buttons");
+        foreach (var line in Cities_Data)
         {
             float latitude = System.Convert.ToSingle(line[3]);
             float longitude = System.Convert.ToSingle(line[4]);
             latitude = latitude / 180 * System.Convert.ToSingle(Math.Acos(-1));
-            longitude = longitude / -180 * System.Convert.ToSingle(Math.Acos(-1));
+            longitude = longitude / 180 * System.Convert.ToSingle(Math.Acos(-1));
             City temp = new City(line[2], latitude, longitude);
             Debug.Log(line[2]);
             cManager.add(temp);
-            Vector3 v = new Vector3(db3_Position[0]+System.Convert.ToSingle(160*Math.Cos(latitude)*Math.Cos(longitude)),
-                db3_Position[1] + System.Convert.ToSingle(160*Math.Cos(latitude) * Math.Sin(longitude)),
-                db3_Position[2] + System.Convert.ToSingle(160 * Math.Sin(latitude)));
+            //法向量
+            float x = db3_Position[0] - System.Convert.ToSingle(160 * Math.Cos(latitude) * Math.Cos(longitude)),
+                y = db3_Position[1] - System.Convert.ToSingle(160 * Math.Sin(latitude)),
+                z = db3_Position[2] + System.Convert.ToSingle(160 * Math.Cos(latitude) * Math.Sin(longitude));
+            //旋转坐标计算
+            float rx = System.Convert.ToSingle(Math.Atan(z / y)) * 180 / System.Convert.ToSingle(Math.Acos(-1));
+            float ry = System.Convert.ToSingle(Math.Atan(z / x)) * 180 / System.Convert.ToSingle(Math.Acos(-1));
+            float rz = System.Convert.ToSingle(Math.Atan(x / y)) * 180 / System.Convert.ToSingle(Math.Acos(-1));
+            Vector3 v = new Vector3(x, y, z);
             GameObject go = GameObject.Instantiate(db3, v, Quaternion.identity) as GameObject;
+            go.transform.localEulerAngles = new Vector3(rx, ry, rz);
+            go.name = line[2];
+            go.transform.parent = buttonParent.transform;
         }
     }
 

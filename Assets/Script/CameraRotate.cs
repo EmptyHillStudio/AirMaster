@@ -2,10 +2,6 @@ using UnityEngine;
 
 public class CameraRotate : MonoBehaviour
 {
-
-    
-
-
     // Update is called once per frame
    
     void Update()
@@ -17,8 +13,8 @@ public class CameraRotate : MonoBehaviour
         var mouse_y = -Input.GetAxis("Mouse Y");//获取鼠标Y轴移动
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            transform.Translate(Vector3.left * (mouse_x * 15f) * Time.deltaTime);
-            transform.Translate(Vector3.up * (mouse_y * 15f) * Time.deltaTime);
+            transform.Translate(Vector3.left * (mouse_x * -10f) * Time.deltaTime);
+            transform.Translate(Vector3.up * (mouse_y * -10f) * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.Mouse0))
         {
