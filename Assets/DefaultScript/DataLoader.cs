@@ -42,7 +42,6 @@ public class DataLoader : MonoBehaviour
             GameObject go = GameObject.Instantiate(db3, v, Quaternion.identity) as GameObject;
             go.transform.localEulerAngles = new Vector3(rz, ry, rx);
             go.name = line[6];
-            go.transform.parent = buttonParent.transform;
         }
     }
 
