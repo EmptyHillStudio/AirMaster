@@ -21,23 +21,27 @@ public class DataLoader : MonoBehaviour
         {
             float latitude = System.Convert.ToSingle(line[3]);
             float longitude = System.Convert.ToSingle(line[4]);
-            latitude = latitude / 180 * System.Convert.ToSingle(Math.Acos(-1));
-            longitude = longitude / 180 * System.Convert.ToSingle(Math.Acos(-1));
-            City temp = new City(line[2], latitude, longitude);
+            latitude = latitude / 180 * System.Convert.ToSingle(3.14159265);
+            longitude = longitude / 180 * System.Convert.ToSingle(3.14159265);
+            City temp = new City(line[6], latitude, longitude);
             Debug.Log(line[2]);
             cManager.add(temp);
             //法向量
-            float x = db3_Position[0] - System.Convert.ToSingle(160 * Math.Cos(latitude) * Math.Cos(longitude)),
-                y = db3_Position[1] - System.Convert.ToSingle(160 * Math.Sin(latitude)),
-                z = db3_Position[2] + System.Convert.ToSingle(160 * Math.Cos(latitude) * Math.Sin(longitude));
+            double tx = 160 * Math.Cos(latitude) * Math.Cos(longitude),
+            ty = 160 * Math.Sin(latitude),
+            tz = 160 * Math.Cos(latitude) * Math.Sin(longitude);
+            //相对坐标
+            float x = db3_Position[0] - System.Convert.ToSingle(tx),
+                y = db3_Position[1] - System.Convert.ToSingle(ty),
+                z = db3_Position[2] + System.Convert.ToSingle(tz);
             //旋转坐标计算
-            float rx = System.Convert.ToSingle(Math.Atan(z / y)) * 180 / System.Convert.ToSingle(Math.Acos(-1));
-            float ry = System.Convert.ToSingle(Math.Atan(z / x)) * 180 / System.Convert.ToSingle(Math.Acos(-1));
-            float rz = System.Convert.ToSingle(Math.Atan(x / y)) * 180 / System.Convert.ToSingle(Math.Acos(-1));
+            float ry = -System.Convert.ToSingle((Math.Atan2(tx, tz) * 180) / 3.14159265);
+            float rx = System.Convert.ToSingle((Math.Atan2(ty, tz)));
+            float rz = System.Convert.ToSingle((Math.Atan2(ty, tx) * 180) / 3.14159265);
             Vector3 v = new Vector3(x, y, z);
             GameObject go = GameObject.Instantiate(db3, v, Quaternion.identity) as GameObject;
-            go.transform.localEulerAngles = new Vector3(rx, ry, rz);
-            go.name = line[2];
+            go.transform.localEulerAngles = new Vector3(rz, ry, rx);
+            go.name = line[6];
             go.transform.parent = buttonParent.transform;
         }
     }

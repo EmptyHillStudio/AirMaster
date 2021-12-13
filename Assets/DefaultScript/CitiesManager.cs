@@ -25,6 +25,14 @@ public class City
     {
         return y;
     }
+    public static void GetDistance(City c1, City c2)
+    {
+
+    }
+    public static void GetTicketIn(City c1,City c2)
+    {
+
+    }
 }
 
 public class CitiesManager
