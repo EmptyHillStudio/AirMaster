@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class City
-{
+{ //单个城市的各项数据
     private string name;
     private float x;
     private float y;
@@ -36,7 +36,7 @@ public class City
 }
 
 public class CitiesManager
-{
+{//所有城市的管理器，提供获取城市的一些方法
     List<City> Cities;
     public CitiesManager()
     {

@@ -8,13 +8,13 @@ using UnityEngine.UI;
 
 public class DataLoader : MonoBehaviour
 {
-    private int re = 160;    //模型半径：160
-    public List<string[]> Cities_Data;
-    public CitiesManager cManager;
+    private static int re = 160;    //模型半径：160
+    public static List<string[]> Cities_Data;
+    private static CitiesManager cManager;
     // Start is called before the first frame update
-    void Start()
+    public static CitiesManager getManager()
     {
-        this.Cities_Data = new List<string[]>();
+        Cities_Data = new List<string[]>();
         loadFile(Application.dataPath+"/Res", "World_Cities_Location_table.csv");
         cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
@@ -46,17 +46,12 @@ public class DataLoader : MonoBehaviour
             go.transform.localEulerAngles = new Vector3(rx, ry, rz);
             go.name = line[6];
         }
+        return cManager;
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void loadFile(string path,string fileName)
     {
-        
-    }
-
-    public void loadFile(string path,string fileName)
-    {
-        this.Cities_Data.Clear();
+        Cities_Data.Clear();
         StreamReader sr = null;
         try
         {

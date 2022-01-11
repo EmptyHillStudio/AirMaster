@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class InitManagers : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //可以从该管理器对象中获取已读取的数据，但每个数据对象需要在各自的类文件中声明。
+    private CitiesManager cities_manager;
     void Start()
     {
-        
+        this.cities_manager = DataLoader.getManager();
     }
 
     // Update is called once per frame
