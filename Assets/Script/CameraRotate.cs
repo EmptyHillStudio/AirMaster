@@ -28,7 +28,7 @@ public class CameraRotate : MonoBehaviour
         {
             f = 90 - transform.localEulerAngles.x;
         }
-        if(Math.Abs(mouse_y) > f/5)
+        if(Math.Abs(mouse_y) > f/2)
         {
             mouse_y = 2 * Math.Sign(mouse_y);
         }

@@ -9,15 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/menu.unity
+    path: Assets/Scenes/menu.unity
     guid: ec8561bc0c0e56e46953e978aabc7054
   - enabled: 1
-    path: Assets/earth.unity
+    path: Assets/Scenes/earth.unity
     guid: c2caae5d122659d48b36183ed78174fd
   - enabled: 1
     path: Assets/setting.unity
     guid: 7d69fa717a6d0664fbea7d7797a21646
   - enabled: 1
-    path: Assets/test.unity
+    path: Assets/Scenes/setting.unity
     guid: 4dec82d85d98a7a42a27d26b4f4421f7
   m_configObjects: {}

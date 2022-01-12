@@ -15,7 +15,7 @@ public class DataLoader : MonoBehaviour
     public static CitiesManager getManager()
     {
         Cities_Data = new List<string[]>();
-        loadFile(Application.dataPath+"/Res", "World_Cities_Location_table.csv");
+        loadFile(Application.dataPath+"/Res/Data", "cities.csv");
         cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
