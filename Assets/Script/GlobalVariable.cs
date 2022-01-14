@@ -13,4 +13,5 @@ public class GlobalVariable
     public static Date GameDate;
     public static bool IsPaused = true;
     public static int SpeedTime = 1;
+    public static string CompanyName = "Debug Mode";
 }

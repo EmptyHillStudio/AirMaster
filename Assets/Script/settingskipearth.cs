@@ -8,11 +8,11 @@ using System;
 public class settingskipearth : MonoBehaviour
 {
     public Slider m_slider;
-    // Start is called before the first frame update
-
+    public Text text;
     public void Click()
     {
         SceneManager.LoadScene("earth");
         GlobalVariable.GameDate = new Date(Convert.ToInt32(m_slider.value), 1, 1);
+        GlobalVariable.CompanyName = text.text;
     }
 }

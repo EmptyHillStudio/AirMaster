@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEditor;
 
 public class TimeControl : MonoBehaviour
 {
-    GameObject TimesShowing;
+    public Text TimesShowing;
+    public Light_Dynamic Light;
     GameObject StartButton;
     GameObject PauseButton;
     GameObject SpeedUpButton;
@@ -15,7 +17,6 @@ public class TimeControl : MonoBehaviour
     GameObject PausingShowing;
     void Start()
     {
-        TimesShowing = GameObject.Find("SpeedInfo");
         StartButton = GameObject.Find("StartButton");
         PauseButton = GameObject.Find("PauseButton");
         PauseButton.SetActive(false);
@@ -47,7 +48,8 @@ public class TimeControl : MonoBehaviour
         if (GlobalVariable.SpeedTime <5)
         {
             GlobalVariable.SpeedTime++;
-            TimesShowing.GetComponent<Text>().text = GlobalVariable.SpeedTime.ToString() + "x";
+            Light.speedtimes++;
+            TimesShowing.text = GlobalVariable.SpeedTime.ToString() + "x";
         }
     }
     void SlowDown_Time()
@@ -55,7 +57,8 @@ public class TimeControl : MonoBehaviour
         if (GlobalVariable.SpeedTime > 1)
         {
             GlobalVariable.SpeedTime--;
-            TimesShowing.GetComponent<Text>().text = GlobalVariable.SpeedTime.ToString() + "x";
+            Light.speedtimes--;
+            TimesShowing.text = GlobalVariable.SpeedTime.ToString() + "x";
         }
     }
 }

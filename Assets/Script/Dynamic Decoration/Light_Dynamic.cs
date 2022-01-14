@@ -5,6 +5,7 @@ using UnityEngine;
 public class Light_Dynamic : MonoBehaviour
 {
     private GameObject Sphere;
+    public int speedtimes = 1;
     void Start()
     {
         Sphere = GameObject.Find("Sphere");
@@ -14,7 +15,8 @@ public class Light_Dynamic : MonoBehaviour
     {
         if (!GlobalVariable.IsPaused)
         {
-            transform.RotateAround(Sphere.transform.position, Vector3.up, 0.01f);
+            int times = speedtimes * speedtimes;
+            transform.RotateAround(Sphere.transform.position, Vector3.up, 0.01f * times);
         }
     }
 }
