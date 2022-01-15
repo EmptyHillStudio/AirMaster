@@ -7,6 +7,7 @@ public class City
     private string name;
     private float x;
     private float y;
+    private string city_introduction;
     public City(string name, float x, float y)
     {
         this.name = name;
@@ -32,6 +33,10 @@ public class City
     public static void GetTicketIn(City c1,City c2)
     {
 
+    }
+    public string getIntroduction()
+    {
+        return this.city_introduction;
     }
 }
 
