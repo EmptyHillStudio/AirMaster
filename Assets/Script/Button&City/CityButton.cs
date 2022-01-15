@@ -1,30 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
-public class CityButton : MonoBehaviour
+public class CityButton : MonoBehaviour , IPointerClickHandler
 {
-    // Start is called beforeCitiesManager c = new City();
-
+    public CityBindToBoard InfomationBoard;
     private static CitiesManager cManager;
+    private string CityName;
+    private City tCity;
     
-    
-   // Update is called once per frame
-    
-    public void Click()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        cManager = new CitiesManager();
-        
-        string name = this.name;
-        string city_intro =cManager.getCityByName(name).getIntroduction();
-        GameObject city_intro_obj = GameObject.Find("city_introduction");
-        Text city_intro_text = city_intro_obj.GetComponent<Text>();
-        city_intro_text.text = city_intro;
-        Debug.Log(city_intro_text.text);
-
-
+        cManager = GlobalVariable.DefaultManager.cities_manager;
+        string CityName = this.name;
+        tCity = cManager.getCityByName(CityName);
+        InfomationBoard.UpdateContent(tCity);
     }
 
 

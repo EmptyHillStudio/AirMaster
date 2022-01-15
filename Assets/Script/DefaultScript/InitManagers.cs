@@ -5,9 +5,10 @@ using UnityEngine;
 public class InitManagers : MonoBehaviour
 {
     //可以从该管理器对象中获取已读取的数据，但每个数据对象需要在各自的类文件中声明。
-    public  CitiesManager cities_manager;
-    public   LinesManager lines_manager;
-    public  DateManager date_manager;
+    public  CitiesManager cities_manager;//城市对象管理器
+    public  LinesManager lines_manager;//航线管理器
+    public  DateManager date_manager;//日期管理器
+    public ThumbnailImageManager thumbnailImageManager;//规模图像管理器
     void Start()
     {
         this.cities_manager = DataLoader.getManager();
@@ -16,6 +17,7 @@ public class InitManagers : MonoBehaviour
         {
             GlobalVariable.GameDate = new Date(1960, 1, 1);
         }
+        GlobalVariable.DefaultManager = this;
     }
 
     // Update is called once per frame

@@ -14,4 +14,7 @@ public class GlobalVariable
     public static bool IsPaused = true;
     public static int SpeedTime = 1;
     public static string CompanyName = "Debug Mode";
+
+    //全局管理器
+    public static InitManagers DefaultManager;
 }
