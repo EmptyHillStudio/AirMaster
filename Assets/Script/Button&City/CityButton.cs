@@ -20,7 +20,7 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
         tCity = cManager.getCityByName(CityName);
         InfomationBoard.UpdateContent(tCity);
     }
-
+    
 
 }
 

@@ -15,6 +15,7 @@ public class CityBindToBoard : MonoBehaviour
     }
     public void UpdateContent(City city)
     {
+        
         CityName.GetComponent<Text>().text = city.getName();
         setCity(city);
         Board.SetActive(true);
