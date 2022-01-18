@@ -6,11 +6,11 @@ public class helpclosebutton : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject board;
-    public GameObject button;
+    public GameObject lastboard;
     // Update is called once per frame
     public void Click()
     {
         board.SetActive(false);
-        button.SetActive(true);
+        lastboard.SetActive(true);
     }
 }
