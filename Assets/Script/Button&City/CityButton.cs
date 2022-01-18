@@ -13,6 +13,7 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
     private string CityName;
     private City tCity;
     
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         cManager = GlobalVariable.DefaultManager.cities_manager;
