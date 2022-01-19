@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/earth.unity
     guid: c2caae5d122659d48b36183ed78174fd
-  - enabled: 1
-    path: Assets/setting.unity
-    guid: 7d69fa717a6d0664fbea7d7797a21646
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/setting.unity
     guid: 4dec82d85d98a7a42a27d26b4f4421f7
+  - enabled: 1
+    path: Assets/Scenes/investment.unity
+    guid: 87f0418e2426d8242812496c6e98858d
   m_configObjects: {}
