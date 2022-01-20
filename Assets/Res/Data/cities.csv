@@ -1,498 +1,435 @@
-608,Australia,Sydney,-33.86785,151.2073212,1,悉尼
-609,Australia,Melbourne,-37.8139966,144.9633179,58,墨尔本
-610,Australia,Perth,-31.9333333,115.8333359,32,珀斯
-611,Australia,Adelaide,-34.9333333,138.6000061,65,阿德莱德
-612,Australia,Brisbane,-27.4679357,153.0280914,15,布里斯班
-613,Australia,Gold Coast,-28,153.4333344,1,黄金海岸
-614,Australia,Newcastle,-32.9271484,151.776474,1,纽卡斯尔
-615,Australia,Canberra,-35.2834625,149.128067,609,堪培拉
-616,Australia,Wollongong,-34.4333333,150.8833313,26,卧龙岗
-617,Australia,Geelong,-38.1471126,144.3607025,0,吉隆
-618,Australia,Cairns,-16.9166667,145.7666626,1,凯恩斯
-619,Australia,Geelong West,-38.1333333,144.3500061,0,吉隆西部
-620,Australia,Townsville,-19.25,146.8000031,1,汤斯维尔
-621,Australia,Albury,-36.0833333,146.9166718,170,阿尔伯里
-622,Australia,Nowra,-34.8833333,150.6000061,1,诺拉
-623,Australia,Darwin,-12.4611337,130.8418427,0,达尔文
-624,Australia,Toowoomba,-27.55,151.9666595,560,图文巴
-625,Australia,Ballarat,-37.5666667,143.8500061,465,巴拉拉特
-626,Australia,Bendigo,-36.7666667,144.2833405,234,本迪戈
-627,Australia,Mackay,-21.15,149.1999969,0,麦凯
-628,Australia,Mandurah,-32.55,115.6999969,1,曼都拉
-629,Australia,Launceston,-41.45,147.1666718,105,朗塞斯顿
-630,Australia,Rockhampton,-23.3833333,150.5,2,罗克汉普顿
-631,Australia,Coffs Harbour,-30.3,153.1333313,8,咖啡港
-632,Australia,South Brisbane,-27.4833333,153.0166626,17,南布里斯班
-633,Australia,Wagga Wagga,-35.1166667,147.3666687,148,瓦加瓦加
-634,Australia,Bundaberg,-24.85,152.3500061,7,邦达伯格
-635,Australia,Port Macquarie,-31.4333333,152.9166718,0,麦格理港
-636,Australia,Mildura,-34.2,142.1499939,60,米尔杜拉
-637,Australia,Hobart,-42.9166667,147.3333282,151,霍巴特
-638,Australia,Torquay,-25.2833333,152.8666687,0,托基
-639,Australia,Mooloolaba,-26.6833333,153.1166687,0,穆卢拉巴
-640,Australia,Taree,-31.9,152.4666595,56,塔里
-641,Australia,Cranbourne,-38.1,145.2833405,1,克蓝本
-642,Australia,Caloundra,-26.8,153.1333313,1,卡伦德拉
-643,Australia,Tamworth,-31.1,150.9333344,545,塔姆沃思
-644,Australia,Kalgoorlie,-30.75,121.4666672,469,卡尔古利
-645,Australia,Shepparton,-36.3833333,145.3999939,132,谢帕顿
-646,Australia,Melton,-37.6833333,144.5833282,128,梅尔顿
-647,Australia,Queanbeyan,-35.35,149.2333374,609,魁北安
-648,Australia,Wodonga,-36.1166667,146.8833313,153,沃东加
-649,Australia,Lismore,-28.8135438,153.277298,130,利斯莫尔
-650,Australia,Gladstone,-23.85,151.25,1,格莱斯顿
-651,Australia,Orange,-33.2833333,149.1000061,652,橙色
-652,Australia,Warrnambool,-38.3833333,142.4833374,1,瓦尔南波尔
-653,Australia,Sunbury,-37.5833333,144.7333374,197,桑伯里
-654,Australia,Dubbo,-32.25,148.6166687,304,杜博
-655,Australia,Geraldton,-28.7666667,114.5999985,2,杰拉尔顿
-656,Australia,Bunbury,-33.3333333,115.6333313,1,班伯里
-657,Australia,Alice Springs,-23.7,133.8833313,609,爱丽丝·斯普林斯
-658,Australia,Palmerston,-12.4860237,130.9832916,6,帕默斯顿
-659,Australia,Albany,-35.0169444,117.8916702,85,奥尔巴尼
-660,Australia,Mount Gambier,-37.8333333,140.7666626,82,甘比亚山
-661,Australia,Armidale,-30.5166667,151.6499939,1014,阿米代尔
-662,Australia,Mount Isa,-20.7333333,139.5,438,伊萨山
-663,Australia,Caboolture,-27.0833333,152.9499969,66,卡布尔
-664,Australia,Goulburn,-34.75,149.7166595,563,古尔伯恩
-665,Australia,Mornington,-38.2166667,145.0333405,1,莫宁顿
-666,Australia,Maryborough,-25.5333333,152.6999969,4,马里伯勒
-667,Australia,Kwinana,-32.25,115.7666702,24,奎纳纳
-668,Australia,Burnie,-41.0666667,145.9166718,1,伯尼
-669,Australia,Brunswick,-37.7666667,144.9666595,129,布伦瑞克
-670,Australia,Craigieburn,-37.6,144.9499969,156,克雷吉伯恩
-671,Australia,Whyalla,-33.0333333,137.5833282,1,维亚拉
-672,Australia,Echuca,-36.1333333,144.75,73,埃丘卡
-673,Australia,Devonport,-41.1666667,146.3500061,1,德文波特
-674,Australia,Roebourne,-20.7833333,117.1333313,11,罗伯恩
-675,Australia,Hornsby,-33.7,151.1000061,163,霍恩斯比
-676,Australia,Katoomba,-33.7,150.3000031,720,卡图姆巴
-677,Australia,Surfers Paradise,-28.0027378,153.4299927,1,冲浪者天堂
-678,Australia,Traralgon,-38.1833333,146.5333405,119,特拉尔贡
-679,Australia,Murray Bridge,-35.1166667,139.2666626,10,默里桥
-680,Australia,Nerang,-27.9833333,153.3333282,49,奈蕴
-681,Australia,Forster,-32.1666667,152.5166626,0,福斯特
-682,Australia,Broken Hill,-31.95,141.4333344,305,断山
-683,Australia,Karratha,-20.7291441,116.8547058,1,卡拉沙
-684,Australia,South Grafton,-29.7,152.9499969,78,南格拉夫顿
-685,Australia,Cessnock,-32.8333333,151.3500061,152,塞斯诺克
-686,Australia,Gawler,-34.6,138.7333374,72,张口结舌的
-687,Australia,Deception Bay,-27.2,153.0333405,3,欺骗湾
-688,Australia,Griffith,-34.2833333,146.0333405,117,格里菲斯
-689,Australia,Buderim,-26.6833333,153.0500031,43,布德林姆
-690,Australia,Nambour,-26.6333333,152.9499969,139,南博
-691,Australia,Crafers,-35,138.6999969,303,克莱弗
-692,Australia,Sawtell,-30.3833333,153.1000061,0,索泰尔
-693,Australia,Kingston,-42.9666667,147.3166656,23,金斯敦
-694,Australia,Port Hedland,-20.3166667,118.5666656,0,黑德兰港
-695,Australia,Ballina,-28.8666667,153.5666656,1,巴利纳
-696,Australia,Wangaratta,-36.3666667,146.3333282,148,旺加拉塔
-697,Australia,Port Augusta,-32.5,137.7666626,7,奥古斯塔港
-698,Australia,Singleton,-32.5666667,151.1833344,154,独生子女
-699,Australia,Cleveland,-27.5333333,153.2666626,1,克利夫兰
-700,Australia,Bongaree,-27.0797222,153.1586151,1,邦加里
-701,Australia,Raymond Terrace,-32.75,151.75,7,雷蒙德台
-702,Australia,Bacchus Marsh,-37.6833333,144.4499969,129,巴克斯沼泽
-703,Australia,Broome,-17.9666667,122.2333298,0,布鲁姆
-704,Australia,Moe,-38.1666667,146.2666626,150,教育部
-705,Australia,Sale,-38.1,147.0666656,37,出售
-706,Australia,Horsham,-36.7166667,142.1999969,116,霍沙姆
-707,Australia,Warwick,-28.2333333,152.0166626,555,沃里克
-283,United States,New York City,40.7142691,-74.0059738,2,纽约市
-284,United States,Los Angeles,34.0522342,-118.2436829,115,洛杉矶
-285,United States,Chicago,41.850033,-87.6500549,181,芝加哥
-286,United States,Houston,29.7632836,-95.3632736,15,休斯敦
-287,United States,Philadelphia,39.952335,-75.1637878,8,费城
-288,United States,Phoenix,33.4483771,-112.0740356,0,凤凰
-289,United States,San Antonio,29.4241219,-98.4936295,196,圣安东尼奥
-290,United States,San Diego,32.7153292,-117.1572571,26,圣迭戈
-291,United States,Dallas,32.7830556,-96.8066635,137,达拉斯
-292,United States,Detroit,42.331427,-83.0457535,181,底特律
-293,United States,San Jose,37.3393857,-121.8949585,24,圣何塞
-294,United States,Jacksonville,30.3321838,-81.6556473,7,杰克逊维尔
-295,United States,Indianapolis,39.7683765,-86.1580429,222,印第安纳波利斯
-296,United States,Columbus,39.9611755,-82.9987946,237,哥伦布
-297,United States,San Francisco,37.7749295,-122.4194183,60,旧金山
-298,United States,Austin,30.267153,-97.7430573,163,奥斯丁
-299,United States,Memphis,35.1495343,-90.0489807,75,孟菲斯
-300,United States,New South Memphis,35.0867579,-90.0567551,74,新南孟菲斯
-301,United States,Fort Worth,32.725409,-97.3208466,199,沃思堡
-302,United States,Baltimore,39.2903848,-76.6121902,2,巴尔的摩
-303,United States,Charlotte,35.2270869,-80.8431244,229,夏洛特
-304,United States,Boston,42.3584308,-71.0597763,11,波士顿
-305,United States,Milwaukee,43.0389025,-87.9064713,195,密尔沃基
-306,United States,South Boston,42.3334312,-71.0494919,10,南波士顿
-307,United States,Seattle,47.6062095,-122.3320694,60,西雅图
-308,United States,El Paso,31.7587198,-106.4869308,1147,埃尔帕索
-309,United States,Denver,39.7391536,-104.9847031,1598,丹佛
-310,United States,Washington,38.8951118,-77.0363693,11,华盛顿
-311,United States,Portland,45.5234515,-122.6762085,61,波特兰
-312,United States,Oklahoma City,35.4675602,-97.5164261,364,俄克拉荷马城
-313,United States,Nashville,36.1658899,-86.7844467,151,纳什维尔
-314,United States,Tucson,32.2217429,-110.9264755,751,图森
-315,United States,Albuquerque,35.0844909,-106.6511383,1510,阿尔伯克基
-316,United States,New Orleans,29.9546482,-90.0750732,0,新奥尔良
-317,United States,Long Beach,33.7669623,-118.1892319,1,长滩
-318,United States,Las Vegas,36.1749705,-115.1372223,609,拉斯维加斯
-319,United States,Sacramento,38.5815719,-121.4944,5,萨克拉门托
-320,United States,Fresno,36.7477272,-119.7723694,91,弗雷斯诺
-321,United States,Cleveland,41.4994954,-81.6954117,185,克利夫兰
-322,United States,North Kansas City,39.130004,-94.5621796,223,北堪萨斯城
-323,United States,Kansas City,39.0997266,-94.5785675,271,堪萨斯城
-324,United States,Virginia Beach,36.8529263,-75.9779816,3,弗吉尼亚海滩
-325,United States,Atlanta,33.7489954,-84.3879852,305,亚特兰大
-326,United States,Oakland,37.8043722,-122.2708054,0,奥克兰
-327,United States,Mesa,33.4222685,-111.8226395,386,桌子山
-328,United States,Tulsa,36.1539816,-95.992775,213,塔尔萨市
-329,United States,Omaha,41.2586096,-95.9377899,0,奥马哈
-330,United States,Miami,25.7742658,-80.1936569,2,迈阿密
-331,United States,Honolulu,21.3069444,-157.8583374,0,檀香山
-332,United States,Minneapolis,44.9799654,-93.2638397,259,明尼阿波利斯
-333,United States,Colorado Springs,38.8338816,-104.8213654,1829,科罗拉多泉
-334,United States,Wichita,37.6922361,-97.3375473,402,威奇托
-335,United States,Santa Ana,33.7455731,-117.867836,30,圣安娜
-336,United States,West Raleigh,35.7868182,-78.6638947,122,西罗利
-337,United States,Arlington,32.735687,-97.1080627,184,阿灵顿
-338,United States,Anaheim,33.8352932,-117.914505,40,阿纳海姆
-339,United States,Tampa,27.9475216,-82.4584274,1,坦帕
-340,United States,Saint Louis,38.6272733,-90.1978912,135,圣路易斯
-341,United States,Pittsburgh,40.4406248,-79.9958878,235,匹兹堡
-342,United States,Toledo,41.6639383,-83.5552139,191,托莱多
-343,United States,Cincinnati,39.1620036,-84.4568863,203,辛辛那提
-344,United States,Riverside,33.9533487,-117.3961563,262,河边
-345,United States,Bakersfield,35.3732921,-119.0187149,122,贝克斯菲尔德
-346,United States,Stockton,37.9577016,-121.2907791,4,斯托克顿
-347,United States,Newark,40.735657,-74.1723633,16,纽瓦克
-348,United States,Buffalo,42.8864468,-78.8783722,183,水牛
-349,United States,Corpus Christi,27.8005828,-97.3963776,6,科珀斯克里斯蒂
-350,United States,Aurora,39.7294319,-104.8319168,1647,极光
-351,United States,Raleigh,35.772096,-78.6386108,91,罗利
-352,United States,Saint Paul,44.9444101,-93.093277,235,圣保罗
-353,United States,Lexington-Fayette,38.0497996,-84.4585495,312,列克星敦·费耶特
-354,United States,Anchorage,61.2180556,-149.9002838,0,安克雷奇
-355,United States,Plano,33.0198431,-96.6988831,200,普拉诺
-356,United States,Saint Petersburg,27.7708606,-82.6792679,14,圣彼得堡
-357,United States,Louisville,38.2542376,-85.759407,128,路易斯维尔
-358,United States,Lincoln,40.8000011,-96.6669617,382,林肯
-359,United States,Glendale,33.5386523,-112.1859894,336,格伦代尔
-360,United States,Henderson,36.0396988,-114.9819336,580,亨德森
-361,United States,Jersey City,40.7281575,-74.0776443,14,泽西市
-362,United States,Norfolk,36.8468146,-76.2852173,3,诺福克
-363,United States,Chandler,33.3061605,-111.8412476,380,经销商
-364,United States,Greensboro,36.0726355,-79.7919769,244,格林斯波罗
-365,United States,Birmingham,33.5206608,-86.8024902,173,伯明翰
-366,United States,Fort Wayne,41.1306041,-85.1288605,243,韦恩堡
-367,United States,Lexington,37.9886892,-84.4777145,298,列克星敦
-368,United States,Hialeah,25.8575963,-80.2781067,2,海利亚
-369,United States,Madison,43.0730517,-89.4012299,270,麦迪逊
-370,United States,Baton Rouge,30.4507462,-91.1545486,0,巴吞鲁日
-371,United States,Garland,32.912624,-96.6388855,165,花环
-372,United States,Modesto,37.6390972,-120.9968796,12,莫德斯托
-373,United States,Paradise,36.0971945,-115.1466675,626,天堂
-374,United States,Chula Vista,32.6400541,-117.084198,23,丘拉维斯塔酒店
-375,United States,Lubbock,33.5778631,-101.8551636,976,卢伯克
-376,United States,Rochester,43.1547845,-77.6155548,155,罗切斯特
-377,United States,Laredo,27.506407,-99.5075455,115,拉雷多
-378,United States,Akron,41.0814447,-81.5190048,290,阿克伦
-379,United States,Orlando,28.5383355,-81.3792343,34,奥兰多
-380,United States,Durham,35.9940329,-78.8986206,122,达勒姆
-381,United States,North Glendale,34.1605626,-118.2645187,174,北格伦代尔
-382,United States,Scottsdale,33.5092103,-111.8990326,386,斯科茨代尔
-1465,Brazil,Sao Paulo,-23.5475,-46.6361122,631,圣保罗
-1466,Brazil,Rio de Janeiro,-22.9027778,-43.2075005,19,里约热内卢
-1467,Brazil,Salvador,-12.9711111,-38.5108337,1,萨尔瓦多
-1468,Brazil,Fortaleza,-3.7172222,-38.5430565,1,福塔莱萨
-1469,Brazil,Belo Horizonte,-19.9208333,-43.9377785,877,贝洛奥里藏特
-1470,Brazil,Brasilia,-15.77972,-47.9297218,1092,巴西利亚
-1471,Brazil,Curitiba,-25.4277778,-49.273056,913,库里蒂巴
-1472,Brazil,Manaus,-3.1019444,-60.0250015,37,马瑙斯
-1473,Brazil,Recife,-8.0538889,-34.8811111,1,累西腓
-1474,Brazil,Belem,-1.4558333,-48.5044441,1,贝伦
-1475,Brazil,Porto Alegre,-30.0330556,-51.2299995,1,阿雷格里港
-1476,Brazil,Goiania,-16.6786111,-49.2538872,790,戈亚尼亚
-1477,Brazil,Guarulhos,-23.4627778,-46.5333328,704,瓜鲁霍斯
-1478,Brazil,Campinas,-22.9055556,-47.060833,670,坎皮纳斯
-1479,Brazil,Nova Iguacu,-22.7591667,-43.4511108,154,新伊瓜库酒店
-1480,Brazil,Maceio,-9.6658333,-35.7352791,1,马塞奥
-1481,Brazil,Sao Luis,-2.5297222,-44.3027763,1,圣路易斯
-1482,Brazil,Duque de Caxias,-22.7855556,-43.3116684,7,卡西亚斯公爵酒店
-1483,Brazil,Natal,-5.795,-35.209446,2,出生的
-1484,Brazil,Teresina,-5.0891667,-42.8019447,58,特蕾西娜
-1485,Brazil,Sao Bernardo do Campo,-23.6938889,-46.5649986,760,圣伯纳多坎波
-1486,Brazil,Campo Grande,-20.4427778,-54.646389,602,坎波格兰德酒店
-1487,Brazil,Jaboatao,-8.1802778,-35.0013885,62,贾博塔奥
-1488,Brazil,Osasco,-23.5325,-46.7916679,633,奥萨斯科
-1489,Brazil,Santo Andre,-23.6638889,-46.5383339,765,圣安德烈
-1490,Brazil,Joao Pessoa,-7.115,-34.8630562,3,若奥·佩索阿
-1491,Brazil,Jaboatao dos Guararapes,-8.1127778,-35.0147209,12,瓜拉帕斯酒店
-1492,Brazil,Contagem,-19.9316667,-44.0536118,878,继续
-1493,Brazil,Sao Jose dos Campos,-23.1794444,-45.8869438,572,圣何塞多斯坎波斯酒店
-1494,Brazil,Uberlandia,-18.9186111,-48.2772217,690,尤伯兰迪亚
-1495,Brazil,Sorocaba,-23.5016667,-47.4580574,601,索罗卡巴
-1496,Brazil,Ribeirao Preto,-21.1775,-47.810276,593,里贝拉奥普雷托
-1497,Brazil,Cuiaba,-15.5961111,-56.0966682,173,库亚巴
-1498,Brazil,Aracaju,-10.9111111,-37.0716667,5,阿拉卡朱
-1499,Brazil,Feira de Santana,-12.2666667,-38.9666672,166,费拉德桑塔纳
-1500,Brazil,Londrina,-23.3102778,-51.1627769,563,隆德里纳
-1501,Brazil,Juiz de Fora,-21.7641667,-43.3502769,678,论坛论坛
-1502,Brazil,Belford Roxo,-22.7641667,-43.3994446,26,贝尔福德罗索酒店
-1503,Brazil,Joinville,-26.3044444,-48.8455544,167,乔维尔
-1504,Brazil,Niteroi,-22.8833333,-43.103611,8,尼特罗伊
-1505,Brazil,Sao Joao de Meriti,-22.8038889,-43.3722229,27,圣约奥德梅里蒂酒店
-1506,Brazil,Ananindeua,-1.3655556,-48.3722229,12,阿纳尼迪欧
-1507,Brazil,Florianopolis,-27.5966667,-48.5491676,149,弗洛里亚诺波利斯
-1508,Brazil,Santos,-23.9608333,-46.3336105,2,桑托斯
-1509,Brazil,Ribeirao das Neves,-19.7669444,-44.0866661,905,里贝拉奥达斯内维斯酒店
-1510,Brazil,Vila Velha,-20.3297222,-40.2924995,1,维拉维拉维拉酒店
-1511,Brazil,Serra,-20.1286111,-40.3077774,70,塞拉
-1512,Brazil,Diadema,-23.6861111,-46.622776,723,迪亚德马
-1513,Brazil,Campos,-21.75,-41.2999992,1,坎波斯
-1514,Brazil,Maua,-23.6677778,-46.4613876,763,毛亚
-1515,Brazil,Betim,-19.9677778,-44.1983337,800,贝蒂姆
-1516,Brazil,Caxias do Sul,-29.1680556,-51.1794434,737,南卡克西斯酒店
-1517,Brazil,Sao Jose do Rio Preto,-20.8197222,-49.3794441,457,圣何塞里约普雷托酒店
-1518,Brazil,Olinda,-8.0088889,-34.855278,2,奥林达
-1519,Brazil,Carapicuiba,-23.5225,-46.835556,630,卡拉皮库巴
-1520,Brazil,Campina Grande,-7.2305556,-35.8811111,445,坎皮纳格兰德酒店
-1521,Brazil,Piracicaba,-22.7252778,-47.6491661,532,皮拉西卡巴
-1522,Brazil,Macapa,0.0388889,-51.0663872,1,马卡帕
-1523,Brazil,Itaquaquecetuba,-23.4861111,-46.3483315,674,伊塔奎塞图巴
-1524,Brazil,Bauru,-22.3147222,-49.0605545,534,鲍鲁
-1525,Brazil,Montes Claros,-16.735,-43.8616676,750,蒙特斯克拉罗斯酒店
-1526,Brazil,Canoas,-29.9177778,-51.1836128,19,独木舟
-1527,Brazil,Moji das Cruzes,-23.5227778,-46.1883316,710,莫吉达斯克鲁兹酒店
-1528,Brazil,Sao Vicente,-23.9630556,-46.3919449,1,圣文森特
-1529,Brazil,Jundiai,-23.1863889,-46.8841667,1006,容迪亚伊
-1530,Brazil,Pelotas,-31.7719444,-52.3424988,7,佩洛塔斯
-1531,Brazil,Anapolis,-16.3266667,-48.9527779,917,阿纳波利斯
-1532,Brazil,Vitoria,-20.3194444,-40.3377762,12,维多利亚
-1533,Brazil,Maringa,-23.4252778,-51.9386101,444,马林加
-1534,Brazil,Guaruja,-23.9930556,-46.2563896,1,瓜鲁雅
-1535,Brazil,Porto Velho,-8.7619444,-63.9038887,86,维略港
-1536,Brazil,Franca,-20.5386111,-47.4008331,920,弗朗卡
-1537,Brazil,Blumenau,-26.9194444,-49.0661125,136,布鲁梅诺
-1538,Brazil,Foz do Iguacu,-25.5477778,-54.5880547,174,伊瓜库酒店
-1539,Brazil,Ponta Grossa,-25.095,-50.1619453,913,格罗萨桥
-1540,Brazil,Paulista,-7.9408333,-34.8730545,23,保利斯塔
-1541,Brazil,Limeira,-22.5647222,-47.4016685,610,利梅拉
-1542,Brazil,Viamao,-30.0811111,-51.0233345,51,维亚芒
-1543,Brazil,Suzano,-23.5425,-46.310833,704,苏扎诺
-1544,Brazil,Caucaia,-3.7361111,-38.6530571,20,高加索
-1545,Brazil,Petropolis,-22.505,-43.1786118,883,彼得罗波利斯
-1546,Brazil,Uberaba,-19.7483333,-47.9319458,750,尤伯拉巴
-1547,Brazil,Rio Branco,-9.9747222,-67.8099976,157,里奥布兰科
-1548,Brazil,Cascavel,-24.9558333,-53.4552765,647,卡斯卡维尔
-1549,Brazil,Novo Hamburgo,-29.6783333,-51.1305542,97,诺沃汉堡酒店
-1550,Brazil,Vitoria da Conquista,-14.8661111,-40.8394432,947,征服维多利亚酒店
-1551,Brazil,Barueri,-23.5105556,-46.8761101,647,巴卢韦利
-1552,Brazil,Taubate,-23.0263889,-45.5552788,578,陶巴特
-1553,Brazil,Governador Valadares,-18.8511111,-41.9494438,132,瓦拉代尔总督
-1554,Brazil,Praia Grande,-24.0058333,-46.4027786,8,普拉亚格兰德酒店
-1555,Brazil,Varzea Grande,-15.6466667,-56.1324997,142,瓦尔泽亚大酒店
-1556,Brazil,Volta Redonda,-22.5230556,-44.1041679,279,沃尔塔·雷东达
-1557,Brazil,Santa Maria,-29.6841667,-53.8069458,136,圣玛丽亚
-1558,Brazil,Santa Luzia,-19.7697222,-43.851387,807,圣卢西亚
-1559,Brazil,Gravatai,-29.9444444,-50.9919434,75,格拉瓦塔伊
-1560,Brazil,Caruaru,-8.2833333,-35.9761124,494,卡鲁鲁
-1561,Brazil,Boa Vista,2.8197222,-60.6733322,76,博阿维斯塔酒店
-1562,Brazil,Ipatinga,-19.4683333,-42.5366669,213,伊帕廷加
-1563,Brazil,Sumare,-22.8219444,-47.2669449,610,苏马雷
-1564,Brazil,Juazeiro do Norte,-7.2130556,-39.3152771,590,北胡塞罗酒店
-1565,United Kingdom,London,51.5084153,-0.1255327,21,伦敦
-1566,United Kingdom,Birmingham,52.4666667,-1.9166667,140,伯明翰
-1567,United Kingdom,Glasgow,55.8333333,-4.25,66,格拉斯哥
-1568,United Kingdom,Liverpool,53.4166667,-3,6,利物浦
-1569,United Kingdom,Leeds,53.7964813,-1.5478492,67,利兹
-1570,United Kingdom,Sheffield,53.38297,-1.4659023,76,谢菲尔德
-1571,United Kingdom,Edinburgh,55.95,-3.2,32,爱丁堡
-1572,United Kingdom,Bristol,51.45,-2.5833333,47,布里斯托尔
-1573,United Kingdom,Manchester,53.4809464,-2.2374344,60,曼彻斯特
-1574,United Kingdom,Leicester,52.6333333,-1.1333333,76,莱斯特
-1575,United Kingdom,Coventry,52.4065556,-1.5121651,76,考文垂
-1576,United Kingdom,Kingston upon Hull,53.7445995,-0.3352547,1,赫尔河畔的金斯敦
-1577,United Kingdom,Cardiff,51.48,-3.1800001,6,加的夫
-1578,United Kingdom,Bradford,53.7833333,-1.75,152,布拉德福德
-1579,United Kingdom,Belfast,54.5833333,-5.9333334,9,贝尔法斯特
-1580,United Kingdom,Stoke-on-Trent,53,-2.1833334,132,特伦特斯托克
-1581,United Kingdom,Wolverhampton,52.5833333,-2.1333332,152,伍尔弗汉普顿
-1582,United Kingdom,Plymouth,50.3715254,-4.1430473,10,普利茅斯
-1583,United Kingdom,Nottingham,52.9536023,-1.1504745,61,诺丁汉
-1584,United Kingdom,Southampton,50.9,-1.4,0,南安普顿
-1585,United Kingdom,Reading,51.4333333,-1,51,阅读
-1586,United Kingdom,Derby,52.9333333,-1.5,67,德比
-1587,United Kingdom,Dudley,52.5,-2.0833333,152,达德利
-1588,United Kingdom,Northampton,52.25,-0.8833333,80,北安普敦
-1589,United Kingdom,Portsmouth,50.8090806,-1.0714245,1,朴茨茅斯
-1590,United Kingdom,Luton,51.8833333,-0.4166667,130,卢顿
-1591,United Kingdom,Newcastle upon Tyne,54.9732787,-1.6139603,20,纽卡斯尔
-1592,United Kingdom,Preston,53.7666667,-2.7166667,26,普雷斯顿
-1593,United Kingdom,Milton Keynes,52.0417219,-0.755825,78,米尔顿·凯恩斯
-1594,United Kingdom,Aberdeen,57.1333333,-2.0999999,36,香港仔
-1595,United Kingdom,Sunderland,54.9046457,-1.3822174,9,桑德兰
-1596,United Kingdom,Norwich,52.6278273,1.2983394,9,诺里奇
-1597,United Kingdom,Walsall,52.6,-2,142,沃尔索尔
-1598,United Kingdom,Swansea,51.6207877,-3.9432335,1,斯旺西
-1599,United Kingdom,Bournemouth,50.7166667,-1.8833333,1,伯恩茅斯
-1600,United Kingdom,Southend-on-Sea,51.5378207,0.7143259,1,海上南端
-1601,United Kingdom,Swindon,51.5166667,-1.7833333,153,斯温顿
-1602,United Kingdom,Oxford,51.752221,-1.2559605,66,牛津
-1603,United Kingdom,Dundee,56.5,-2.9666667,76,邓迪
-1604,United Kingdom,Poole,50.7166667,-2,1,普尔
-1605,United Kingdom,Huddersfield,53.65,-1.7833333,84,哈德斯菲尔德
-1606,United Kingdom,York,53.9666667,-1.0833333,14,约克
-1607,United Kingdom,Ipswich,52.0546544,1.1569977,6,伊普斯维奇
-1608,United Kingdom,Blackpool,53.8166667,-3.05,1,布莱克浦
-1609,United Kingdom,Middlesbrough,54.5727778,-1.1627778,32,米德尔斯堡
-1610,United Kingdom,Bolton,53.5833333,-2.4333334,75,博尔顿
-1611,United Kingdom,Peterborough,52.5833333,-0.25,28,彼得伯勒
-1612,United Kingdom,Stockport,53.4097877,-2.1576118,72,斯托克波特
-1613,United Kingdom,Brighton,50.8283849,-0.1394749,22,布莱顿
-1614,United Kingdom,West Bromwich,52.5166667,-2,154,西布罗姆维奇
-1615,United Kingdom,Slough,51.5,-0.5833333,34,使脱落
-1616,United Kingdom,Gloucester,51.8656801,-2.2430992,72,格洛斯特
-1617,United Kingdom,Cambridge,52.2,0.1166667,38,剑桥
-1618,United Kingdom,Watford,51.6553059,-0.3960228,70,沃特福德
-1619,United Kingdom,Rotherham,53.4333333,-1.35,71,罗瑟汉姆
-1620,United Kingdom,Newport,51.5877364,-2.9983504,1,纽波特
-1621,United Kingdom,Exeter,50.7235979,-3.5275073,43,埃克塞特
-1622,United Kingdom,Eastbourne,50.7687108,0.2845287,1,伊斯特本
-1623,United Kingdom,Colchester,51.8833333,0.9,5,科尔切斯特
-1624,United Kingdom,Crawley,51.1166667,-0.1833333,75,克劳利
-1625,United Kingdom,Sutton Coldfield,52.5651864,-1.8223572,128,萨顿·科尔德菲尔德
-1626,United Kingdom,Blackburn,53.75,-2.4833333,149,布莱克本
-1627,United Kingdom,Oldham,53.5405114,-2.1183014,184,奥尔德姆
-1628,United Kingdom,Woking,51.3190263,-0.5589294,40,工作
-1629,United Kingdom,Cheltenham,51.9,-2.0833333,72,切尔滕纳姆
-1630,United Kingdom,Chelmsford,51.7333333,0.4833333,38,切姆斯福德
-1631,United Kingdom,Saint Helens,53.45,-2.7333333,22,圣海伦斯
-1632,United Kingdom,Basildon,51.5666667,0.4666667,66,巴西尔顿
-1633,United Kingdom,Gillingham,51.3891373,0.5486298,24,吉林厄姆
-1634,United Kingdom,Worcester,52.1893517,-2.2200108,71,伍斯特
-1635,United Kingdom,Worthing,50.8114669,-0.3716469,0,值得
-1636,United Kingdom,Rochdale,53.6166667,-2.1500001,140,罗奇代尔
-1637,United Kingdom,Basingstoke,51.2666667,-1.0833333,78,贝辛斯托克
-1638,United Kingdom,Solihull,52.4166667,-1.7833333,109,索利哈尔
-1639,United Kingdom,Harlow,51.7833333,0.1666667,77,哈洛
-1640,United Kingdom,Bath,51.3794444,-2.3655555,74,浴缸
-1641,United Kingdom,Southport,53.6666667,-3,1,南港
-1642,United Kingdom,Maidstone,51.2666667,0.5166667,56,梅德斯通
-1643,United Kingdom,Lincoln,53.2333333,-0.5333333,31,林肯
-1644,United Kingdom,Hastings,50.8529919,0.5645943,2,黑斯廷斯
-1645,United Kingdom,Darlington,54.5333333,-1.5666667,63,达林顿
-1646,United Kingdom,Londonderry County Borough,54.9972135,-7.3091698,28,伦敦德里县行政区
-1647,United Kingdom,Harrogate,53.9833333,-1.5333333,97,哈罗盖特
-1648,United Kingdom,Hartlepool,54.6861111,-1.2125,1,哈特尔普尔
-1649,United Kingdom,Bedford,52.1345944,-0.4663181,53,贝德福德
-1650,United Kingdom,Hemel Hempstead,51.75,-0.4666667,99,赫默尔亨普斯特德
-1651,United Kingdom,Stevenage,51.9166667,-0.2166667,79,史蒂夫内奇
-1652,United Kingdom,Saint Albans,51.75,-0.3333333,77,圣奥尔本
-1653,United Kingdom,South Shields,54.9877778,-1.4213889,1,南盾牌
-1654,United Kingdom,Weston-super-Mare,51.3458333,-2.9677777,70,韦斯顿超级母马酒店
-1655,United Kingdom,Halifax,53.7166667,-1.85,188,哈利法克斯
-1656,United Kingdom,Birkenhead,53.4,-3.0333333,15,伯肯黑德
-1657,United Kingdom,Chester,53.2,-2.9166667,12,切斯特
-1658,United Kingdom,Warrington,53.3833333,-2.5999999,18,沃林顿
-1659,United Kingdom,Wigan,53.5333333,-2.6166668,64,维根
-1660,United Kingdom,High Wycombe,51.6333333,-0.7666667,73,高维科姆
-1661,United Kingdom,Stockton-on-Tees,54.5833333,-1.4166667,46,斯托克顿发球台
-1662,United Kingdom,Wakefield,53.6833141,-1.4976811,53,韦克菲尔德
-1663,United Kingdom,Gateshead,54.945,-1.6174999,43,盖茨黑德
-1664,United Kingdom,Lisburn,54.523373,-6.0352707,27,里斯本
-2240,China,Shanghai,31.2222222,121.4580536,6,上海
-2241,China,Beijing,39.9074977,116.3972244,63,北京
-2242,China,Nanchong,30.8,106.0666656,280,南充
-2243,China,Kaifeng,34.7911111,114.3483353,77,开封
-2244,China,Wuhan,30.5833333,114.2666702,25,武汉
-2245,China,Chongqing,29.5627778,106.5527802,234,重庆
-2246,China,Chengdu,30.6666667,104.0666656,529,成都
-2247,China,Tianjin,39.1422222,117.1766663,8,天津
-2248,China,Puyang,29.4602778,119.8861084,63,濮阳
-2249,China,Shenyang,41.7922222,123.4327774,48,沈阳
-2250,China,Shiyan,32.6475,110.7780533,247,希扬
-2251,China,Harbin,45.75,126.6500015,168,哈尔滨
-2252,China,Lanzhou,36.0563889,103.7922211,1572,兰州
-2253,China,Guangzhou,23.1166667,113.25,10,广州
-2254,China,Nanjing,32.0616667,118.7777786,12,南京
-2255,China,Taiyuan,37.8694444,112.5602798,794,太原市
-2256,China,Yunfu,22.9333333,112.0333328,77,云浮
-2257,China,Changchun,43.88,125.3227768,212,长春市
-2258,China,Changsha,28.2,112.9666672,46,长沙
-2259,China,Jinan,36.6683333,116.9972229,29,济南
-2260,China,Dalian,38.9122222,121.6022186,23,大连
-2261,China,Zhengzhou,34.7577778,113.648613,107,郑州
-2262,China,Shijiazhuang,38.0413889,114.4786148,79,石家庄
-2263,China,Jilin,43.8508333,126.5602798,186,吉林
-2264,China,Hangzhou,30.2552778,120.1688919,18,杭州
-2265,China,Nanchang,28.6833333,115.8833313,19,南昌
-2266,China,Qingdao,36.0986111,120.3719406,32,青岛
-2267,China,Tangshan,39.6333333,118.1833344,20,唐山
-2268,China,Xinyang,32.1227778,114.0655594,73,信阳
-2269,China,Urumqi,43.8,87.5833359,915,乌鲁木齐
-2270,China,Fushun,41.8558333,123.9233322,90,抚顺
-2271,China,Luoyang,34.6836111,112.4536133,133,洛阳
-2272,China,Hefei,31.8638889,117.2808304,18,合肥
-2273,China,Handan,36.6005556,114.4677811,69,邯郸
-2274,China,Suzhou,31.3113889,120.6180573,4,苏州
-2275,China,Shantou,23.36,116.6783371,5,汕头
-2276,China,Baotou,40.6522222,109.8222198,1055,包头
-2277,China,Anshan,41.1236111,122.9899979,83,鞍山
-2278,China,Xuzhou,34.2669444,117.1916656,45,徐州
-2279,China,Fuzhou,26.0613889,119.3061142,13,福州
-2280,China,Guiyang,26.5833333,106.7166672,1078,贵阳
-2281,China,Dayan,26.8687934,100.2207184,2394,大雁
-2282,China,Wuxi,31.5772222,120.2938919,7,无锡
-2283,China,Datong,40.0936111,113.2913895,1041,大同
-2284,China,Xianyang,34.3455556,108.7147217,405,咸阳
-2285,China,Huainan,32.6263889,116.9969406,43,淮南
-2286,China,Kunming,25.0388889,102.7183304,1911,昆明
-2287,China,Shenzhen,22.5455377,114.0682983,3,深圳
-2288,China,Jieyang,23.5297222,116.3655548,5,揭阳
-2289,China,Baoding,38.8511111,115.4902802,13,保定
-2290,China,Benxi,41.2886111,123.7649994,156,本溪
-2291,China,Changzhou,31.7833333,119.9666672,7,常州
-2292,China,Huaibei,33.9744444,116.7916641,41,淮北
-2293,China,Pingdingshan,33.7408333,113.3063889,63,平顶山
-2294,China,Qiqihar,47.3408333,123.9672241,147,齐齐哈尔
-2295,China,Wenzhou,28.0191667,120.6544418,17,温州
-2296,China,Nanning,22.8166667,108.3166656,73,南宁市
-2297,China,Anyang,36.0994444,114.3288879,87,安阳
-2298,China,Hohhot,40.8105556,111.6522217,1092,呼和浩特
-2299,China,Xining,36.6166667,101.7666702,2252,西宁
-2300,China,Qinhuangdao,39.9316667,119.5883331,5,秦皇岛
-2301,China,Hengyang,26.8880556,112.6149979,36,衡阳
-2302,China,Xinxiang,35.3088889,113.8672256,76,新乡
-2303,China,Hegang,47.4,130.3666687,207,鹤岗
-2304,China,Langfang,39.5097222,116.694725,19,廊坊
-2305,China,Ningbo,29.875,121.5419464,9,宁波
-2306,China,Yantai,37.5333333,121.4000015,46,烟台
-2307,China,Zhuzhou,27.8333333,113.1500015,31,株洲市
-2308,China,Changzhi,35.2088889,111.7386093,405,长治县
-2309,China,Zhangjiakou,40.81,114.8794479,757,张家口市
-2310,China,Zigong,29.4,104.7833328,456,自贡
-2311,China,Fuxin,42.0155556,121.6588898,131,阜新
-2312,China,Huangshi,30.2166667,115.0999985,5,黄石
-2313,China,Liaoyang,41.2719444,123.1730576,24,辽阳
-2314,China,Xiangtan,27.85,112.9000015,42,湘潭
-2315,China,Zibo,36.7905556,118.0633316,47,淄博
-2316,China,Puyang,35.7027778,115.0052795,52,濮阳
-2317,China,Nantong,32.0302778,120.8747253,8,南通
-2318,China,Mudanjiang,44.5833333,129.6000061,246,牡丹江
-2319,China,Guilin,25.2819444,110.2863922,148,桂林
-2320,China,Zhanjiang,21.2,110.3833313,7,湛江
-2321,China,Zhenjiang,32.2091667,119.434166,13,镇江
-2322,China,Dandong,40.1291667,124.394722,1,丹东
-2323,China,Shaoguan,24.8,113.5833359,61,韶关
-2324,China,Yancheng,33.3855556,120.1252747,3,盐城
-2325,China,Foshan,23.0333333,113.1166687,12,佛山
-2326,China,Panshan,41.1880556,122.0494461,3,盘山
-2327,China,Haikou,20.0458333,110.3416672,8,海口
-2328,China,Taizhou,32.4933333,119.9080582,6,台州市
-2329,China,Xingtai,37.0630556,114.4941635,71,邢台
-2330,China,Jinzhou,41.1077778,121.1416702,14,锦州
-2331,China,Shuangyashan,46.6361111,131.1538849,176,双鸭山市
-2332,China,Luancheng,37.8791667,114.6516647,53,栾城县
-2333,China,Yingkou,40.6680556,122.2247238,2,营口
-2334,China,Zhangzhou,24.5133333,117.6555557,1,漳州
-2335,China,Xiamen,24.4675,118.0930557,0,厦门
-2336,China,Bengbu,32.9408333,117.3608322,31,蚌埠
-2337,China,Shihezi,44.3,86.0333328,461,石河子
+1,Denmark,Aalborg,57.05,9.92,1,奥尔堡,348.13,278.77
+2,Denmark,Aarhus,56.15,10.17,10,奥佛斯,381.85,282.45
+3,Cote d'Ivoire,Abidjan,5.32,0.04,20,阿比让,465.7,244.37
+4,United Arab Emirates,Abu Dhabi,24.45,54.38,16,阿布扎比 ,509.86,552.96
+5,Niger,Abuja,9.08,7.53,705,阿布贾,256.14,230.02
+6,Ghana,Accra,5.55,-0.22,104,阿克拉,464.87,253.69
+7,Ethiopia,Addis Ababa,9.03,38.7,2363,亚的斯·亚巴巴,496.41,393.54
+8,Australia,Adelaide,-34.93,138.6,65,阿德莱德,429.5,379.91
+9,India,Agra,27.18,78.02,171,阿格拉,348.13,515.03
+10,India,Ahmedabad,23.03,72.62,66,艾哈迈达巴德,459.39,359.13
+11,Australia,Albany,-35.02,117.89,85,奥尔巴尼,288.05,350.35
+12,Jamaica,Alexandria,18.3,-77.35,648,亚历山大港,344.94,234.74
+13,Algeria,Algiers,36.76,3.05,1,阿尔及尔,471.23,376.03
+14,Spain,Alicante,38.35,-0.48,20,阿拉坎特,309.07,363.44
+15,Kazakhstan,Almaty,43.25,76.95,862,阿拉木图,246.38,374.49
+16,Jordan,Amman,31.95,35.93,765,安曼,388.86,343.6
+17,Netherlands,Amsterdam,52.37,4.9,-2,阿姆斯特丹,574.09,568.51
+18,Turkey,Ankara,39.93,32.86,889,安卡拉,517.68,494.68
+19,France,Annecy,45.93,6.12,448,安纳西,320.55,352.44
+20,Turkey,Antalya,36.91,30.69,115,安塔利亚,247.01,636.79
+21,Belgium,Antwerp,51.22,4.42,3,安特卫普,428.38,368.2
+22,Turkmenistan,Ashgabat,37.96,58.23,215,阿什哈巴德,223.34,262.25
+23,Paraguay,Asuncion,-25.27,-57.67,55,亚松森,353.75,263.63
+24,Greece,Athens,37.98,23.73,110,雅典,514.8,518.54
+25,United States,Atlanta,33.75,-84.39,305,亚特兰大,549.83,481.12
+26,New Zealand,Auckland,-36.87,174.77,26,奥克兰,453.21,470.96
+27,United States,Austin,30.27,-97.74,163,奥斯丁,464.61,465.75
+28,France,Avignon,43.95,4.82,21,阿维尼翁,378.12,364.39
+29,Iraq,Baghdad,33.34,44.39,41,巴格达,423.26,248.12
+30,Azerbaijan,Baku,40.4,49.88,30,巴库,368.64,307.24
+31,United States,Baltimore,39.29,-76.61,2,巴尔的摩,518.15,475.68
+32,Indonesia,Bandung,-6.91,107.62,815,万隆,425.88,499.1
+33,India,Bangalore,12.97,77.59,922,班加罗尔,507.33,366.42
+34,Thailand,Bangkok,13.75,100.52,2,曼谷,558.92,675.45
+35,Spain,Barcelona,41.39,2.16,41,巴塞罗那,551.59,577.29
+36,Italy,Bari,41.12,16.85,8,巴里,341.52,302.01
+37,Iraq,Basra,30.5,47.82,6,巴士拉,239.69,240.59
+38,China,Beijing,39.91,116.4,63,北京,580.97,540.61
+39,Lebanon,Beirut,33.87,35.51,56,贝鲁特,392.7,325.3
+40,United Kingdom,Belfast,54.58,-5.93,9,贝尔法斯特,415.74,410.53
+41,Serbia,Belgrade,44.45,69.83,116.75,贝尔格莱德,397.95,319.28
+42,Brazil,Belo Horizonte,-19.92,-43.94,877,贝洛奥里藏特,455.71,441.91
+43,Norway,Bergen,50.39,6.33,320,卑尔根,385.87,465.73
+44,Germany,Berlin,52.52,13.4,35,柏林,591.8,547.02
+45,Switzerland,Bern,46.95,7.45,527,伯尔尼,296.28,370.69
+46,India,Bhopal,23.27,77.4,487,博帕尔,311.16,332.45
+47,Spain,Bilbao,43.26,-2.93,33,毕尔巴鄂,326.92,367.6
+48,United States,Birmingham,33.52,-86.8,173,伯明翰,412.64,455.07
+49,Kyrgyzstan,Bishkek,42.88,76.76,750,比什凯克,329.55,268.37
+50,Colombia,Bogota,4.6,-74.08,2620,波哥大,551.26,407.68
+51,Italy,Bologna,44.49,11.34,54,博洛尼亚,351.37,303.48
+52,France,Bordeaux,44.83,-0.57,9,波尔多,297.94,347.33
+53,United States,Boston,42.36,-71.06,11,波士顿,562.11,483.15
+54,Brazil,Brasilia,-15.78,-47.93,1092,巴西利亚,478.09,446.14
+55,Slovakia,Bratislava,48.15,17.12,133,布拉迪斯拉发,411.36,231.73
+56,Germany,Bremen,53.08,8.81,3,不来梅,275.84,351.31
+57,United Kingdom,Brighton and Hove,50.83,-0.14,22,布赖顿-霍夫,376.74,402.36
+58,Australia,Brisbane,-27.47,153.03,15,布里斯班,519.08,394.93
+59,Belgium,Brussels,50.85,4.35,48,布鲁塞尔,565.03,509.93
+60,Romania,Bucharest,44.43,26.1,71,布加勒斯特,396.94,340.59
+61,Hungary,Budapest,47.5,19.08,100,布达佩斯,521.19,521.83
+62,Argentina,Buenos Aires,-34.58,-58.41,13,布宜诺斯艾利斯,566.24,484.6
+63,United States,Buffalo,42.89,-78.88,183,水牛,445.33,461.92
+64,Bulgaria,Burgas,42.5,27.47,31,布尔加斯,343.37,504.85
+65,Korea  South,Busan,35.1,129.04,7,釜山,518.92,454.55
+66,Italy,Cagliari,39.21,9.13,17,卡利亚里,259.52,288.83
+67,Australia,Cairns,-16.92,145.77,1,凯恩斯,290.94,351.05
+68,Egypt,Cairo,30.4,31.2,64,开罗,511,499.7
+69,Canada,Calgary,51.05,-114.09,1052,卡尔加里,416.76,402.35
+70,Colombia,Cali,3.44,-76.52,758,卡利,303.13,360.82
+71,United Kingdom,Cambridge,52.2,0.12,38,剑桥,357.79,398.14
+72,Brazil,Campinas,-22.91,-47.06,670,坎皮纳斯,270.44,397.63
+73,Australia,Canberra,-35.28,149.13,609,堪培拉,487.61,389.91
+74,Mexico,Cancun,21.17,-86.85,5,坎昆,460.51,534.34
+75,United States,Cape Coral,26.63,-81.96,5,珊瑚角,268.74,417.67
+76,South Africa,Cape Town,-33.92,18.42,7,开普敦,519.16,371.07
+77,Venezuela,Caracas,10.5,-66.92,920,加拉加斯,501.56,412.44
+78,United Kingdom,Cardiff,51.48,-3.18,6,加的夫,393.78,406.01
+79,Morocco,Casablanca,33.59,-7.61,17,卡萨布兰卡,494.45,402.26
+80,Italy,Catania,37.5,15.09,19,卡塔尼亚,330.62,300.35
+81,China,Changchun,43.88,125.32,212,长春,232.03,404.16
+82,China,Changsha,28.2,112.97,46,长沙,398.46,450.65
+83,Korea  South,Changwon,37.6,128,16,昌原,421.7,436.21
+84,United States,Charlotte,35.23,-80.84,229,夏洛特,421.2,456.91
+85,Bangladesh,Chattogram,22.33,91.84,7,吉大港,381.65,304.59
+86,Kroea South,Chejudo,33.33,126.5,5,济州,201.3,466.89
+87,China,Chengdu,30.67,104.07,529,成都,509.19,472.75
+88,India,Chennai,13.09,80.28,20,钦奈,502.8,530.84
+89,Thailand,Chiang Mai,18.79,98.98,312,清迈,490.27,495.81
+90,United States,Chicago,41.85,-87.65,181,芝加哥,574.75,485.2
+91,China,Chongqing,29.56,106.55,234,重庆,504.61,471.93
+92,New Zealand,Christchurch,-43.53,172.63,7,克赖斯特彻奇,387.29,336.26
+93,United States,Cincinnati,39.16,-84.46,203,辛辛那提,469.95,466.79
+94,United States,Cleveland,41.5,-81.7,185,克利夫兰,495.8,471.65
+95,France,Colmar,48.08,7.37,187,科尔马,232.81,330.95
+96,Germany,Cologne,50.94,6.96,301,科隆,417.9,382.22
+97,Cuba,Colombia,20.99,-77.43,59,哥伦比亚,428.24,261.15
+98,Sri Lanka,Colombo,6.93,79.85,1,科伦坡,396.94,371.97
+99,United States,Columbus,39.96,-83,237,哥伦布,492.65,471.07
+100,Denmark,Copenhagen,55.68,12.57,4,哥本哈根,572.28,301.01
+101,United Kingdom,Coventry,52.41,-1.51,76,考文垂,462.61,419.53
+102,Senegal,Dakar,14.7,-17.44,14,达喀尔,347.45,238.19
+103,China,Dalian,38.91,121.6,23,大连,410.94,453.4
+104,United States,Dallas,32.78,-96.81,137,达拉斯,546.65,480.59
+105,Tanzania,Dar es Salaam,-6.8,39.28,0,达累斯萨拉姆,300.14,285.19
+106,Germany,Darmstadt,49.87,8.65,153,达姆施塔特,486.74,394.34
+107,Australia,Darwin,-12.46,130.84,0,达尔文,225.75,333.93
+108,Korea  South,Deagu,35.87,128.59,41,大邱,414.49,434.71
+109,Indonesia,Denpasar,-8.65,115.22,41,登巴萨,318.77,527.68
+110,United States,Denver,39.74,-104.98,1598,丹佛,522.19,476.39
+111,United Kingdom,Derby,52.93,-1.5,67,德比,360.22,398.69
+112,United States,Detroit,42.33,-83.05,181,底特律,512.47,474.67
+113,Bangladesh,Dhaka,23.72,90.41,4,达卡,470.39,303.67
+114,France,Dijon,47.32,5.02,240,第戎,269.98,340.63
+115,Qatar,Doha,25.29,51.53,21,多哈,526.76,501.5
+116,Germany,Dortmund,51.52,7.45,95,多特蒙德,239.36,341.55
+117,Cameroon,Douala,4.05,9.7,1,杜阿拉,324.07,246.57
+118,Germany,Dresden,51.05,13.74,110,德累斯顿,463.44,390.4
+119,United Arab Emirates,Dubai,25.27,55.31,180,迪拜,537.02,650.3
+120,Ireland,Dublin,53.33,-6.25,9,都柏林,550.76,542.91
+121,New Zealand,Dunedin,-45.87,170.5,94,达尼丁,355.77,330.78
+122,South Africa,Durban,-29.85,31.02,28,德班,390.52,350.31
+123,Tajikistan,Dushanbe,38.56,68.77,808,杜尚别,248.64,282.89
+124,Germany,Dusseldorf,51.22,6.78,42,杜塞尔多夫,462.12,390.17
+125,United Kingdom,Edinburgh,55.95,-3.2,32,爱丁堡,516.47,428.97
+126,Canada,Edmonton,53.55,-113.47,640,埃德蒙顿,412.65,401.54
+127,Netherlands,Eindhoven,51.44,5.48,19,埃因霍温,371.12,420.09
+128,Iran,Esfahan,32.66,51.67,1566,伊斯法罕,211.84,349.51
+129,Pakistan,Faisalabad,31.42,73.08,175,费萨拉巴德,381.76,296.63
+130,Italy,Florence,43.77,11.25,87,佛罗伦萨,485.32,544.83
+131,Germany,Frankfurt,50.12,8.68,119,法兰克福,565.99,473.04
+132,Japan,Fuji,35.17,138.68,67,富士,474.5,399.42
+133,Japan,Fukuoka,33.58,130.4,10,福冈,478.29,400.07
+134,Japan,Fukushima,37.75,140.47,89,福岛,487.47,401.63
+135,China,Fuzhou,26.06,119.31,13,福州,391.57,449.1
+136,Botswana,Gaborone,-24.75,25.91,983,哈博罗内,330.09,242.58
+137,Turkey,Gaziantep,37.06,37.38,859,加齐安泰普,228.75,421.57
+138,Switzerland,Geneva,46.2,6.15,375,日内瓦,523.84,416.45
+139,Italy,Genoa,44.41,8.93,32,热那亚,216.34,281.13
+140,United Kingdom,Glasgow,55.83,-4.25,66,格拉斯哥,433.17,413.97
+141,Australia,Gold Coast,-28,153.43,1,黄金海岸,512.53,393.91
+142,Sweden,Gothenburg,57.71,11.97,6,哥德堡,409.46,470.32
+143,Nicaragua,Granada,11.93,-85.95,47,格拉纳达,347.15,236.24
+144,Mexico,Guadalajara,20.67,-103.33,1545,瓜达拉哈拉,432.85,400.45
+145,China,Guangzhou,23.12,113.25,10,广州,546.65,599.13
+146,Guatemala,Guatemala City,14.62,-90.53,1533,危地马拉,428.88,234.34
+147,Ecuador,Guayaquil,-2.17,-79.9,47,瓜亚基尔,366.42,333.66
+148,Israel,Haifa,32.82,34.99,290,海法,428.32,309.66
+149,Vietnam,Haiphong,20.86,106.68,3,海防,410.77,408.42
+150,Germany,Hamburg,53.55,10,3,汉堡,481.74,393.51
+151,Canada,Hamilton,43.23,-79.95,208,汉密尔顿,371.58,393.02
+152,China,Hangzhou,30.26,120.17,18,杭州,513.05,473.44
+153,Germany,Hannover,52.37,9.73,54,汉诺威,456.96,389.28
+154,Vietnam,Hanoi,21.03,105.85,26,河内,398.8,507.09
+155,Zimbabwe,Harare,-17.82,31.04,1481,哈拉雷,348.22,247.96
+156,China,Harbin,45.75,126.65,168,哈尔滨,427.75,456.99
+157,Cuba,Havana,23.13,-82.36,5,哈瓦那,448.31,262.4
+158,Finland,Helsinki,60.18,24.93,23,赫尔辛基,497.25,441.01
+159,Japan,Hiroshima,34.4,132.45,26,广岛,470.37,398.71
+160,Vietnam,Ho Chi Minh City,10.75,106.67,4,胡志明市,490.53,543.38
+161,China,Hong Kong,22.47,114.2,3,香港,589.23,723.89
+162,United States,Honolulu,21.31,-157.86,0,檀香山,417.35,487.53
+163,Tunisia,Houmt Souk,33.87,10.86,7,厚朴,237.77,301.92
+164,United States,Houston,29.76,-95.36,15,休斯敦,557.94,482.47
+165,India,Hyderabad,17.38,78.47,494,海得拉巴,501.97,365.63
+166,United States,Indianapolis,39.77,-86.16,222,印第安纳波利斯,449.51,462.77
+167,India,Indore,22.72,75.83,544,印多尔,390.34,347.58
+168,Germany,Ingolstadt,48.77,11.43,368,英戈尔斯塔特,419.69,382.56
+169,Pakistan,Islamabad,33.61,73.06,497,伊斯兰堡,445.54,304.45
+170,Turkey,Istanbul,41.01,28.95,28,伊斯坦布尔,568.54,639.62
+171,Turkey,Izmir,38.41,27.15,132,伊兹密尔,404.84,472.05
+172,United States,Jacksonville,30.33,-81.66,7,杰克逊维尔,371.22,445.66
+173,India,Jaipur,26.92,75.82,426,斋浦尔,411.69,351.29
+174,Indonesia,Jakarta,-6.17,106.83,2,雅加达,551.04,482.86
+175,Saudi Arabia,Jeddah,21.02,39.08,122,吉达,511.95,426.88
+176,Israel,Jerusalem,31.77,35.23,669,耶路撒冷,384.49,507.73
+177,China,Jinan,36.67,117,29,济南,323.54,432.34
+178,South Africa,Johannesburg,-26.2,28.08,1775,约翰内斯堡,546.51,551.12
+179,Malaysia,Johor Bahru,1.47,103.75,5,新山,280.95,525.11
+180,Afghanistan,Kabul,34.52,69.18,1808,喀布尔,339.89,319.82
+181,Uganda,Kampala,0.32,32.57,1206,坎帕拉,364.25,240.11
+182,Niger,Kano,12,8.52,477,卡诺,415.24,230.14
+183,India,Kanpur,26.47,80.35,128,坎普尔,399.66,349.22
+184,United States,Kansas City,39.1,-94.58,271,堪萨斯城,512.31,474.64
+185,Pakistan,Karachi,24.87,67.05,14,卡拉奇,493.97,310.01
+186,Germany,Karlsruhe,49,8.39,116,卡尔斯鲁厄,451.95,388.4
+187,Nepal,Kathmandu,27.72,85.32,1304,加德满都,234.89,259.25
+188,Poland,Katowice,50.27,19.02,293,卡托维兹,406.36,289.57
+189,Sudan,Khartoum,15.59,32.53,378,喀土穆,418.54,258.46
+190,Ukraine,Kiev,50.43,30.52,169,基辅,308.09,367.74
+191,Congo(Democratic-Republic),Kinshasa,-4.31,15.32,325,金沙萨,459.27,256.15
+192,India,Kolkata,22.57,88.37,16,加尔各答,493.95,462.79
+193,Turkey,Konya,37.87,32.48,1031,科尼亚,235.06,423.9
+194,Poland,Krakow,50.08,19.92,233,克拉科夫,350.14,490.1
+195,Russia,Krasnodar,45.03,38.98,36,克拉斯诺达尔,359.59,397.54
+196,Malaysia,Kuala Lumpur,3.17,101.7,62,吉隆坡,518.58,637.84
+197,Japan,Kumamoto,32.8,130.72,23,熊本,354.3,376.25
+198,China,Kunming,25.04,102.72,1911,昆明,264.25,415.01
+199,Kuwait,Kuwait City,29.37,47.98,12,科威特城,509.92,350.15
+200,Japan,Kyoto,35.02,135.75,86,京都,515.52,439.27
+201,Bolivia,La Paz,-16.5,-68.15,3829,拉巴斯,269.66,350.75
+202,Niger,Lagos,6.45,3.4,35,拉各斯,484.35,230.2
+203,Pakistan,Lahore,31.55,74.34,210,拉合尔,488.25,309.37
+204,United States,Las Vegas,36.17,-115.14,609,拉斯维加斯,518.79,576.88
+205,Switzerland,Lausanne,46.52,6.63,429,洛桑,370.51,388.02
+206,United Kingdom,Leeds,53.8,-1.55,67,利兹,372.14,401.35
+207,Germany,Leipzig,51.34,12.37,110,莱比锡,361.61,371.09
+208,France,Lille,50.63,3.07,25,里尔,416.29,371.59
+209,Peru,Lima,-12.05,-77.05,108,利马,510.39,481.71
+210,Cyprus,Limassol,34.68,33.03,1,利马索尔,446.69,251.6
+211,Austria,Linz,48.31,14.29,263,林茨,349.44,385.95
+212,Portugal,Lisbon,38.72,-9.13,56,里斯本,559.13,497.72
+213,United Kingdom,Liverpool,53.42,-3,6,利物浦,429.8,413.32
+214,Zambia,Livingstone,-17.85,25.87,897,利文斯通,277.26,230.08
+215,Slovenia,Ljubljana,46.06,14.51,284,卢布尔雅那,364.82,277.17
+216,United Kingdom,London,51.51,-0.13,21,伦敦,624.08,677.59
+217,United States,Los Angeles,34.05,-118.24,115,洛杉矶,608.71,560.75
+218,United States,Louisville,38.25,-85.76,128,路易斯维尔,349.16,440.26
+219,Angola,Luanda,-8.84,13.23,6,罗安达,218.39,295.64
+220,India,Lucknow,26.85,80.92,131,勒克瑙,403.31,349.85
+221,India,Ludhiana,30.9,75.85,243,卢迪亚纳,356.73,341.44
+222,Zambia,Lusaka,-15.42,28.28,1277,卢萨卡,351.78,230.15
+223,Luxembourg,Luxembourg,49.61,6.13,259,卢森堡,522.98,305.4
+224,France,Lyon,45.75,4.85,175,里昂,519.78,388.85
+225,Colombia,Madrid,4.73,-74.27,2400,马德里,544.5,538.44
+226,Spain,Malaga,36.72,-4.42,1,马拉加,360.96,375.1
+227,Maldives,Male,4.18,73.51,0,马累,466.27,281.32
+228,Nicaragua,Managua,12.15,-86.27,59,马那瓜,372.69,236.7
+229,Bahrain,Manama,26.24,50.58,0,麦纳麦,462.21,574.92
+230,Brazil,Manaus,-3.1,-60.03,37,马瑙斯,217.32,380.22
+231,United Kingdom,Manchester,53.48,-2.24,60,曼彻斯特,457.56,418.6
+232,Philippines,Manila,14.6,120.98,4,马尼拉纸,522.13,492.94
+233,Germany,Mannheim,49.49,8.46,95,曼海姆,339.36,366.32
+234,Mozambique,Maputo,-25.97,32.59,47,马普托,319.54,269.62
+235,France,Marseille,43.3,5.4,54,马赛,459.93,379.23
+236,Iran,Mashhad,36.3,59.61,1015,马什哈德,317.7,379.42
+237,Saudi Arabia,Mecca,21.29,39.85,277,麦加,344.01,575.16
+238,Colombia,Medellin,6.29,-75.54,2076,麦德林,387.74,379.37
+239,Saudi Arabia,Medina,24.58,39.56,,麦地那,394.36,404.85
+240,India,Meerut,28.98,77.7,219,米鲁特,289.56,327.9
+241,Australia,Melbourne,-37.81,144.96,58,墨尔本,568.37,470.78
+242,United States,Memphis,35.15,-90.05,75,孟菲斯,326.72,434.46
+243,Mexico,Mexico City,19.43,-99.14,2216,墨西哥城,563.66,493.33
+244,United States,Miami,25.77,-80.19,2,迈阿密,561.77,591.73
+245,Italy,Milano,45.46,9.19,108,米兰,559.86,567.71
+246,United Kingdom,Milton Keynes,52.04,-0.76,78,米尔顿·凯恩斯,424.58,412.29
+247,United States,Milwaukee,43.04,-87.91,195,密尔沃基,385,448.89
+248,United States,Minneapolis,44.98,-93.26,259,明尼阿波利斯,436.47,460.11
+249,Japan,Mito,36.37,140.47,19,水户,407.94,387.26
+250,Kenya,Mombasa,-4.05,39.67,1,蒙巴萨,341.93,308.09
+251,Monaco,Monte Carlo,43.75,7.44,87,摩纳哥,348.22,231.91
+252,Mexico,Monterrey,25.67,-100.32,563,蒙特雷,440.62,401.91
+253,Uruguay,Montevideo,-34.86,-56.17,78,蒙得维的亚,377.77,279.19
+254,Canada,Montreal,45.52,-73.65,47,蒙特利尔,553.99,426.3
+255,Russia,Moscow,55.75,37.62,151,莫斯科,572.8,558.04
+256,India,Mumbai,19.01,72.85,12,孟买,528.02,547.12
+257,Germany,Munich,48.14,11.57,515,慕尼黑,562.51,508.41
+258,Spain,Murcia,37.98,-1.12,28,穆尔西亚,356.76,374.21
+259,Oman,Muscat,23.61,58.59,69,马斯喀特,481.99,376.49
+260,Japan,Nagano,36.65,138.18,373,长野,418.92,389.37
+261,Japan,Nagasaki,32.76,129.87,18,长崎,476.25,399.72
+262,Japan,Nagoya,35.18,136.91,14,名古屋,528.36,408.29
+263,India,Nagpur,21.15,79.1,304,那格浦尔,402.83,349.77
+264,Kenya,Nairobi,-1.28,36.82,1724,内罗毕,504.31,331.03
+265,China,Nanjing,32.06,118.78,12,南京,512.21,473.29
+266,France,Nantes,47.22,-1.55,16,南特,329.24,354.34
+267,Italy,Naples,40.83,14.25,0,那不勒斯,409.15,311.7
+268,United States,Nashville,36.17,-86.78,151,纳什维尔,409.25,454.34
+269,India,Nasik,19.98,73.8,570,纳西克,259.59,321.21
+270,Bahamas,Nassau,25.03,-77.33,2,拿骚,441.72,280.17
+271,Brazil,Natal,-5.8,-35.21,2,纳塔尔,280.23,400.53
+272,India,New Delhi,28.53,77.27,216,新德里,536.25,370.58
+273,United States,New Orleans,29.95,-90.08,0,新奥尔良,486.78,469.98
+274,United States,New York,40.71,-74.01,2,纽约,626.64,642.79
+275,Australia,Newcastle,-32.93,151.78,1,纽卡斯尔,376.81,369.89
+276,France,Nice,43.7,7.27,0,尼斯,385.96,478.53
+277,Cyprus,Nicosia,35.17,33.37,128,尼科西亚,387.66,248.98
+278,China,Ningbo,29.88,121.54,9,宁波,448.4,461.23
+279,Russia,Nizhny Novgorod,56.02,44.01,247,下诺夫哥罗德,421.89,410.72
+280,Germany,Nuremburg,49.45,11.07,306,纽伦堡,355.44,369.79
+281,Mexico,Oaxaca City,17.05,-96.72,1550,瓦哈卡,221.08,349.3
+282,Denmark,Odense,55.4,10.39,10,欧登塞,321.72,275.79
+283,Japan,Okayama,34.65,133.92,30,冈山,438.82,393.09
+284,United States,Oklahoma City,35.47,-97.52,364,俄克拉荷马城,360.08,442.97
+285,United States,Omaha,41.26,-95.94,0,奥马哈,335.85,436.86
+286,United States,Orlando,28.54,-81.38,34,奥兰多,512.86,549.23
+287,Japan,Osaka,34.69,135.5,4,大阪,553.38,480.25
+288,Norway,Oslo,59.56,10.45,2,奥斯陆,516.79,492.52
+289,Japan,Otsu,35,135.87,163,大津,322.1,369.01
+290,Canada,Ottawa,45.42,-75.69,61,渥太华,509.69,419.18
+291,Spain,Oviedo,43.37,-5.83,179,奥维耶多,335.38,369.52
+292,United Kingdom,Oxford,51.75,-1.26,66,牛津,374.68,401.91
+293,Italy,Palermo,38.12,13.36,20,巴勒莫,305.76,296.47
+294,New Zealand,Palmerston North,-40.35,175.62,30,北帕默斯顿,214.16,301.61
+295,Colombia,Pamplona,7.38,-72.65,2516,潘普洛纳,336.32,368.51
+296,Panama,Panama City,8.97,-79.53,2,巴拿马,446.94,447.21
+297,France,Paris,48.85,2.35,30,巴黎,616.7,663.29
+298,Italy,Parma,44.8,10.33,48,帕尔马,273.83,291.26
+299,India,Patna,25.6,85.12,50,帕特纳,378.45,345.45
+300,Thailand,Pattaya,12.94,100.88,6,芭堤雅,240.27,579.9
+301,Australia,Perth,-31.93,115.83,32,珀斯,493.32,390.84
+302,United States,Philadelphia,39.95,-75.16,8,费城,557.62,482.41
+303,Cambodia,Phnom Penh,11.55,104.92,16,金边,453.54,283.28
+304,United States,Phoenix,33.45,-112.07,0,菲尼克斯,553.55,481.74
+305,Thailand,Phuket,7.88,98.4,9,普吉岛,328.85,602.59
+306,Italy,Pisa,43.72,10.4,1,比萨,458.14,318.18
+307,United States,Pittsburgh,40.44,-80,235,匹兹堡,457.5,464.36
+308,Saint Kitts and Nevis,Port Elizabeth,13.02,-61.23,66,伊丽莎白港,321.22,533.37
+309,United States,Portland,45.52,-122.68,61,波特兰,475.13,467.78
+310,Portugal,Porto,41.15,-8.62,74,波尔图,384.4,377.75
+311,Brazil,Porto Alegre,-30.03,-51.23,1,阿雷格里港,457.52,442.26
+312,Czech,Prague,14.42,50.09,230,布拉格,564.3,580.73
+313,Mauritius,Providence,-20.24,57.61,331,普洛维顿斯,388.65,293.56
+314,Mexico,Puebia,19.05,-98.2,2175,普埃布拉,391.83,392.38
+315,India,Pune,18.52,73.86,562,浦那,440.71,356.13
+316,Dominica,Punta Cana,18.52,-68.42,5,蓬塔卡纳,264.38,504.63
+317,Norway,Pyongyang,39.02,125.75,13,平壤,312.11,446.73
+318,China,Qingdao,36.1,120.37,32,青岛,483.57,468.06
+319,Canada,Quebec,46.81,-71.21,47,魁北克省,463.54,411.17
+320,Ecuador,Quito,-0.22,-78.5,2764,基多,386.82,337.2
+321,India,Rajkot,22.3,70.78,134,拉杰果德,257.88,320.82
+322,United States,Raleigh,35.77,-78.64,91,罗利,354.3,441.55
+323,India,Ranchi,23.35,85.33,623,兰奇,242.63,317.22
+324,Pakistan,Rawalpindi,33.6,73.07,484,拉瓦尔品第,225.11,274.32
+325,Brazil,Recife,-8.05,-34.88,1,累西腓,455.13,441.8
+326,Germany,Regensburg,49.02,12.1,338,雷根斯堡,397.69,378.36
+327,France,Rennes,48.08,-1.68,30,雷恩,288.22,345.05
+328,Canada,Richmond,49.17,-123.14,3,里士满,386.89,396.28
+329,Brazil,Rio de Janeiro,-22.9,-43.21,19,里约热内卢,521.67,453.9
+330,United States,Riverside,33.95,-117.4,262,河边,430.18,458.81
+331,Saudi Arabia,Riyadh,24.7,46.75,520,利雅得,518.15,538.31
+332,United States,Rochester,43.15,-77.62,155,罗切斯特,381.17,448
+333,Italy,Rome,41.9,12.48,14,罗马,545.44,610.58
+334,Russia,Rostov-on-Don,47.25,39.74,234,顿河畔罗斯托夫,344.17,393.99
+335,Netherlands,Rotterdam,51.92,4.48,-4,鹿特丹,515.7,448.71
+336,United States,Sacramento,38.58,-121.49,5,萨克拉门托,396.35,451.48
+337,Brazil,Salvador,-12.97,-38.51,1,萨尔瓦多,439,438.63
+338,Thailand,Samut Prakan,13.6,100.6,2,萨穆特·普拉坎,430.53,430.68
+339,United States,San Antonio,29.42,-98.49,196,圣安东尼奥,389.82,450
+340,United States,San Diego,32.72,-117.16,26,圣迭戈,524.31,476.76
+341,United States,San Francisco,37.77,-122.42,60,旧金山,587.45,516.83
+342,United States,San Jose,37.34,-121.89,24,圣何塞,522.01,476.36
+343,Argentina,San Juan,-31.54,-68.54,650,圣胡安,469,467.37
+344,El Salvador,San Salvador,13.71,-89.2,699,圣萨尔瓦多,384.8,297.11
+345,Yemen,Sanaa,15.35,44.21,2245,萨那,281.66,304.15
+346,Spain,Santa Cruz de Tenerife,28.47,-16.25,159,圣克鲁斯特内里费,236.08,344.31
+347,Argentina,Santa Fe,-31.63,-60.7,20,圣塔菲,322.01,433.92
+348,Spain,Santander,43.46,-3.8,1,桑坦德,491.85,399.62
+349,Chile,Santiago,-33.45,-70.67,513,圣地亚哥,483.31,464.42
+350,Costa Rica,Santo Domingo,10.07,-84.15,1399,圣多明各,449.46,296.32
+351,Brazil,Sao Paulo,-23.55,-46.64,631,圣保罗,525.56,454.56
+352,Japan,Sapporo,43.05,141.35,26,札幌,436.13,392.59
+353,Bosnia and Herzegovina,Sarajevo,43.85,18.38,545,萨拉热窝,220.41,232.22
+354,United States,Seattle,47.61,-122.33,60,西雅图,523.85,476.68
+355,Korea  South,Seoul,37.57,127,46,首尔,573.61,616.84
+356,Spain,Seville,37.38,-5.99,2,塞维利亚,367.43,376.47
+357,China,Shanghai,31.22,121.46,6,上海,585.34,579.42
+358,China,Shenyang,41.79,123.43,48,沈阳,350.71,439.37
+359,China,Shenzhen,22.55,114.07,3,深圳,553.37,639.48
+360,Japan,Shizuoka,34.97,138.38,22,静冈,393.1,384.33
+361,Singapore,Singapore,1.12,103.89,5,新加坡,590.35,674.07
+362,Macedonia,Skopje,42,21.43,246,斯科普里,332.18,240.31
+363,Russia,Sochi,43.6,39.73,65,索契,380.59,402.18
+364,Bulgaria,Sofia,42.7,23.32,558,索非亚,381.72,261.2
+365,United Kingdom,Southampton,50.9,-1.4,0,南安普顿,452.99,417.75
+366,United States,St. Louis,38.63,-90.2,135,圣路易斯,515.44,475.2
+367,Russia,St. Peterburg,59.89,30.26,5,圣彼得堡,504.96,498.6
+368,Norway,Stavanger,58.97,5.74,5,斯塔万格,319.58,448.82
+369,Sweden,Stockholm,59.33,18.06,20,斯德哥尔摩,576.76,501.93
+370,France,Strasbourg,48.58,7.75,140,斯特拉斯堡,418.3,371.96
+371,Germany,Stuttgart,48.78,9.18,255,斯图加特,482.3,393.6
+372,United Kingdom,Sunderland,54.9,-1.38,9,桑德兰,286.3,380.39
+373,Indonesia,Surabaya,-7.25,112.75,1,泗水,444.02,502.99
+374,India,Surat,21.17,72.83,13,苏拉特,424.55,353.47
+375,China,Suzhou,31.31,120.62,4,苏州,528.72,476.19
+376,Australia,Sydney,-33.87,151.21,1,悉尼,601.3,507.31
+377,United States,Syracuse,43.05,-76.1,1301,锡拉丘兹,393.54,450.84
+378,China,Taipei,24.11,120.7,9,台北,539.65,608.42
+379,Estonia,Tallinn,59.44,24.75,22,塔林,389.03,263.35
+380,United States,Tampa,27.95,-82.46,1,坦帕,482.28,469.14
+381,Uzbekistan,Tashkent,41.28,69.25,455,塔什干,286.25,328.55
+382,Australia,Tasmania,-43,148,111,塔斯马尼亚,393.54,373.18
+383,Georgia,Tbilisi,41.73,44.79,420,第比利斯,348.55,242.06
+384,Honduras,Tegucigalpa,14.1,-87.22,997,特古西加尔巴,358.11,244.48
+385,Iran,Tehran,35.67,51.42,1149,德黑兰,488.01,414.2
+386,Israel,Tel Aviv,32.07,34.76,3,特拉维夫,550.7,485.16
+387,Greece,Thessaloniki,40.64,22.94,0,塞萨洛尼基,304.11,361.91
+388,China,Tianjin,39.14,117.18,8,天津,458.94,463.32
+389,Albania,Tirana,41.33,19.82,103,地拉那,345.34,239.4
+390,Japan,Tokyo,35.69,139.69,40,东京,622.38,577.08
+391,Canada,Toronto,43.7,-79.42,173,多伦多,588.65,513.69
+392,France,Toulon,43.12,5.93,7,土伦,243.12,333.73
+393,France,Toulouse,43.6,1.44,146,图卢兹,395.67,367.77
+394,South Africa,Tshwane,-25.57,28.1,1378,茨瓦内,420.3,355.51
+395,United States,Tulsa,36.15,-95.99,213,塔尔萨市,314.27,431.08
+396,Tunisia,Tunis,36.8,10.18,13,突尼斯,450.39,339.72
+397,Italy,Turin,45.04,7.67,243,都灵,394.95,309.74
+398,India,Udaipur,24.58,73.68,590,乌代布尔,247.17,318.3
+399,Russia,Ufa,54.78,56.04,102,乌法,259.45,371.87
+400,Monaco,Ulaanbaatar,47.92,106.92,1299,乌兰巴托,354.39,231.95
+401,Germany,Ulm,48.4,9.99,471,乌尔姆,408.8,380.5
+402,Korea  South,Ulsan,35.54,129.32,6,蔚山,432.23,438.37
+403,Philippines,Valencia,7.91,125.09,270,巴伦西亚,411.42,471.03
+404,Spain,Valladolid,41.65,-4.72,694,瓦拉多利德,293.05,359.54
+405,Canada,Vancouver,49.25,-123.12,63,温哥华,517.71,477.3
+406,Italy,Venice,45.44,12.33,1,威尼斯,534.99,554.68
+407,Italy,Verona,45.43,11,71,维罗纳,330.2,300.29
+408,Austria,Vienna,48.21,16.37,164,维也纳,582.14,563.15
+409,Spain,Vigo,42.23,-8.72,115,维戈,235.57,344.16
+410,Lithuania,Vilnius,54.68,25.32,125,维尔纽斯,367.8,290.73
+411,United States,Virginia Beach,36.85,-75.98,3,弗吉尼亚海滩,510.98,474.41
+412,India,Visakhapatnam,17.7,83.3,4,维萨卡帕特南,395.28,348.45
+413,Russia,Vladivostok,43.11,131.87,5,海参崴,388.88,403.96
+414,Russia,Volgograd,48.8,44.59,52,伏尔加格勒,311.43,386.01
+415,Namibia,Walvis Bay,-22.95,14.5,1,鲸湾港,260.93,243.3
+416,Poland,Warsaw,52.25,21,94,华沙,562.16,491.94
+417,United States,Washington D.C.,38.9,-77.04,11,华盛顿,573,466.11
+418,New Zealand,Wellington,-41.28,174.78,51,惠灵顿,421.27,341.85
+419,China,Wenzhou,28.02,120.65,17,温州,436.27,458.76
+420,Namibia,Windhoek,-22.59,17.1,1645,温得和克,363.06,248.11
+421,Canada,Winnipeg,49.88,-97.15,230,温尼伯,281.84,371.42
+422,Germany,Wolfsburg,52.43,10.8,57,沃尔夫斯堡,386.99,376.26
+423,Australia,Wollongong,-34.43,150.88,26,卧龙岗,354.42,365.31
+424,Poland,Wroclaw,51.1,17.03,118,弗罗茨瓦夫,335.7,281.43
+425,China,Wuhan,30.58,114.27,25,武汉,412.22,453.68
+426,China,Xiamen,24.47,118.09,0,厦门,464.53,464.42
+427,China,Xi'An,33.88,108.3,400,西安,472.72,466
+428,Myanmar,Yangon,16.8,96.13,5.5,仰光,408.63,312
+429,China,Yantai,37.53,121.4,46,烟台,364.74,442.82
+430,Russia,Yekaterinburg,56.86,60.61,278,叶卡捷琳堡,397,405.66
+431,Armenia,Yerevan,40.18,44.51,1002,埃里温,264.38,232.84
+432,Japan,Yokohama,35.45,139.65,1,横滨,434.17,392.23
+433,El Salvador,Zaragoza,13.59,-89.29,607,萨拉戈萨,361.75,294.14
+434,China,Zhengzhou,34.76,113.65,107,郑州,397.55,450.45
+435,Switzerland,Zurich,47.37,8.55,472,苏黎世,575.64,424.48
