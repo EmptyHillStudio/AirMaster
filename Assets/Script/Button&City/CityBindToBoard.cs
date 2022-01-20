@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class CityBindToBoard : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CityBindToBoard : MonoBehaviour
     public Text CityName;
     private Image[] Thumbnail;
     public GameObject Board;
+
     public void setCity(City city)
     {
         this.bindCity = city;
