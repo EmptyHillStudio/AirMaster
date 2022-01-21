@@ -13,26 +13,39 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
     private static CitiesManager cManager;
     private string CityName;
     private City tCity;
-    public GameObject selectboard;
+    public GameObject dropdown;
     
     public void OnPointerClick(PointerEventData eventData)
     {
-
+        dropdown.GetComponent<RectTransform>().position = Input.mousePosition;
+        dropdown.GetComponent<Dropdown>().ClearOptions();
         int radius = 3;
         Collider[] cols = Physics.OverlapSphere(this.transform.position, radius, LayerMask.NameToLayer("layername"));
+        List<string> cityList = new List<string>();
         if (cols.Length > 0)
         {
-            
-            GameObject citybutton = GameObject.Find("CityButton");
             for (int i = 0; i < cols.Length; i++)
             {
-                Vector3 v = new Vector3(0, 80-i*35, 0);
-                GameObject cb = GameObject.Instantiate(citybutton, v, Quaternion.identity) as GameObject;
-                cb.transform.GetComponent<Text>().text=cols[i].name;
-               
+                if (i % 2 == 0)
+                {
+                    cityList.Add(cols[i].name);
+                    Debug.Log(cols[i].name);
+                }
                 
             }
-            selectboard.SetActive(true);
+            Debug.Log(cols.Length);
+            dropdown.GetComponent<Dropdown>().AddOptions(cityList);
+            dropdown.SetActive(true);
+            for (int i = 0; i < cols.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    cityList.Remove(cols[i].name);
+                    
+                }
+
+            }
+            
         }
         else
         {
