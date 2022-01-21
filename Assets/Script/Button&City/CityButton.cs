@@ -22,7 +22,7 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
         int radius = 3;
         Collider[] cols = Physics.OverlapSphere(this.transform.position, radius, LayerMask.NameToLayer("layername"));
         List<string> cityList = new List<string>();
-        if (cols.Length > 0)
+        if (cols.Length > 2)
         {
             for (int i = 0; i < cols.Length; i++)
             {
