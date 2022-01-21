@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class About : MonoBehaviour
+public class Aboutexit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,8 +16,8 @@ public class About : MonoBehaviour
         
     }
     public GameObject board;
-    public void about()
+    public void aboutexit()
     {
-        board.SetActive(true);
+        board.SetActive(false);
     }
 }
