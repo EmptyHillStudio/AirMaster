@@ -14,9 +14,13 @@ public class DropdownSelect : MonoBehaviour
     // Update is called once per frame
     public void OnChangeValue()
     {
-        cManager = GlobalVariable.DefaultManager.cities_manager;
-        string CityName = dropdown.GetComponent<Dropdown>().options[dropdown.GetComponent<Dropdown>().value].text;
-        tCity = cManager.getCityByName(CityName);
-        InfomationBoard.UpdateContent(tCity);
+        if(dropdown.GetComponent<Dropdown>().options[dropdown.GetComponent<Dropdown>().value].text!="SelectCity")
+        {
+            cManager = GlobalVariable.DefaultManager.cities_manager;
+            string CityName = dropdown.GetComponent<Dropdown>().options[dropdown.GetComponent<Dropdown>().value].text;
+            tCity = cManager.getCityByName(CityName);
+            InfomationBoard.UpdateContent(tCity);
+        }
+        
     }
 }
