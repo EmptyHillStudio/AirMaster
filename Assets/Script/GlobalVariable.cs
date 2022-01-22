@@ -12,6 +12,7 @@ public class GlobalVariable
     //全局初始日期定义和相应的控制属性
     public static Date GameDate;
     public static bool IsPaused = true;
+    public static bool Keep = true;
     public static int SpeedTime = 1;
     public static string CompanyName = "Debug Mode";
 

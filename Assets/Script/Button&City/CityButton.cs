@@ -19,7 +19,7 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
     {
         dropdown.GetComponent<RectTransform>().position = Input.mousePosition;
         dropdown.GetComponent<Dropdown>().ClearOptions();
-        int radius = 3;
+        int radius = 1;
         Collider[] cols = Physics.OverlapSphere(this.transform.position, radius, LayerMask.NameToLayer("layername"));
         List<string> cityList = new List<string>();
         if (cols.Length > 2)

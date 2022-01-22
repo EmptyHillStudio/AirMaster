@@ -10,19 +10,25 @@ public class TimeControl : MonoBehaviour
 {
     public Text TimesShowing;
     public Light_Dynamic Light;
-    GameObject StartButton;
-    GameObject PauseButton;
-    GameObject SpeedUpButton;
-    GameObject SlowDownButton;
-    GameObject PausingShowing;
+    public GameObject StartButton;
+    public GameObject PauseButton;
+    public GameObject SpeedUpButton;
+    public GameObject SlowDownButton;
+    public GameObject PausingShowing;
     void Start()
     {
-        StartButton = GameObject.Find("StartButton");
-        PauseButton = GameObject.Find("PauseButton");
-        PauseButton.SetActive(false);
-        SpeedUpButton = GameObject.Find("SpeedUp");
-        PausingShowing = GameObject.Find("PausingShowing");
-        SlowDownButton = GameObject.Find("SlowDown");
+        if (GlobalVariable.IsPaused)
+        {
+            PauseButton.SetActive(false);
+            PausingShowing.SetActive(true);
+            StartButton.SetActive(true);
+        }
+        else
+        {
+            PauseButton.SetActive(true);
+            PausingShowing.SetActive(false);
+            StartButton.SetActive(false);
+        }
         StartButton.GetComponent<Button>().onClick.AddListener(Start_Time);
         PauseButton.GetComponent<Button>().onClick.AddListener(Pause_Time);
         SpeedUpButton.GetComponent<Button>().onClick.AddListener(SpeedUp_Time);
