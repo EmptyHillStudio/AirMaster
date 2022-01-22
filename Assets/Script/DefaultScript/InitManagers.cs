@@ -15,7 +15,7 @@ public class InitManagers : MonoBehaviour
         this.lines_manager = new LinesManager();
         if(GlobalVariable.GameDate == null)
         {
-            GlobalVariable.GameDate = new Date(1960, 1, 1);
+            GlobalVariable.GameDate = new Date(1970, 1, 1);
         }
         GlobalVariable.DefaultManager = this;
     }

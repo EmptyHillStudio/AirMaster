@@ -12,7 +12,7 @@ public class City
     public float economy;//经济指数
     public float tourism;//旅游指数
 
-    public City(int id, string name, float x, float y, float economy, float tourim)
+    public City(int id, string name, float x, float y, float economy, float tourism)
     {
         this.id = id;
         this.name = name;

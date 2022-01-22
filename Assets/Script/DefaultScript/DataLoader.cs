@@ -20,6 +20,7 @@ public class DataLoader : MonoBehaviour
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
         var buttonParent = GameObject.Find("Buttons");
+        int ci_num = 0;
         foreach (var line in Cities_Data)//按行读取，每一行是一个城市的各项数据
         {
             int id = System.Convert.ToInt32(line[0]);//id
@@ -34,7 +35,6 @@ public class DataLoader : MonoBehaviour
             latitude = latitude / 180 * System.Convert.ToSingle(3.14159265); //转换成弧度
             longitude = longitude / 180 * System.Convert.ToSingle(3.14159265); //转换成弧度
             City temp = new City(id, line[6], latitude, longitude, economy, tourism); 
-            Debug.Log(line[2]);
             cManager.add(temp);
             //法向量（相对于球心的向量）
             double tx = re * Math.Cos(latitude) * Math.Cos(longitude),
@@ -48,7 +48,9 @@ public class DataLoader : MonoBehaviour
             GameObject go = GameObject.Instantiate(db3, v, Quaternion.identity) as GameObject;
             go.transform.localEulerAngles = new Vector3(rx, ry, rz);
             go.name = line[6];
+            ci_num++;
         }
+        Debug.Log(ci_num + " cities has been loaded!");
         return cManager;
     }
 
