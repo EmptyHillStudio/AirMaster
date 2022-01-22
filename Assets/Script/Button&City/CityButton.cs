@@ -22,6 +22,7 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
         int radius = 3;
         Collider[] cols = Physics.OverlapSphere(this.transform.position, radius, LayerMask.NameToLayer("layername"));
         List<string> cityList = new List<string>();
+        cityList.Add("SelectCity");
         if (cols.Length > 2)
         {
             for (int i = 0; i < cols.Length; i++)
@@ -34,7 +35,9 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
                 
             }
             Debug.Log(cols.Length);
+            dropdown.GetComponent<Dropdown>().captionText.text = "Select City";
             dropdown.GetComponent<Dropdown>().AddOptions(cityList);
+            
             dropdown.SetActive(true);
             for (int i = 0; i < cols.Length; i++)
             {
