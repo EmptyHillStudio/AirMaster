@@ -14,6 +14,7 @@ public class Line
     public string info;
     public Line(int id, City begin, City end)
     {
+        Points = new City[2];
         this.Points[0] = begin;
         this.Points[1] = end;
     }
