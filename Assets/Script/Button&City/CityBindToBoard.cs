@@ -20,11 +20,18 @@ public class CityBindToBoard : MonoBehaviour
     }
     public void UpdateContent(City city)
     {
-        CityName.GetComponent<Text>().text = city.getName();
-        Economy_index.GetComponent<Text>().text = city.economy.ToString();
-        Toursm_index.GetComponent<Text>().text = city.tourism.ToString();
-        Population_index.GetComponent<Text>().text = city.getName();
-        setCity(city);
-        Board.SetActive(true);
+        if(city != null)
+        {
+            CityName.GetComponent<Text>().text = city.getName();
+            Economy_index.GetComponent<Text>().text = city.economy.ToString();
+            Toursm_index.GetComponent<Text>().text = city.tourism.ToString();
+            Population_index.GetComponent<Text>().text = city.getName();
+            setCity(city);
+            Board.SetActive(true);
+        }
+        else
+        {
+            Board.SetActive(false);
+        }
     }
 }
