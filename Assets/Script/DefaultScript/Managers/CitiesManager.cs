@@ -12,7 +12,7 @@ public class City
     public float economy;//经济指数
     public float tourism;//旅游指数
     public bool begin;
-
+    public bool end;
 
     public City(int id, string name, float x, float y, float economy, float tourism)
     {
@@ -30,6 +30,27 @@ public class City
     public static void GetDistance(City c1, City c2)//计算两点间距离
     {
 
+    }
+    public void SetBegin(City city)
+    {
+        city.begin = true;
+    }
+    public void SetEnd(City city)
+    {
+        city.end = true;
+    }
+    public bool GetBegin()
+    {
+        return this.begin;
+    }
+    public bool Getend()
+    {
+        return this.end;
+    }
+    public void Reset()
+    {
+        this.begin = false;
+        this.end = false;
     }
 }
 
@@ -54,5 +75,16 @@ public class CitiesManager
     public void add(City c)
     {
         this.Cities.Add(c);
+    }
+    public City getBeginCity()
+    {
+        foreach (var c in Cities)
+        {
+            if (c.GetBegin() == true)
+            {
+                return c;
+            }
+        }
+        return null;
     }
 }
