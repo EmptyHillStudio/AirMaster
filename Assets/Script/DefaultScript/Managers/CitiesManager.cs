@@ -11,6 +11,8 @@ public class City
     public string city_introduction;//城市介绍
     public float economy;//经济指数
     public float tourism;//旅游指数
+    public bool begin;
+
 
     public City(int id, string name, float x, float y, float economy, float tourism)
     {
