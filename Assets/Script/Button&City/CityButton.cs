@@ -14,7 +14,8 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
     private string CityName;
     private City tCity;
     public GameObject dropdown;
-    
+    private static LinesManager lManager;
+
     public void OnPointerClick(PointerEventData eventData)
     {
         dropdown.GetComponent<RectTransform>().position = Input.mousePosition;
@@ -55,7 +56,19 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
             cManager = GlobalVariable.DefaultManager.cities_manager;
             string CityName = this.name;
             tCity = cManager.getCityByName(CityName);
-            InfomationBoard.UpdateContent(tCity);
+            if (cManager.getBeginCity() != null)
+            {
+                lManager = GlobalVariable.DefaultManager.lines_manager;
+                lManager = new LinesManager();
+                lManager.add(cManager.getBeginCity(), tCity);
+                cManager.getBeginCity().Reset();
+                tCity.Reset();
+                Debug.Log("Ìí¼Ó³É¹¦");
+            }
+            else
+            {
+                InfomationBoard.UpdateContent(tCity);
+            }
         }
     }
     

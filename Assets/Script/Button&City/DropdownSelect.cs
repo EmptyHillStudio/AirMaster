@@ -11,16 +11,29 @@ public class DropdownSelect : MonoBehaviour
     private static CitiesManager cManager;
     private string CityName;
     private City tCity;
+    private static LinesManager lManager;
     // Update is called once per frame
     public void OnChangeValue()
     {
-        if(dropdown.GetComponent<Dropdown>().options[dropdown.GetComponent<Dropdown>().value].text!="SelectCity")
+        if (dropdown.GetComponent<Dropdown>().options[dropdown.GetComponent<Dropdown>().value].text != "SelectCity")
         {
             cManager = GlobalVariable.DefaultManager.cities_manager;
             string CityName = dropdown.GetComponent<Dropdown>().options[dropdown.GetComponent<Dropdown>().value].text;
             tCity = cManager.getCityByName(CityName);
-            InfomationBoard.UpdateContent(tCity);
+            if (cManager.getBeginCity() != null)
+            {
+                lManager = GlobalVariable.DefaultManager.lines_manager;
+                lManager.add(cManager.getBeginCity(), tCity);
+                cManager.getBeginCity().Reset();
+                tCity.Reset();
+                Debug.Log("Ìí¼Ó³É¹¦");
+            }
+            else
+            {
+                InfomationBoard.UpdateContent(tCity);
+            }
+
         }
-        
+
     }
 }
