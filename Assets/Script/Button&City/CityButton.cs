@@ -59,6 +59,7 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
             if (cManager.getBeginCity() != null)
             {
                 lManager = GlobalVariable.DefaultManager.lines_manager;
+                lManager = new LinesManager();
                 lManager.add(cManager.getBeginCity(), tCity);
                 cManager.getBeginCity().Reset();
                 tCity.Reset();
