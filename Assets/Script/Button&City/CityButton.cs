@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.IO;
+using System;
 using UnityEngine.SceneManagement;
 
 
@@ -15,6 +16,9 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
     private City tCity;
     public GameObject dropdown;
     private static LinesManager lManager;
+    public GameObject confirmcreate;
+    public GameObject operationcom;
+    public GameObject cityinfo;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -58,12 +62,18 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
             tCity = cManager.getCityByName(CityName);
             if (cManager.getBeginCity() != null)
             {
-                lManager = GlobalVariable.DefaultManager.lines_manager;
-                lManager = new LinesManager();
-                lManager.add(cManager.getBeginCity(), tCity);
-                cManager.getBeginCity().Reset();
-                tCity.Reset();
-                Debug.Log("添加成功");
+                if (cManager.getBeginCity().name.Equals(CityName))
+                {
+                    Debug.Log("请选择终点");
+                }
+                else
+                {
+                    InfomationBoard.UpdateContent(tCity);
+                    cityinfo.SetActive(true);
+                    confirmcreate.SetActive(true);
+                    operationcom.SetActive(false);
+                }
+                
             }
             else
             {

@@ -12,6 +12,9 @@ public class DropdownSelect : MonoBehaviour
     private string CityName;
     private City tCity;
     private static LinesManager lManager;
+    public GameObject confirmcreate;
+    public GameObject operationcom;
+    public GameObject cityinfo;
     // Update is called once per frame
     public void OnChangeValue()
     {
@@ -22,11 +25,17 @@ public class DropdownSelect : MonoBehaviour
             tCity = cManager.getCityByName(CityName);
             if (cManager.getBeginCity() != null)
             {
-                lManager = GlobalVariable.DefaultManager.lines_manager;
-                lManager.add(cManager.getBeginCity(), tCity);
-                cManager.getBeginCity().Reset();
-                tCity.Reset();
-                Debug.Log("添加成功");
+                if (cManager.getBeginCity().name.Equals(CityName))
+                {
+                    Debug.Log("请选择终点");
+                }
+                else
+                {
+                    InfomationBoard.UpdateContent(tCity);
+                    cityinfo.SetActive(true);
+                    confirmcreate.SetActive(true);
+                    operationcom.SetActive(false);
+                }
             }
             else
             {
