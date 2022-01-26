@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Research.unity
     guid: 6d35ec88b5ad2d54ebb941d7c62f4dcf
+  - enabled: 1
+    path: Assets/Scenes/rank.unity
+    guid: 1795b3dd9ecd98a48a42dd3572f86030
   m_configObjects: {}

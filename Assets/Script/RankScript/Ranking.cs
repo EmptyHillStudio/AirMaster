@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ranking : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Ranking : MonoBehaviour
             Vector3 a = new Vector3(180,(270-90*i), 0);
             GameObject l=Instantiate(oneline, a, b, Lines.transform);
             l.name = "line"+i.ToString() ;
+            Text number = (l.transform.Find("line-number").gameObject).GetComponent<Text>();
+            number.text = (i + 1).ToString();
         }
     }
 
