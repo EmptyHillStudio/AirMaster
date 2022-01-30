@@ -77,6 +77,8 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
             }
             else
             {
+                confirmcreate.SetActive(false );
+                operationcom.SetActive(true );
                 InfomationBoard.UpdateContent(tCity);
             }
         }

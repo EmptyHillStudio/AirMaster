@@ -39,6 +39,8 @@ public class DropdownSelect : MonoBehaviour
             }
             else
             {
+                confirmcreate.SetActive(false );
+                operationcom.SetActive(true );
                 InfomationBoard.UpdateContent(tCity);
             }
 
