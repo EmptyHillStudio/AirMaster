@@ -8497,6 +8497,7 @@ GameObject:
   - component: {fileID: 1646828378}
   - component: {fileID: 1646828377}
   - component: {fileID: 1646828376}
+  - component: {fileID: 1646828379}
   m_Layer: 5
   m_Name: Lines
   m_TagString: Untagged
@@ -8567,7 +8568,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646828377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1646828379}
+        m_TargetAssemblyTypeName: Linesbutton, Assembly-CSharp
+        m_MethodName: Rankclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646828377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8606,6 +8619,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646828374}
   m_CullTransparentMesh: 1
+--- !u!114 &1646828379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646828374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e086e334bb2284f9ba5f3f1246a13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1665324421
 GameObject:
   m_ObjectHideFlags: 0

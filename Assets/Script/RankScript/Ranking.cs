@@ -20,7 +20,6 @@ public class Ranking : MonoBehaviour
             number.text = (i + 1).ToString();
         }
     }
-
     // Update is called once per frame
     void Update()
     {
