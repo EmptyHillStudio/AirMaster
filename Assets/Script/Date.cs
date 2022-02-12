@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class Date
     public string[] monthname = { "Jen", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" };
     private bool Leap = false; public bool isLeap() { return this.Leap; }
     private int year, month, day;
+    private bool Lack;public bool isLack() { return this.Lack; }//缺省日期
     public Date(int year, int month, int day)
     {
         setDay(day);
@@ -18,7 +20,43 @@ public class Date
         {
             this.Leap = true;
         }
+        this.Lack = false;
     }
+    public Date(int year,int month)//没有具体时间的日期
+    {
+        setYear(year);
+        setMonth(month);
+        if (year % 4 == 0)
+        {
+            this.Leap = true;
+        }
+        this.Lack = true;
+    }
+
+    public Date(string year)
+    {
+        int temp = Convert.ToInt32(year);
+        setYear(temp);
+        setMonth(1);
+        setDay(1);
+        if (temp % 4 == 0)
+        {
+            this.Leap = true;
+        }
+    }
+
+    public static Date FormatDate(string Standered)
+    {
+        string[] ymd = Standered.Split('/');
+        List<int> ymdInt = new List<int>();
+        foreach(string s in ymd)
+        {
+            ymdInt.Add(Convert.ToInt32(s));
+        }
+        Date temp = new Date(ymdInt[2], ymdInt[0], ymdInt[1]);
+        return temp;
+    }
+
     public int getYear()
     {
         return year;

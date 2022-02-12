@@ -17,6 +17,7 @@ public class Line
         Points = new City[2];
         this.Points[0] = begin;
         this.Points[1] = end;
+
     }
 }
 
