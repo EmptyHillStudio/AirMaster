@@ -57,6 +57,30 @@ public class Date
         return temp;
     }
 
+    public static bool InRange(Date reg, Date end, Date now)
+    {
+        if (reg.getYear()<now.getYear()&&end.getYear()>now.getYear())
+        {
+            return true;
+        }else if (reg.getYear() == now.getYear() && end.getYear() == now.getYear())
+        {
+            if (reg.getMonth() < now.getMonth() && end.getMonth() > now.getMonth())
+            {
+                return true;
+            }
+            else if (reg.getMonth() == now.getMonth() && end.getMonth() == now.getMonth())
+            {
+                if (reg.getDay() <= now.getDay() && end.getDay() >= now.getDay())
+                {
+                    return true;
+                }
+                else return false;
+            }
+            else return false;
+        }
+        else return false;
+    }
+
     public int getYear()
     {
         return year;

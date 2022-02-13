@@ -54,6 +54,7 @@ public enum Company_Type
 public class CompaniesManager
 {
     private Dictionary<string, Company> AircraftCompanies;
+    
     public CompaniesManager()
     {
         this.AircraftCompanies = new Dictionary<string, Company>();
@@ -65,5 +66,18 @@ public class CompaniesManager
     public Company GetCompany(string name)
     {
         return AircraftCompanies[name];
+    }
+    public List<Company> GetInDateCompanies()
+    {
+        List<Company> temp = new List<Company>();
+        Date now = GlobalVariable.GameDate;
+        foreach(Company c in AircraftCompanies.Values)
+        {
+            if (Date.InRange(c.register, c.end, now)) 
+            {
+
+            }
+        }
+        return temp;
     }
 }
