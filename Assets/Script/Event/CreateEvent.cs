@@ -8,17 +8,17 @@ using UnityEngine.UI;
 public class CreateEvent
 { 
     public delegate void MyMehod(BaseEventData pd);
-    EventTrigger trigger;
-    public void addTriggersListener(GameObject obj, EventTriggerType eventTriggerType, MyMehod myMehod)
+    
+    public static void addTriggersListener(GameObject obj, EventTriggerType eventTriggerType, MyMehod myMehod)
     {
-        EventTrigger ET = GetComponent<EventTrigger>();
+        EventTrigger ET = obj.GetComponent<EventTrigger>();
         if (ET == null)
         {
             ET = obj.AddComponent<EventTrigger>();
         }
-        if (trigger.triggers.Count == 0)
+        if (ET.triggers.Count == 0)
         {
-            trigger.triggers = new List<EventTrigger.Entry>();
+            ET.triggers = new List<EventTrigger.Entry>();
         }
 
         UnityAction<BaseEventData> callBack = new UnityAction<BaseEventData>(myMehod);
@@ -26,7 +26,7 @@ public class CreateEvent
         entry.eventID = eventTriggerType;
         entry.callback.AddListener(callBack);
 
-        trigger.triggers.Add(entry);
+        ET.triggers.Add(entry);
         Debug.Log("2");
     }
 
