@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lines.unity
     guid: 75a3679e17beda64abf028adb9789a19
+  - enabled: 1
+    path: Assets/Scenes/BuyPlane.unity
+    guid: 9de305e9c8c11a641a04b2f0c3e911ff
   m_configObjects: {}

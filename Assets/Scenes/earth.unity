@@ -4188,6 +4188,7 @@ GameObject:
   - component: {fileID: 830204249}
   - component: {fileID: 830204248}
   - component: {fileID: 830204247}
+  - component: {fileID: 830204250}
   m_Layer: 5
   m_Name: Puchase
   m_TagString: Untagged
@@ -4258,7 +4259,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 830204248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 830204250}
+        m_TargetAssemblyTypeName: PuchasePlaneButton, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &830204248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4297,6 +4310,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830204245}
   m_CullTransparentMesh: 1
+--- !u!114 &830204250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830204245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38175f0052e80e45ba46b6ab9fa410d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &849687951
 GameObject:
   m_ObjectHideFlags: 0
