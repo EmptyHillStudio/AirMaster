@@ -11449,6 +11449,7 @@ GameObject:
   - component: {fileID: 2034359669}
   - component: {fileID: 2034359670}
   - component: {fileID: 2034359671}
+  - component: {fileID: 2034359672}
   m_Layer: 5
   m_Name: IndexBusiness
   m_TagString: Untagged
@@ -11517,6 +11518,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &2034359672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034359668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7434aa4414f719f4386ee8c2e01c60b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035963311
 GameObject:
   m_ObjectHideFlags: 0
@@ -11592,7 +11605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "01\t\tJan\t\t1960"
+  m_Text: "01\t\tJan\t\t2019"
 --- !u!222 &2035963314
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11625,6 +11638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a48c5ada37c9b54599339e14d977318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  date: {fileID: 2035963311}
 --- !u!114 &2035963317
 MonoBehaviour:
   m_ObjectHideFlags: 0
