@@ -75,7 +75,7 @@ public class CompaniesManager
         {
             if (Date.InRange(c.register, c.end, now)) 
             {
-
+                temp.Add(c);
             }
         }
         return temp;
