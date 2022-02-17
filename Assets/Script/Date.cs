@@ -81,6 +81,11 @@ public class Date
         else return false;
     }
 
+    public static Date GetPutOff(Date date, int year)
+    {
+        return new Date(date.getYear() + year, date.getMonth(), date.getDay());
+    }
+
     public int getYear()
     {
         return year;

@@ -27,6 +27,7 @@ public class Plane
         this.creater = GlobalVariable.DefaultManager.companiesManager.GetCompany(creater);
         this.model = model;
         this.series = series;
+        Debug.Log(series);
         this.sub = sub;
         this.Size = GetSize(Size);
         this.Launch = Date.FormatDate(launch);
@@ -78,5 +79,21 @@ public class PlanesManager
     public void Add(Plane p)
     {
         this.Planes.Add(p);
+    }
+    public List<Plane> GetPlanesByCompany(string CompanyName)
+    {
+        List<Plane> temp = new List<Plane>();
+        foreach(Plane p in Planes)
+        {
+            if (CompanyName.Equals(p.creater.name))
+            {
+                temp.Add(p);
+            }
+        }
+        return temp;
+    }
+    public List<Plane> GetPlanes()
+    {
+        return Planes;
     }
 }

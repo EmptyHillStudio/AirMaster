@@ -80,4 +80,14 @@ public class CompaniesManager
         }
         return temp;
     }
+
+    public List<Company> GetCompanies()
+    {
+        List<Company> temp = new List<Company>();
+        foreach (Company c in AircraftCompanies.Values)
+        {
+            temp.Add(c);
+        }
+        return temp;
+    }
 }

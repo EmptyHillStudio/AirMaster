@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,13 +11,19 @@ public class CompaniesShowing : MonoBehaviour
     public GameObject Content;
     void Start()
     {
-        companies = GlobalVariable.DefaultManager.companiesManager.GetInDateCompanies();
+        companies = GlobalVariable.DefaultManager.companiesManager.GetCompanies();
         foreach (Company c in companies)
         {
             GameObject temp = GameObject.Instantiate(Primary);
-            Sprite logo = Resources.Load("Companies/" + temp.name, typeof(Sprite)) as Sprite;
+            Sprite logo = Resources.Load("Companies/" + c.name, typeof(Sprite)) as Sprite;
             temp.GetComponent<Image>().sprite = logo;
-            temp.SetActive(true);
+            temp.transform.SetParent(Content.transform);
+            temp.name = c.name;
+            Date now = GlobalVariable.GameDate;
+            if (Date.InRange(c.register, c.end, now))
+            {
+                temp.SetActive(true);
+            }else temp.SetActive(false);
         }
     }
 
