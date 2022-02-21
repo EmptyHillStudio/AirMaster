@@ -18,4 +18,6 @@ public class GlobalVariable
 
     //全局管理器
     public static InitManagers DefaultManager;
+    //进入城市按钮将CityName传递
+    public static string CityName;
 }
