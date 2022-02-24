@@ -3630,7 +3630,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 737378792}
           m_TargetAssemblyTypeName: TestChangevalue, Assembly-CSharp
-          m_MethodName: Change
+          m_MethodName: OnUpdateSelected
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6174,6 +6174,7 @@ GameObject:
   - component: {fileID: 1180871542}
   - component: {fileID: 1180871543}
   - component: {fileID: 1180871544}
+  - component: {fileID: 1180871545}
   m_Layer: 5
   m_Name: UI_Canvas
   m_TagString: Untagged
@@ -6334,6 +6335,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1180871545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180871537}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343fba984f6e1c94384489843fa3e0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventline: 0
+  eventTypeList: []
 --- !u!1 &1203048586
 GameObject:
   m_ObjectHideFlags: 0
@@ -11610,7 +11625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 760, y: 470}
+  m_AnchoredPosition: {x: 148, y: 273}
   m_SizeDelta: {x: 3000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2035963313
@@ -11667,6 +11682,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343fba984f6e1c94384489843fa3e0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventline: 0
+  eventTypeList: []
 --- !u!114 &2035963316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11679,7 +11696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a48c5ada37c9b54599339e14d977318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  date: {fileID: 2035963311}
 --- !u!114 &2035963317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11693,10 +11709,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 8
+  - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2035963316}
+          m_TargetAssemblyTypeName: EventControl, Assembly-CSharp
+          m_MethodName: OnUpdateSelected
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &2035963318
 MonoBehaviour:
   m_ObjectHideFlags: 0
