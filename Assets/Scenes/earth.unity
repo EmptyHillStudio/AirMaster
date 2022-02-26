@@ -2510,7 +2510,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 526883600}
         m_TargetAssemblyTypeName: ESCbutton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: Onclick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

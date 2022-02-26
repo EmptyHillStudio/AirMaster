@@ -7,12 +7,9 @@ public class ESCbutton : MonoBehaviour
 {
     public GameObject ESCimage;
     bool visable = true;
-    void Update()
+    public void Onclick()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ESCimage.SetActive(visable);
-            visable = (visable ? false : true);
-        }
+        ESCimage.SetActive(visable);
+        visable = (visable ? false : true);
     }
 }
