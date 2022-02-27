@@ -25,6 +25,7 @@ public class City
         this.economy = economy;
         this.tourism = tourism;
     }
+    
     public string getName()
     {
         return this.name;
@@ -53,6 +54,10 @@ public class City
     {
         this.begin = false;
         this.end = false;
+    }
+    public string GetCountry()
+    {
+        return this.country;
     }
 }
 
@@ -88,5 +93,17 @@ public class CitiesManager
             }
         }
         return null;
+    }
+    public List<City> GetCityListByCountryName(string name)
+    {
+        List<City> allCities = new List<City>();
+        foreach (var c in Cities)
+        {
+            if(c.GetCountry().Equals(name))
+            {
+                allCities.Add(c);
+            }
+        }
+        return allCities;
     }
 }

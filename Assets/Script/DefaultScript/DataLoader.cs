@@ -16,7 +16,7 @@ public class DataLoader
     public static CitiesManager getManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath+"/Res/Data", "Cities.csv");
+        loadFile(Application.dataPath+"/Res/Data", "cities.csv");
         cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
