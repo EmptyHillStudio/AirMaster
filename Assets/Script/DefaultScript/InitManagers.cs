@@ -9,6 +9,7 @@ public class InitManagers : MonoBehaviour
     public LinesManager lines_manager;//航线管理器
     public DateManager date_manager;//日期管理器
     public ThumbnailImageManager thumbnailImageManager;//规模图像管理器
+    public AirportsManager airportsManager;
     public CountriesManager countriesManager;
     public CompaniesManager companiesManager;
     public PlanesManager planesManager;
@@ -25,11 +26,13 @@ public class InitManagers : MonoBehaviour
         this.lines_manager = new LinesManager();
         //4读取所有历史客机的数据
         this.planesManager = DataLoader.GetPlanesManager();
-        //5读取科技和研究数据
+        //5读取所有机场的数据
+        this.airportsManager = DataLoader.GetAirportsManager();
+        //6读取科技和研究数据
 
-        //6读取航线需求数据
+        //7读取航线需求数据
 
-        //7
+        //8
         if (GlobalVariable.GameDate == null)
         {
             GlobalVariable.GameDate = new Date(1970, 1, 1);

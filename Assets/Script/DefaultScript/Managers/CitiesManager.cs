@@ -6,6 +6,7 @@ public class City
 { //单个城市的各项数据
     public int id;//编号
     public string name;//城市名
+    public string country;
     public float x;//纬度
     public float y;//经度
     public string city_introduction;//城市介绍
@@ -14,10 +15,11 @@ public class City
     public bool begin;
     public bool end;
 
-    public City(int id, string name, float x, float y, float economy, float tourism)
+    public City(int id, string name, string country, float x, float y, float economy, float tourism)
     {
         this.id = id;
         this.name = name;
+        this.country = country;
         this.x = x;
         this.y = y;
         this.economy = economy;

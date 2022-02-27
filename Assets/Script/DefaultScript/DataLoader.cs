@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -34,7 +35,7 @@ public class DataLoader
             float rz = 0;
             latitude = latitude / 180 * System.Convert.ToSingle(3.14159265); //转换成弧度
             longitude = longitude / 180 * System.Convert.ToSingle(3.14159265); //转换成弧度
-            City temp = new City(id, line[6], latitude, longitude, economy, tourism); 
+            City temp = new City(id, line[6], line[1], latitude, longitude, economy, tourism); 
             cManager.add(temp);
             //法向量（相对于球心的向量）
             double tx = re * Math.Cos(latitude) * Math.Cos(longitude),
@@ -105,6 +106,24 @@ public class DataLoader
         }
         Debug.Log(countries_num + " countries has been loaded!");
         return countriesManager;
+    }
+
+    //获取机场并返回管理器对象
+    public static AirportsManager GetAirportsManager()
+    {
+        Datas = new List<string[]>();
+        loadFile(Application.dataPath + "/Res/Data", "Airports.csv");
+        AirportsManager airportsManager = new AirportsManager();
+        int airports_num = 0;
+        foreach (var line in Datas)//按行读取，每一行是一个公司的各项数据
+        {
+            Debug.Log(line[1]);
+            Airport temp = new Airport(line[0], line[1], line[2], line[3], line[4], line[5], line[6]);
+            airportsManager.Add(Convert.ToInt32(line[0]), temp);
+            airports_num++;
+        }
+        Debug.Log(airports_num + " airports has been loaded!");
+        return airportsManager;
     }
 
     public static void loadFile(string path,string fileName)
