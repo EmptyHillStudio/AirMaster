@@ -27,6 +27,7 @@ public class ShowCityInfo : MonoBehaviour
         Datas = new List<string[]>();
         List<string> Airports = new List<string>();
         loadFile(Application.dataPath + "/Res/Data", "Airports.csv");
+        Airports.Add("进入机场");
         foreach (var line in Datas)
         {
             if (line[2].Equals(CityName.GetComponent<Text>().text))
