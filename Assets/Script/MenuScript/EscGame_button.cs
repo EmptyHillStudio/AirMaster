@@ -8,7 +8,9 @@ public class EscGame_button : MonoBehaviour
     
     public void OnClick()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
         Application.Quit();
     }
 }
