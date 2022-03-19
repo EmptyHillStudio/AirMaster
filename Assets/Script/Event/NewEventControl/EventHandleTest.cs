@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.IO;
 
@@ -9,6 +10,7 @@ public class EventHandleTest : MonoBehaviour
     // 定义事件名称
     public const string ON_CLICK = "Epidemic";
     public static List<string[]> Datas;
+    public GameObject date;
     public static  List<string> GetEventTypeName()
     {
         List<string> eventTypeName = new List<string>();
@@ -45,7 +47,8 @@ public class EventHandleTest : MonoBehaviour
     // 处理点击事件
     public void OnClick(EventArgs evt)
     {
-        Debug.Log("111111111");
+        
+        Debug.Log(date.GetComponent<Text>().text);
     }
 
     

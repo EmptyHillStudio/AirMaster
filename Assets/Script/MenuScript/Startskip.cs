@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Startskip : MonoBehaviour
 {
 
-    public void Click() 
+    public void OnClick() 
     { 
     
         SceneManager.LoadScene("setting");
