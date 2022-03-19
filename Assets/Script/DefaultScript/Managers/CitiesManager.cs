@@ -1,6 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public enum City_Scale //城市规模，大小和英文一样
+{
+    TINY,
+    SMALL,
+    MIDDLE,
+    LARGE,
+    HUGE
+}
 
 public class City
 { //单个城市的各项数据
@@ -12,9 +22,30 @@ public class City
     public string city_introduction;//城市介绍
     public float economy;//经济指数
     public float tourism;//旅游指数
+    public float personnel;//人才指数
     public bool begin;
     public bool end;
-
+    public City_Scale getScale()
+    {
+        double fraction = Math.Round((economy + tourism) / 2, 2);
+        if (fraction < 350)
+        {
+            return City_Scale.TINY;
+        }
+        else if (fraction < 450)
+        {
+            return City_Scale.SMALL;
+        }
+        else if (fraction < 500)
+        {
+            return City_Scale.MIDDLE;
+        }
+        else if (fraction < 550)
+        {
+            return City_Scale.LARGE;
+        }
+        else return City_Scale.HUGE;
+    }
     public City(int id, string name, string country, float x, float y, float economy, float tourism)
     {
         this.id = id;
