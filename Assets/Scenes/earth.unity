@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 86964852}
   - component: {fileID: 86964854}
   - component: {fileID: 86964853}
+  - component: {fileID: 86964855}
   m_Layer: 5
   m_Name: Business_text
   m_TagString: Untagged
@@ -282,6 +283,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86964851}
   m_CullTransparentMesh: 1
+--- !u!114 &86964855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86964851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7434aa4414f719f4386ee8c2e01c60b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  date: {fileID: 2035963311}
 --- !u!1 &88615989
 GameObject:
   m_ObjectHideFlags: 0
@@ -11586,6 +11600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7434aa4414f719f4386ee8c2e01c60b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  date: {fileID: 0}
 --- !u!1 &2035963311
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,26 +11,27 @@ using UnityEngine.Events;
 public class EventControl : MonoBehaviour
 {
     /*public GameObject date;
-    public EventHandleTest eventType = new EventHandleTest();
+    //public EventHandleTest eventType = new EventHandleTest();
     public static List<string[]> Datas;
     EventTrigger trigger;
    
     void Start()
     {
         
-        CreateEvent.addTriggersListener(date, EventTriggerType.UpdateSelected, CreateEvent.myMehod);
+        //CreateEvent.addTriggersListener(date, EventTriggerType.UpdateSelected, CreateEvent.myMehod);
         Datas = new List<string[]>();
         loadFile(Application.dataPath+"/Res/Data","Events.csv");
-        List<string> eventTypeList = eventType.GetEventTypeName();
+        List<string> eventTypeList = EventHandleTest.GetEventTypeName();
         for (int i=0;i<Datas.Count;i++)
         {
+            //if(Data[i][1].Equals("")&&
             if(Datas[i][1].Equals("")&& date.GetComponent<Text>().text==Datas[i][2])
             {
                 EventUtil.DispatchEvent(eventTypeList[i]);
                 //eventType.GetEventTypeName();
             }
         }
-        if (date.GetComponent<Text>().text == "01		Jen		1970")
+        /*if (date.GetComponent<Text>().text == "01		Jen		1970")
         {
             EventUtil.DispatchEvent(EventHandleTest.ON_CLICK);
         }
@@ -42,17 +43,18 @@ public class EventControl : MonoBehaviour
     }
     public void OnUpdateSelected()
     {
-        /*Datas = new List<string[]>();
+        Datas = new List<string[]>();
         loadFile(Application.dataPath + "/Res/Data", "Events.csv");
-        foreach (var line in Datas)
+        List<string> eventTypeList = EventHandleTest.GetEventTypeName();
+        for (int i = 0; i < Datas.Count; i++)
         {
-            if(line[1].Equals("")&& date.GetComponent<Text>().text==line[2])
+            if (Datas[i][1].Equals("") && date.GetComponent<Text>().text == Datas[i][2])
             {
-
+                EventUtil.DispatchEvent(eventTypeList[i]);
             }
         }
         
-        Debug.Log("date¸Ä±ä");
+        
     }
     public static void loadFile(string path, string fileName)
     {
@@ -74,7 +76,7 @@ public class EventControl : MonoBehaviour
         }
         sr.Close();
         sr.Dispose();
-    }
-    */
+    }*/
+    
 
 }
