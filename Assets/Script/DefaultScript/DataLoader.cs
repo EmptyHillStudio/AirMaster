@@ -16,7 +16,7 @@ public class DataLoader
     public static CitiesManager getManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath+"/Res/Data", "Cities.csv");
+        loadFile(Application.dataPath+"/Res/Data", "cities.csv");
         cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
@@ -35,7 +35,7 @@ public class DataLoader
             float rz = 0;
             latitude = latitude / 180 * System.Convert.ToSingle(3.14159265); //转换成弧度
             longitude = longitude / 180 * System.Convert.ToSingle(3.14159265); //转换成弧度
-            City temp = new City(id, line[6], line[1], latitude, longitude, economy, tourism); 
+            City temp = new City(id, line[2], line[1], latitude, longitude, economy, tourism); 
             cManager.add(temp);
             //法向量（相对于球心的向量）
             double tx = re * Math.Cos(latitude) * Math.Cos(longitude),
@@ -48,7 +48,7 @@ public class DataLoader
             Vector3 v = new Vector3(x, y, z);
             GameObject go = GameObject.Instantiate(db3, v, Quaternion.identity) as GameObject;
             go.transform.localEulerAngles = new Vector3(rx, ry, rz);
-            go.name = line[6];
+            go.name = line[2];
             ci_num++;
         }
         Debug.Log(ci_num + " cities has been loaded!");
