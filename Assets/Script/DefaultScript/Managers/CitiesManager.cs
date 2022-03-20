@@ -25,26 +25,26 @@ public class City
     public float personnel;//人才指数
     public bool begin;
     public bool end;
-    public City_Scale getScale()
+    public string getScale()
     {
         double fraction = Math.Round((economy + tourism) / 2, 2);
         if (fraction < 350)
         {
-            return City_Scale.TINY;
+            return City_Scale.TINY.ToString();
         }
         else if (fraction < 450)
         {
-            return City_Scale.SMALL;
+            return City_Scale.SMALL.ToString();
         }
         else if (fraction < 500)
         {
-            return City_Scale.MIDDLE;
+            return City_Scale.MIDDLE.ToString();
         }
         else if (fraction < 550)
         {
-            return City_Scale.LARGE;
+            return City_Scale.LARGE.ToString();
         }
-        else return City_Scale.HUGE;
+        else return City_Scale.HUGE.ToString();
     }
     public City(int id, string name, string country, float x, float y, float economy, float tourism)
     {
