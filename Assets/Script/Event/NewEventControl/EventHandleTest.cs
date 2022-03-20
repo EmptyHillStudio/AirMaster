@@ -48,7 +48,7 @@ public class EventHandleTest : MonoBehaviour
     public void OnClick(EventArgs evt)
     {
         
-        Debug.Log(date.GetComponent<Text>().text);
+        //Debug.Log(date.GetComponent<Text>().text);
     }
 
     
