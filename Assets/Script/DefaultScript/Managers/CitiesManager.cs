@@ -46,7 +46,7 @@ public class City
         }
         else return City_Scale.HUGE.ToString();
     }
-    public City(int id, string name, string country, float x, float y, float economy, float tourism)
+    public City(int id, string name, string country, float x, float y, float economy, float tourism, float personnel)
     {
         this.id = id;
         this.name = name;
@@ -55,6 +55,7 @@ public class City
         this.y = y;
         this.economy = economy;
         this.tourism = tourism;
+        this.personnel = personnel;
     }
     
     public string getName()
