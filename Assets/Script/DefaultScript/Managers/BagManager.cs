@@ -20,7 +20,7 @@ public class BagManager : MonoBehaviour
         //输出背包中该id飞机的数量
         public int GetNum(int id)
         {
-            foreach(KeyValuePair<int,int>bag in this.planeBag )
+            foreach(KeyValuePair<int, int> bag in this.planeBag )
             {
                 if (bag.Key == id)
                     return bag.Value;
@@ -31,6 +31,19 @@ public class BagManager : MonoBehaviour
         {
             return this.username;
         }
+        //背包中增加飞机
+        public void AddPlane(int id,int num)
+        {
+            if (this.planeBag.ContainsKey(id))
+            {
+                this.planeBag[id] = this.planeBag[id] + num;
+            }
+            else
+            {
+                this.planeBag.Add(id, num);
+            }
+        }
+        
     }
     public class BagsManager
     {
