@@ -35,7 +35,7 @@ public class CityBindToBoard : MonoBehaviour
             CityName.GetComponent<Text>().text = city.getName();
             Economy_index.GetComponent<Text>().text = city.economy.ToString();
             Toursm_index.GetComponent<Text>().text = city.tourism.ToString();
-            Population_index.GetComponent<Text>().text = city.getName();
+            Population_index.GetComponent<Text>().text = city.personnel.ToString();
             setCity(city);
             Board.SetActive(true);
             string scale = city.getScale();
