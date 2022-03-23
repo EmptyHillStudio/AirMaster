@@ -9815,11 +9815,11 @@ MonoBehaviour:
   Population_index: {fileID: 732154706}
   Board: {fileID: 1734762030}
   Thumbnail: {fileID: 1716154855}
-  texture1: {fileID: 2800000, guid: 66177004b4ab36549adea6a6bccda202, type: 3}
-  texture2: {fileID: 2800000, guid: c894f2b119c51a941aac3b52695e9402, type: 3}
-  texture3: {fileID: 2800000, guid: 564fdc30f73de5847b5e2ab2863cf23a, type: 3}
-  texture4: {fileID: 2800000, guid: 94e96f3602db94d499e74c87621b77aa, type: 3}
-  texture5: {fileID: 2800000, guid: a7ed02704d0841f47a989ecd619fea78, type: 3}
+  texture1: {fileID: 2800000, guid: 77f95425cf9c747419ea6406daa2e2bd, type: 3}
+  texture2: {fileID: 2800000, guid: 811aef9a60857ab4fa928296c2e0471e, type: 3}
+  texture3: {fileID: 2800000, guid: a49341f3c700dcb49be8861747f93e97, type: 3}
+  texture4: {fileID: 2800000, guid: 892bf2be9ce23a4489ecf611d8b76193, type: 3}
+  texture5: {fileID: 2800000, guid: 4e8b6a37a9dc7b842b24fa36854cd6a2, type: 3}
 --- !u!1 &1740377214
 GameObject:
   m_ObjectHideFlags: 0
