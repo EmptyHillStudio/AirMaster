@@ -6,10 +6,25 @@ using UnityEngine.UI;
 public class ESCbutton : MonoBehaviour
 {
     public GameObject ESCimage;
-    bool visable = true;
-    public void Onclick()
+    private bool flag = false;
+    void Start()
     {
-        ESCimage.SetActive(visable);
-        visable = (visable ? false : true);
+        ESCimage.SetActive(false);
+    }
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(!flag)
+            {
+                ESCimage.SetActive(true);
+                flag = true;
+            }
+            else
+            {
+                ESCimage.SetActive(false);
+                flag = false;
+            }
+        }
     }
 }
