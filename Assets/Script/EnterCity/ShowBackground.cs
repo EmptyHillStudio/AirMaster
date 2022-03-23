@@ -8,14 +8,12 @@ public class ShowBackground : MonoBehaviour
 {
     private City tCity;
     private static CitiesManager cManager;
-    public Text Cityname;
     public GameObject back;
     private Sprite sprite1, sprite2, sprite3,sprite4,sprite5;
     public Texture2D texture1, texture2, texture3, texture4, texture5;
     void Start()
     {
         cManager = GlobalVariable.DefaultManager.cities_manager;
-        //string Name = Cityname.text;
         tCity = cManager.getCityByName(GlobalVariable.CityName);
         string scale = tCity.getScale();
         sprite1 = Sprite.Create(texture1, new Rect(0, 0, texture1.width, texture1.height), new Vector2(0.5f, 0.5f));

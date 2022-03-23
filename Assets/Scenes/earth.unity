@@ -9593,7 +9593,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -100, y: 300}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1716154857
 MonoBehaviour:
@@ -9814,6 +9814,12 @@ MonoBehaviour:
   Toursm_index: {fileID: 1867701686}
   Population_index: {fileID: 732154706}
   Board: {fileID: 1734762030}
+  Thumbnail: {fileID: 1716154855}
+  texture1: {fileID: 2800000, guid: 66177004b4ab36549adea6a6bccda202, type: 3}
+  texture2: {fileID: 2800000, guid: c894f2b119c51a941aac3b52695e9402, type: 3}
+  texture3: {fileID: 2800000, guid: 564fdc30f73de5847b5e2ab2863cf23a, type: 3}
+  texture4: {fileID: 2800000, guid: 94e96f3602db94d499e74c87621b77aa, type: 3}
+  texture5: {fileID: 2800000, guid: a7ed02704d0841f47a989ecd619fea78, type: 3}
 --- !u!1 &1740377214
 GameObject:
   m_ObjectHideFlags: 0
