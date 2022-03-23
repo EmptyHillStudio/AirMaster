@@ -43,7 +43,25 @@ public class BagManager : MonoBehaviour
                 this.planeBag.Add(id, num);
             }
         }
-        
+        //背包减少飞机
+        public void DecPlane(int id,int num)
+        {
+            if (this.planeBag.ContainsKey(id))
+            {
+                if(this.planeBag[id] >= num)
+                {
+                    this.planeBag[id] = this.planeBag[id] - num;
+                }
+                else
+                {
+                    this.planeBag.Remove(id);
+                }
+            }
+            else
+            {
+                Debug.Log("背包中不存在此飞机");
+            }
+        }
     }
     public class BagsManager
     {
