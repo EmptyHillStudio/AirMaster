@@ -27,7 +27,7 @@ public class City
     public bool end;
     public string getScale()
     {
-        double fraction = Math.Round((economy + tourism) / 2, 2);
+        double fraction = Math.Round((economy + 1.2 * tourism + 0.8 * personnel) / 3, 2);
         if (fraction < 350)
         {
             return City_Scale.TINY.ToString();
