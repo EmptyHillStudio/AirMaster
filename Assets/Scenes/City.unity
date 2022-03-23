@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 118622083}
   - component: {fileID: 118622082}
   m_Layer: 5
-  m_Name: PopulationIndex
+  m_Name: TalentsIndex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2024,7 +2024,7 @@ MonoBehaviour:
   CityName: {fileID: 1567100242}
   Economy_index: {fileID: 1782829416}
   Toursm_index: {fileID: 556186583}
-  Population_index: {fileID: 118622082}
+  Talents_index: {fileID: 118622082}
   SelectAirport: {fileID: 0}
 --- !u!1 &1581192174
 GameObject:
@@ -2730,7 +2730,7 @@ GameObject:
   - component: {fileID: 1867786638}
   - component: {fileID: 1867786637}
   m_Layer: 5
-  m_Name: PopulationIndex_Text
+  m_Name: TalentsIndex_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

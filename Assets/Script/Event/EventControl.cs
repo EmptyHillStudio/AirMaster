@@ -10,7 +10,7 @@ using UnityEngine.Events;
 
 public class EventControl : MonoBehaviour
 {
-    /*public GameObject date;
+    public GameObject date;
     //public EventHandleTest eventType = new EventHandleTest();
     public static List<string[]> Datas;
     EventTrigger trigger;
@@ -25,13 +25,13 @@ public class EventControl : MonoBehaviour
         for (int i=0;i<Datas.Count;i++)
         {
             //if(Data[i][1].Equals("")&&
-            if(Datas[i][1].Equals("")&& date.GetComponent<Text>().text==Datas[i][2])
+            if(Datas[i][1].Equals("")&& date.GetComponent<Text>().text.Equals(Datas[i][2]))
             {
                 EventUtil.DispatchEvent(eventTypeList[i]);
                 //eventType.GetEventTypeName();
             }
         }
-        /*if (date.GetComponent<Text>().text == "01		Jen		1970")
+        if (date.GetComponent<Text>().text == "01		Jen		1970")
         {
             EventUtil.DispatchEvent(EventHandleTest.ON_CLICK);
         }
@@ -76,7 +76,7 @@ public class EventControl : MonoBehaviour
         }
         sr.Close();
         sr.Dispose();
-    }*/
+    }
     
 
 }

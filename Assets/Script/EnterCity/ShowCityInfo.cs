@@ -9,7 +9,7 @@ public class ShowCityInfo : MonoBehaviour
     public GameObject CityName;
     public Text Economy_index;
     public Text Toursm_index;
-    public Text Population_index;
+    public Text Talents_index;
     private static CitiesManager cManager;
     private City tCity;
     public static List<string[]> Datas;
@@ -23,7 +23,7 @@ public class ShowCityInfo : MonoBehaviour
         tCity = cManager.getCityByName(GlobalVariable.CityName);
         Economy_index.GetComponent<Text>().text = tCity.economy.ToString();
         Toursm_index.GetComponent<Text>().text = tCity.tourism.ToString();
-        Population_index.GetComponent<Text>().text = tCity.getName();
+        Talents_index.GetComponent<Text>().text = tCity.personnel.ToString();
         Datas = new List<string[]>();
         List<string> Airports = new List<string>();
         loadFile(Application.dataPath + "/Res/Data", "Airports.csv");

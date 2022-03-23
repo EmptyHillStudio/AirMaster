@@ -29,7 +29,7 @@ public class DataLoader
             float longitude = System.Convert.ToSingle(line[4]); //经度
             float economy = System.Convert.ToSingle(line[7]); //经济指数
             float tourism = System.Convert.ToSingle(line[8]); //旅游指数
-            float personnel = System.Convert.ToSingle(line[9]);
+            float personnel = System.Convert.ToSingle(line[9]);//人才指数
             //旋转坐标计算（垂直于法向量的角度分量）
             float ry = longitude - 90;
             float rx = latitude;

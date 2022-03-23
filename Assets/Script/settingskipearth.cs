@@ -13,6 +13,7 @@ public class settingskipearth : MonoBehaviour
     {
         SceneManager.LoadScene("earth");
         GlobalVariable.GameDate = new Date(Convert.ToInt32(m_slider.value), 1, 1);
+        Debug.Log(GlobalVariable.GameDate);
         GlobalVariable.CompanyName = text.text;
     }
 }
