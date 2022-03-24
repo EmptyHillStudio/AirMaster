@@ -14,7 +14,6 @@ public class CameraRotate : MonoBehaviour
 
     void Update()
     {
-        
         var Sphere = GameObject.Find("Sphere");
         transform.RotateAround(Sphere.transform.position, Vector3.up,0); //摄像机围绕目标旋转
         var mouse_x = -Input.GetAxis("Mouse X");//获取鼠标X轴移动

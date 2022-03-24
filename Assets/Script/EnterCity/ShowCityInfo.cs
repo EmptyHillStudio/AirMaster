@@ -13,7 +13,7 @@ public class ShowCityInfo : MonoBehaviour
     private static CitiesManager cManager;
     private City tCity;
     public static List<string[]> Datas;
-    public GameObject SelectAirport;
+    //public GameObject SelectAirport;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +36,7 @@ public class ShowCityInfo : MonoBehaviour
 
             }
         }
-        SelectAirport.GetComponent<Dropdown>().AddOptions(Airports);
+        //SelectAirport.GetComponent<Dropdown>().AddOptions(Airports);
     }
 
     // Update is called once per frame
