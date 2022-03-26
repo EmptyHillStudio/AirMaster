@@ -1,0 +1,30 @@
+R0A1,Phone,Automatically unlock with the times£¬and then unlock the use of mobile phones around the world.,0,SERVICE,0,1983
+R0A2,Big data technology,Automatically unlock with the times£¬and then unlock the use of Big data technology around the world.,0,SERVICE,0,2012
+R1S1,Baggage check-in permit,Basic permit for baggage check-in.,500,SERVICE,50,
+R1S2,Accompanying luggage,Research the possibility that passengers' carry on luggage can be carried after security inspection.,1000,SERVICE,30,R1S1
+R1S3,Large baggage check-in,Research whether large baggage can be placed in a special cargo hold and whether additional freight charges can be charged.,2000,SERVICE,100,R1S2
+R1S4,Accurate handling of contraband,For some contraband£¬choose the exclusive transportation method instead of directly discarding£¬and additional transportation methods need to be charged.,500,SERVICE,20,R1S1
+R1S5,Extra Class,Research the importance and additional needs of reserved space for special groups.,500,SERVICE,20,
+R1S6,Class classification,More slasss for different voyages distance.,500,SERVICE,50,R1S5
+R1S7,Personalized slass service,Research the possibility of different services provided by different classes.,500,SERVICE,30,R1S5
+R1S8,Aviation food license,Obtain the license of aviation food circulation and unlock the function of signing contracts with other food companies.Unlocking the research can provide some basic dishes.,500,SERVICE,20,
+R1S9,Special customization,Unlock the ability to meet the needs of special passengers for some special food or avoid the taboos of some passengers.,500,SERVICE,60,R1S8
+R1S10,Turkish cuisine,Unlock typical Turkish dishes.,100,SERVICE,60,R1S9
+R1S11,Chinese cuisines,Unlock typical Chinese dishes.,100,SERVICE,60,R1S9
+R1S12,French cuisine,Unlock typical French dishes.,100,SERVICE,60,R1S9
+R1S13,Italian cuisine,Unlock typical Italian dishes.,100,SERVICE,60,R1S9
+R1S14,Indian cuisine,Unlock typical Indian dishes.,100,SERVICE,60,R1S9
+R1S15,Thai Cuisine,Unlock typical Thai dishes.,100,SERVICE,60,R1S9
+R1S16,Mexican cuisine,Unlock typical Mexican dishes.,100,SERVICE,60,R1S9
+R1S17,Japanese cuisine,Unlock typical Japanese dishes.,100,SERVICE,60,R1S9
+R1S18,Spanish cuisine,Unlock typical Spanish dishes.,100,SERVICE,60,R1S9
+R1S19,Greek cuisine,Unlock typical Greek dishes.,100,SERVICE,60,R1S9
+R1S20,Balanced diet,Configure more scientific and balanced meals to improve passenger satisfaction.,1000,SERVICE,100,R1S10;R1S11;R1S12;R1S13;R1S14;R1S15;R1S16;R1S17;R1S18;R1S19
+R1S21,Cost control,Try to use the raw materials provided by itself for processing to reduce the cost of food supply.,2000,SERVICE,180,R1S20
+R1S22,Commodity supply,Unlock route custom gifts and service offerings.,500,SERVICE,50,
+R1S23,Paid supplies and services,Unlock the service charging function at the cost of reducing satisfaction.,1000,SERVICE,100,R1S24
+R1S24,Cooperation discount,Unlock the cooperation contracts related to hotels£¬car rental and taxis£¬reduce some fares£¬and provide passengers and satisfaction bonus.,500,SERVICE,50,
+R1S25,Information management,After unlocking£¬it can provide real-time flight information on the flight information board to reduce the aviation accident rate. At the same time£¬after unlocking the mobile phone system£¬the service can increase the change range of the number of passengers.,500,SERVICE,100,
+R1S26,Online Service,All flight information can be queried and downloaded on the Internet£¬which can greatly improve flight satisfaction.,1000,SERVICE,100,R0S1;R1S25
+R1S27,Duty free goods service,Providing on-board duty-free goods sales service can improve passenger satisfaction.,1000,SERVICE,100,
+R1S28,Specialized supply,For particularly expensive luxury goods£¬study the option of unlocking cooperation with luxury goods manufacturers£¬accept the priced sales orders of luxury goods manufacturers£¬and increase the income of aircraft and passenger satisfaction.,2000,SERVICE,200,R1S27

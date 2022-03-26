@@ -13,6 +13,7 @@ public class InitManagers : MonoBehaviour
     public CountriesManager countriesManager;
     public CompaniesManager companiesManager;
     public PlanesManager planesManager;
+    public ResearchManager researchesManager;
     void Start()
     {
         GlobalVariable.DefaultManager = this;
@@ -29,7 +30,7 @@ public class InitManagers : MonoBehaviour
         //5读取所有机场的数据
         this.airportsManager = DataLoader.GetAirportsManager();
         //6读取科技和研究数据
-
+        this.researchesManager = DataLoader.GetResearchesManager();
         //7读取航线需求数据
 
         //8

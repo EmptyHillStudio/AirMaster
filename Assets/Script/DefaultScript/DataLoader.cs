@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class DataLoader
 {
+    static string ResourceData = Application.dataPath + "/Res/Data";
     private static int re = 160;    //模型半径：160
     public static List<string[]> Datas;
     private static CitiesManager cManager;
@@ -16,7 +17,7 @@ public class DataLoader
     public static CitiesManager getManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath+"/Res/Data", "cities.csv");
+        loadFile(ResourceData, "cities.csv");
         cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
@@ -60,7 +61,7 @@ public class DataLoader
     public static PlanesManager GetPlanesManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Planes.csv");
+        loadFile(ResourceData, "Planes.csv");
         PlanesManager planesManager = new PlanesManager();
         int planes_num = 0;
         foreach (var line in Datas)//按行读取，每一行是一个公司的各项数据
@@ -73,11 +74,28 @@ public class DataLoader
         return planesManager;
     }
 
+    //研究数据读取
+    public static ResearchManager GetResearchesManager()
+    {
+        Datas = new List<string[]>();
+        loadFile(ResourceData, "Researches.csv");
+        ResearchManager researchesManager = new ResearchManager();
+        int researches_num = 0;
+        foreach (var line in Datas)//按行读取
+        {
+            researches_num++;
+            Research temp = new Research(line[0], line[1], line[2], line[3], line[4], line[5], line[6]);
+            researchesManager.Add(temp);
+        }
+        Debug.Log(researches_num + " companies has been loaded!");
+        return researchesManager;
+    }
+
     //公司数据读取
     public static CompaniesManager GetCompaniesManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Companies.csv");
+        loadFile(ResourceData, "Companies.csv");
         CompaniesManager companiesManager = new CompaniesManager();
         int companies_num = 0;
         foreach (var line in Datas)//按行读取
@@ -95,7 +113,7 @@ public class DataLoader
     public static CountriesManager GetCountriesManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Countries.csv");
+        loadFile(ResourceData, "Countries.csv");
         CountriesManager countriesManager = new CountriesManager();
         int countries_num = 0;
         foreach (var line in Datas)//按行读取，每一行是一个公司的各项数据
@@ -113,12 +131,12 @@ public class DataLoader
     public static AirportsManager GetAirportsManager()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Airports.csv");
+        loadFile(ResourceData, "Airports.csv");
         AirportsManager airportsManager = new AirportsManager();
         int airports_num = 0;
         foreach (var line in Datas)//按行读取，每一行是一个公司的各项数据
         {
-            Debug.Log(line[1]);
+           // Debug.Log(line[1]);
             Airport temp = new Airport(line[0], line[1], line[2], line[3], line[4], line[5], line[6]);
             airportsManager.Add(Convert.ToInt32(line[0]), temp);
             airports_num++;
@@ -134,11 +152,11 @@ public class DataLoader
         try
         {
             sr = File.OpenText(path + "/" + fileName);
-            Debug.Log("file " + path + "/" + fileName + " is finded!");
+            //Debug.Log("file " + path + "/" + fileName + " is finded!");
         }
         catch
         {
-            Debug.Log("file don't exist!");
+            //Debug.Log("file don't exist!");
         }
         string line;
         while ((line=sr.ReadLine())!=null)
