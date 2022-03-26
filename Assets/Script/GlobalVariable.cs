@@ -20,4 +20,12 @@ public class GlobalVariable
     public static InitManagers DefaultManager;
     //进入城市按钮将CityName传递
     public static string CityName;
+    //记录Camera位置
+    public static float fieldOfView=52F;
+    public static float rx = 0f;
+    public static float ry = 180f;
+    public static float rz = 180f;
+    public static float px = 0f;
+    public static float py = -10f;
+    public static float pz = 150f;
 }

@@ -10,7 +10,7 @@ public class CityBindToBoard : MonoBehaviour
     public Text CityName;
     public Text Economy_index;
     public Text Toursm_index;
-    public Text Population_index;
+    public Text Talents_index;
     public GameObject Board;
     public GameObject Thumbnail;
     private Sprite sprite1, sprite2, sprite3, sprite4, sprite5;
@@ -35,7 +35,7 @@ public class CityBindToBoard : MonoBehaviour
             CityName.GetComponent<Text>().text = city.getName();
             Economy_index.GetComponent<Text>().text = city.economy.ToString();
             Toursm_index.GetComponent<Text>().text = city.tourism.ToString();
-            Population_index.GetComponent<Text>().text = city.getName();
+            Talents_index.GetComponent<Text>().text = city.personnel.ToString();
             setCity(city);
             Board.SetActive(true);
             string scale = city.getScale();

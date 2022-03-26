@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Linesbutton : MonoBehaviour
 {
+    public Camera c;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,8 @@ public class Linesbutton : MonoBehaviour
     public void Rankclick()
     {
         SceneManager.LoadScene(6);
+        GlobalVariable.px = c.GetComponent<Transform>().localPosition.x;
+        GlobalVariable.py = c.GetComponent<Transform>().localPosition.y;
+        GlobalVariable.pz = c.GetComponent<Transform>().localPosition.z;
     }
 }

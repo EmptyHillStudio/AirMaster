@@ -47,7 +47,7 @@ public class EventHandleTest : MonoBehaviour
     // 处理点击事件
     public void OnClick(EventArgs evt)
     {
-        
+        Debug.Log("事件系统");
         //Debug.Log(date.GetComponent<Text>().text);
     }
 
