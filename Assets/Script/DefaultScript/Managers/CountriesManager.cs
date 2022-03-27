@@ -25,13 +25,17 @@ public class Country
 public class CountriesManager
 {
     public Dictionary<string, Country> countries;
+    public List<string> countriesName;
     public CountriesManager()
     {
         this.countries = new Dictionary<string, Country>();
+        countriesName = new List<string>();
     }
+
     public void Add(string name, Country country)
     {
         this.countries.Add(name, country);
+        this.countriesName.Add(name);
     }
     public Country GetCountry(string name)
     {

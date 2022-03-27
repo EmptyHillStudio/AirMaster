@@ -145,6 +145,20 @@ public class DataLoader
         return airportsManager;
     }
 
+    public static Dictionary<int,double> GetDistribution()
+    {
+        Dictionary<int, double> Distribution = new Dictionary<int, double>();
+        Datas = new List<string[]>();
+        loadFile(Application.streamingAssetsPath + "/FunctionDefine", "Distribution.csv");
+        foreach (var line in Datas)//按行读取，每一行是一个公司的各项数据
+        {
+            int x = Convert.ToInt32(line[0]);
+            double y = Convert.ToDouble(line[1]);
+            Distribution[x] = y;
+        }
+        return Distribution;
+    }
+
     public static void loadFile(string path,string fileName)
     {
         Datas.Clear();

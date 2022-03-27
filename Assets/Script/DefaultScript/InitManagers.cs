@@ -5,6 +5,7 @@ using UnityEngine;
 public class InitManagers : MonoBehaviour
 {
     //可以从该管理器对象中获取已读取的数据，但每个数据对象需要在各自的类文件中声明。
+    public GlobalVariable globalVariable;
     public CitiesManager cities_manager;//城市对象管理器
     public LinesManager lines_manager;//航线管理器
     public DateManager date_manager;//日期管理器
@@ -16,6 +17,7 @@ public class InitManagers : MonoBehaviour
     public ResearchManager researchesManager;
     void Start()
     {
+        this.globalVariable = new GlobalVariable();
         GlobalVariable.DefaultManager = this;
         //读取数据的顺序一定不能乱，否则会报NullPointerException
         //1先读取国家数据，保证城市数据获取国家时能够得到国家对象
