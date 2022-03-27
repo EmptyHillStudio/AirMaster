@@ -6479,7 +6479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343fba984f6e1c94384489843fa3e0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DateInfo: {fileID: 2035963311}
   eventline: 0
   eventTypeList: []
 --- !u!114 &1180871546
@@ -11717,6 +11716,7 @@ GameObject:
   - component: {fileID: 2035963317}
   - component: {fileID: 2035963316}
   - component: {fileID: 2035963320}
+  - component: {fileID: 2035963321}
   m_Layer: 5
   m_Name: DateInfo
   m_TagString: Untagged
@@ -11776,7 +11776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "01\t\tJan\t\t2019"
+  m_Text: "01\t\tJen\t\t1970"
 --- !u!222 &2035963314
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11797,7 +11797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343fba984f6e1c94384489843fa3e0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DateInfo: {fileID: 0}
   eventline: 0
   eventTypeList: []
 --- !u!114 &2035963316
@@ -11888,6 +11887,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c66c7c3ec384e40b6fcdb228b2f8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2035963321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035963311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343fba984f6e1c94384489843fa3e0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventline: 0
+  eventTypeList: []
 --- !u!1 &2050923609
 GameObject:
   m_ObjectHideFlags: 0

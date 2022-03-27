@@ -9,10 +9,7 @@ public class CameraRecover : MonoBehaviour
     void Start()
     {
         c.GetComponent<Camera>().fieldOfView = GlobalVariable.fieldOfView;
-        Debug.Log(c.GetComponent<Transform>().eulerAngles.x);
-        Debug.Log(c.GetComponent<Transform>().eulerAngles.y);
-        Debug.Log(c.GetComponent<Transform>().eulerAngles.z);
-        Debug.Log(GlobalVariable.px);
+       
         c.transform.localEulerAngles = new Vector3(GlobalVariable.rx, GlobalVariable.ry, GlobalVariable.rz);
         c.transform.localPosition = new Vector3(GlobalVariable.px, GlobalVariable.py, GlobalVariable.pz);
     }

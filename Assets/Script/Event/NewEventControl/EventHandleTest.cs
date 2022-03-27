@@ -11,16 +11,17 @@ public class EventHandleTest : MonoBehaviour
     public const string ON_CLICK = "Epidemic";
     public static List<string[]> Datas;
     public GameObject date;
+    static string ResourceData = Application.streamingAssetsPath + "/Data";
     public static  List<string> GetEventTypeName()
     {
         List<string> eventTypeName = new List<string>();
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Events.csv");
+        loadFile(ResourceData, "Events.csv");
         foreach (var line in Datas)
         {
             eventTypeName.Add(line[0]);
         }
-        Debug.Log(eventTypeName[0]);
+        //Debug.Log(eventTypeName[0]);
         return eventTypeName;
     }
 
@@ -28,7 +29,7 @@ public class EventHandleTest : MonoBehaviour
     {
         List<string> eventTypeName = new List<string>();
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Events.csv");
+        loadFile(ResourceData, "Events.csv");
         foreach (var line in Datas)
         {
             eventTypeName.Add(line[0]);
