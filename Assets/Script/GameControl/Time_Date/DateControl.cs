@@ -9,19 +9,19 @@ public class DateControl : MonoBehaviour
 {
     private Date now;
     private int pastTime;
-    public GameObject DateInfo;
     public static List<string[]> Datas;
     public int eventline;
     public List<string> eventTypeList;
+    static string ResourceData = Application.streamingAssetsPath + "/Data";
     //public EventHandleTest eventType = new EventHandleTest();
     void Start()
     {
         now = GlobalVariable.GameDate;
         pastTime = GlobalVariable.gTimer.getNowTime();
-        /*//DateInfo = GameObject.Find("DateInfo");
-        DateInfo.GetComponent<Text>().text = now.ToString();
+        //DateInfo = GameObject.Find("DateInfo");
+        this.GetComponent<Text>().text = now.ToString();
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Events.csv");
+        loadFile(ResourceData, "Events.csv");
         eventTypeList = EventHandleTest.GetEventTypeName();
         for (int i = 1; i < Datas.Count; i++)
         {
@@ -38,7 +38,7 @@ public class DateControl : MonoBehaviour
                 break;
             }
         }
-        */
+        
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class DateControl : MonoBehaviour
         {
             pastTime = GlobalVariable.gTimer.getNowTime();
             now.dayPlus();
-            /*DateInfo.GetComponent<Text>().text = now.ToString() ;
+            this.GetComponent<Text>().text = now.ToString() ;
             for (int i = eventline+1 ; i < Datas.Count; i++)
             {
                 if (Datas[i][1].Equals("") && now.ToString() == Datas[i][2])
@@ -57,7 +57,7 @@ public class DateControl : MonoBehaviour
                     EventUtil.DispatchEvent(eventTypeList[i]);
                     //eventType.GetEventTypeName();
                 }
-            }*/
+            }
         }
     }
     public static void loadFile(string path, string fileName)

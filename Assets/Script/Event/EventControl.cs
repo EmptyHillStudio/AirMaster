@@ -14,22 +14,30 @@ public class EventControl : MonoBehaviour
     //public EventHandleTest eventType = new EventHandleTest();
     public static List<string[]> Datas;
     EventTrigger trigger;
-   
+    static string ResourceData = Application.streamingAssetsPath + "/Data";
+    string dataString;
+
     void Start()
     {
-        
+        //01      Jan     2019
         //CreateEvent.addTriggersListener(date, EventTriggerType.UpdateSelected, CreateEvent.myMehod);
         Datas = new List<string[]>();
-        loadFile(Application.dataPath+"/Res/Data","Events.csv");
+        loadFile(ResourceData, "Events.csv");
         List<string> eventTypeList = EventHandleTest.GetEventTypeName();
+        
         for (int i=0;i<Datas.Count;i++)
         {
+            dataString = Datas[i][2];
             //if(Data[i][1].Equals("")&&
-            if(Datas[i][1].Equals("")&& date.GetComponent<Text>().text.Equals(Datas[i][2]))
+            if (Datas[i][1].Equals("")&& date.GetComponent<Text>().text==(Datas[i][2]))
             {
                 EventUtil.DispatchEvent(eventTypeList[i]);
+                
                 //eventType.GetEventTypeName();
             }
+            //Debug.Log(dataString);
+            //Debug.Log(date.GetComponent<Text>().text);
+
         }
         if (date.GetComponent<Text>().text == "01		Jen		1970")
         {
@@ -37,21 +45,20 @@ public class EventControl : MonoBehaviour
         }
         
     }
-    private void PEnter(BaseEventData pd)
-    {
-        Debug.Log("Penter");
-    }
+    
     public void OnUpdateSelected()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Events.csv");
+        loadFile(ResourceData, "Events.csv");
         List<string> eventTypeList = EventHandleTest.GetEventTypeName();
         for (int i = 0; i < Datas.Count; i++)
         {
             if (Datas[i][1].Equals("") && date.GetComponent<Text>().text == Datas[i][2])
             {
                 EventUtil.DispatchEvent(eventTypeList[i]);
+                Debug.Log(Datas[i][2]);
             }
+            
         }
         
         

@@ -15,5 +15,6 @@ public class txtslider : MonoBehaviour
     public void Update()
     {
         m_text.text = Convert.ToInt32(m_slider.value).ToString();
+
     }
 }
