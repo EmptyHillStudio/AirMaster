@@ -50,7 +50,7 @@ public class DateControl : MonoBehaviour
             pastTime = GlobalVariable.gTimer.getNowTime();
             now.dayPlus();
             this.GetComponent<Text>().text = now.ToString() ;
-            for (int i = eventline+1 ; i < Datas.Count; i++)
+            for (int i = eventline+1 ; i < Datas.Count-1; i++)
             {
                 if (Datas[i][1].Equals("") && now.ToString() == Datas[i][2])
                 {
