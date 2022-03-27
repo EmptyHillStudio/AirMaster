@@ -27,7 +27,7 @@ public class Plane
         this.creater = GlobalVariable.DefaultManager.companiesManager.GetCompany(creater);
         this.model = model;
         this.series = series;
-        Debug.Log(series);
+        //Debug.Log(series);
         this.sub = sub;
         this.Size = GetSize(Size);
         this.Launch = Date.FormatDate(launch);

@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class DataLoader
 {
-    static string ResourceData = Application.dataPath + "/Res/Data";
+    static string ResourceData = Application.streamingAssetsPath + "/Data";
     private static int re = 160;    //Ä£ÐÍ°ë¾¶£º160
     public static List<string[]> Datas;
     private static CitiesManager cManager;
@@ -152,11 +152,11 @@ public class DataLoader
         try
         {
             sr = File.OpenText(path + "/" + fileName);
-            //Debug.Log("file " + path + "/" + fileName + " is finded!");
+            Debug.Log("file " + path + "/" + fileName + " is finded!");
         }
         catch
         {
-            //Debug.Log("file don't exist!");
+            Debug.Log("file " + path + "/" + fileName + " don't exist!");
         }
         string line;
         while ((line=sr.ReadLine())!=null)

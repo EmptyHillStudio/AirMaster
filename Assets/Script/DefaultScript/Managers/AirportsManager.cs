@@ -14,7 +14,7 @@ public class Airport
     public int height;
     public Airport(string id, string name, string city, string country, string iata, string icao, string height)
     {
-        Debug.Log(name);
+        //Debug.Log(name);
         this.id = Convert.ToInt32(id);
         this.AirportName = name;
         this.City = city;
