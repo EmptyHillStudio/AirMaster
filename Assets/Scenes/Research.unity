@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -326,7 +326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 19381734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 19381736}
+        m_TargetAssemblyTypeName: ResearchBackEarthBtn, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &19381734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,11 +386,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 19381731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1d8c898b502ed49b068239a16529b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2995b55d81b95384ab798651e7d3632d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next: earth
-  Btn: {fileID: 19381733}
 --- !u!114 &19381737
 MonoBehaviour:
   m_ObjectHideFlags: 0
