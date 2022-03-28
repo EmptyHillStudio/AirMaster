@@ -15,8 +15,10 @@ public class InitManagers : MonoBehaviour
     public CompaniesManager companiesManager;
     public PlanesManager planesManager;
     public ResearchManager researchesManager;
+    public PlaneCaptainsManager planeCaptainsManager;
     void Start()
     {
+        this.planeCaptainsManager = new PlaneCaptainsManager();//实例化机长管理器（反正为空）
         this.globalVariable = new GlobalVariable();
         GlobalVariable.DefaultManager = this;
         //读取数据的顺序一定不能乱，否则会报NullPointerException

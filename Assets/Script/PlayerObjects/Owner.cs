@@ -12,6 +12,7 @@ public class Owner : MonoBehaviour
     public void setName(string newname)
     {
         ownerName = newname;
+        
     }
     void Start()
     {

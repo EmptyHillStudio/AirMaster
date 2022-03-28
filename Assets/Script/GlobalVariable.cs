@@ -7,7 +7,22 @@ using UnityEngine;
 
 public class MathModel
 {
-    
+    public static double GetCaptainValue(PlaneCaptain planeCaptain)
+    {
+        double sum = 0;
+        sum += planeCaptain.flight_duration;
+        sum += planeCaptain.Calmnessness;
+        sum += planeCaptain.Professionssional;
+        sum += planeCaptain.execution;
+        sum += planeCaptain.learning;
+        sum += planeCaptain.r_p;
+        sum += 0.5 * planeCaptain.languages;
+        sum += 0.5 * planeCaptain.morality;
+        sum += 0.5 * planeCaptain.effect;
+        sum *= PlaneCaptainParameter.agePercentage[planeCaptain.age];
+        sum = Math.Round(sum, 2);
+        return sum;
+    }
 }
 
 public class GlobalVariable
@@ -32,6 +47,9 @@ public class GlobalVariable
         string configFile = DataFile + "/DefaultConfigure";
         INIParser ini = new INIParser();
 
+        /*
+         * 今后将采用反射的方式实现，等下次代码优化的版本之后再进行更正
+         */
         //读取机长参数配置文件
         ini.Open(configFile + "/PlaneCaptain.ini");//string ReadValue(string section, string key, string default)
         PlaneCaptainParameter.minAge = Convert.ToInt32(ini.ReadValue("Age", "min", "18"));
@@ -101,8 +119,17 @@ public class GlobalVariable
         {
             Debug.Log("There are something wrong in " + configFile + "PlaneCaptain.ini");
         }
-        
+
+        //玩家基本属性
+        Money = new PlayerPoints();
+        Prestige = new PlayerPoints();
+        ResearchPoints = new PlayerPoints();
+        Personnel = new PlayerPoints();
+
     }
+
+    //难度
+    public static int difficulty = 1;
 
     //全局时间戳，每帧会使时间戳加一
     public static Timer gTimer;
@@ -133,7 +160,7 @@ public class PlayerPoints
     /// <summary>
     /// 
     /// </summary>
-    private double value;
+    private double value{ get; set; }
     public double GetValue()
     {
         return this.value;
