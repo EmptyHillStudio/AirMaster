@@ -8,10 +8,11 @@ public class EventTypeName
 {
     List<string> eventTypeName = new List<string>();
     public static List<string[]> Datas;
+    static string ResourceData = Application.streamingAssetsPath + "/Data";
     public  List<string> GetEventTypeName()
     {
         Datas = new List<string[]>();
-        loadFile(Application.dataPath + "/Res/Data", "Events.csv");
+        loadFile(ResourceData, "Events.csv");
         foreach (var line in Datas)
         {
             eventTypeName.Add(line[0]);

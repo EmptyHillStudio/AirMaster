@@ -10,7 +10,7 @@ using UnityEngine.Events;
 
 public class EventControl : MonoBehaviour
 {
-    public GameObject date;
+    /*public GameObject date;
     //public EventHandleTest eventType = new EventHandleTest();
     public static List<string[]> Datas;
     EventTrigger trigger;
@@ -83,7 +83,7 @@ public class EventControl : MonoBehaviour
         }
         sr.Close();
         sr.Dispose();
-    }
+    }*/
     
 
 }
