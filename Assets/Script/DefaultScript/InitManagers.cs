@@ -19,7 +19,6 @@ public class InitManagers : MonoBehaviour
     void Start()
     {
         this.planeCaptainsManager = new PlaneCaptainsManager();//实例化机长管理器（反正为空）
-        this.globalVariable = new GlobalVariable();
         GlobalVariable.DefaultManager = this;
         //读取数据的顺序一定不能乱，否则会报NullPointerException
         //1先读取国家数据，保证城市数据获取国家时能够得到国家对象
@@ -37,7 +36,8 @@ public class InitManagers : MonoBehaviour
         this.researchesManager = DataLoader.GetResearchesManager();
         //7读取航线需求数据
 
-        //8
+        //8实例化全局变量管理器
+        this.globalVariable = new GlobalVariable();
         if (GlobalVariable.GameDate == null)
         {
             GlobalVariable.GameDate = new Date(1970, 1, 1);

@@ -7,6 +7,10 @@ using System.IO;
 
 public class DateControl : MonoBehaviour
 {
+    public Text MoneyText;
+    public Text PrestigeText;
+    public Text PersonnelText;
+    public Text ResearchPointsText;
     private Date now;
     private int pastTime;
     public static List<string[]> Datas;
@@ -16,6 +20,11 @@ public class DateControl : MonoBehaviour
     //public EventHandleTest eventType = new EventHandleTest();
     void Start()
     {
+        Debug.Log(GlobalVariable.Money.index);
+        MoneyText.text = GlobalVariable.Money.ToString();
+        PrestigeText.text = GlobalVariable.Prestige.ToString();
+        PersonnelText.text = GlobalVariable.Personnel.ToString();
+        ResearchPointsText.text = GlobalVariable.ResearchPoints.ToString();
         now = GlobalVariable.GameDate;
         pastTime = GlobalVariable.gTimer.getNowTime();
         //DateInfo = GameObject.Find("DateInfo");
@@ -49,6 +58,10 @@ public class DateControl : MonoBehaviour
         {
             pastTime = GlobalVariable.gTimer.getNowTime();
             now.dayPlus();
+            MoneyText.text = GlobalVariable.Money.ToString();
+            PrestigeText.text = GlobalVariable.Prestige.ToString();
+            PersonnelText.text = GlobalVariable.Personnel.ToString();
+            ResearchPointsText.text = GlobalVariable.ResearchPoints.ToString();
             this.GetComponent<Text>().text = now.ToString() ;
             for (int i = eventline+1 ; i < Datas.Count-1; i++)
             {

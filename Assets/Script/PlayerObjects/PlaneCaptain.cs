@@ -37,7 +37,7 @@ public class PlaneCaptain
     }
 
     //通过固定分数添加机长，添加机长操作会把机长移入机长管理器。
-    public static PlaneCaptain GetPointsPlaneCaptain(float points, float investmentlevel)
+    public static PlaneCaptain GetPointsPlaneCaptain(float points)
     {
         PlaneCaptain temp = new PlaneCaptain();
         List<string> countries = GlobalVariable.DefaultManager.countriesManager.countriesName;

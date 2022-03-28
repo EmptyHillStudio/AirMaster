@@ -31,11 +31,12 @@ public class GlobalVariable
     public static string DataFile = Application.streamingAssetsPath;
     public static string LoadFile = Application.persistentDataPath;
     //全局玩家数据
-    private PlayerPoints Money;
-    private PlayerPoints Prestige;
-    private PlayerPoints Personnel;
-    private PlayerPoints ResearchPoints;
-
+    public static PlayerPoints Money;//金钱
+    public static PlayerPoints Prestige;//名望
+    public static PlayerPoints Personnel;//人才指数
+    public static PlayerPoints ResearchPoints;//研究点数
+    public static PlayerPoints Debt;//债务
+    public static PlayerPoints MaxDebt;//最大可支持债务
     //全局参数
 
     //参数和配置读取，建议点击左下角的那个减号收起来
@@ -121,15 +122,36 @@ public class GlobalVariable
         }
 
         //玩家基本属性
-        Money = new PlayerPoints();
+        CompanyLoc = DefaultManager.cities_manager.getCityByName("Beijing");//在未制作总部选择前暂定北京为公司总部
+        double defaultvalue = 1500;
+        if (difficulty == 2)
+        {
+            defaultvalue = 1200;
+        }else if (difficulty == 3)
+        {
+            defaultvalue = 800;
+        }
+        //计算差值分数
+        double del = defaultvalue - Math.Round((CompanyLoc.economy + CompanyLoc.tourism + CompanyLoc.personnel) / 3, 2);
+        float del_d = float.Parse(del.ToString());
+        //生成两个机长
+        PlaneCaptain.GetPointsPlaneCaptain(3 * del_d);
+        PlaneCaptain.GetPointsPlaneCaptain(3 * del_d);
+        MaxDebt = new PlayerPoints(1000 * del_d);
+        Debt = new PlayerPoints(600 * del_d);
+        Money = new PlayerPoints(600 * del_d);
+        Debug.Log(Money.ToString());
         Prestige = new PlayerPoints();
         ResearchPoints = new PlayerPoints();
         Personnel = new PlayerPoints();
-
+        
     }
 
     //难度
     public static int difficulty = 1;
+
+    //玩家总部位置
+    public static City CompanyLoc;
 
     //全局时间戳，每帧会使时间戳加一
     public static Timer gTimer;
@@ -160,7 +182,12 @@ public class PlayerPoints
     /// <summary>
     /// 
     /// </summary>
-    private double value{ get; set; }
+    private double value;
+    public double index
+    {
+        get { return value; }
+        set { value = index; }
+    }
     public double GetValue()
     {
         return this.value;
@@ -181,6 +208,23 @@ public class PlayerPoints
     {
         this.value = (double)value;
     }
+    //重写ToString()方法
+    public override string ToString()
+    {
+        if (value > 1000)
+        {
+            double temp = Math.Round(value / 1000, 2);
+            return temp.ToString("N0") + "k";
+        }else if (value > 1000000)
+        {
+            double temp = Math.Round(value / 1000000, 2);
+            return temp.ToString("N0") + "m";
+        }else
+        {
+            return value.ToString("N0");
+        }
+        
+    }
     /// <summary>
     ///  对每个操作符进行定义，方便数值直接计算。
     /// </summary>
@@ -193,6 +237,7 @@ public class PlayerPoints
     {
         return (float)p.GetValue();
     }
+
     //+-PlayerPoints
     public static PlayerPoints operator +(PlayerPoints p1, PlayerPoints p2)
     {

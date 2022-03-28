@@ -16,6 +16,6 @@ public class settingskipearth : MonoBehaviour
         GlobalVariable.GameDate = new Date(Convert.ToInt32(m_slider.value), 1, 1);
         //Debug.Log(GlobalVariable.GameDate);
         GlobalVariable.CompanyName = text.text;
-        GlobalVariable.difficulty = Diffculty.value;
+        GlobalVariable.difficulty = Diffculty.value + 1;
     }
 }
