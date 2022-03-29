@@ -85,7 +85,7 @@ public class DataLoader
             Research temp = new Research(line[0], line[1], line[2], line[3], line[4], line[5], line[6]);
             researchesManager.Add(temp);
         }
-        Debug.Log(researches_num + " companies has been loaded!");
+        Debug.Log(researches_num + " researches has been loaded!");
         return researchesManager;
     }
 
