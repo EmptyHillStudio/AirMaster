@@ -20,7 +20,7 @@ public class DateControl : MonoBehaviour
     //public EventHandleTest eventType = new EventHandleTest();
     void Start()
     {
-        Debug.Log(GlobalVariable.Money.index);
+        //Debug.Log(GlobalVariable.Money.index);
         MoneyText.text = GlobalVariable.Money.ToString();
         PrestigeText.text = GlobalVariable.Prestige.ToString();
         PersonnelText.text = GlobalVariable.Personnel.ToString();

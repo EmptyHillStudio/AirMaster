@@ -16,6 +16,7 @@ public class InitManagers : MonoBehaviour
     public PlanesManager planesManager;
     public ResearchManager researchesManager;
     public PlaneCaptainsManager planeCaptainsManager;
+    public DateEvents dateEvents;
     void Start()
     {
         this.planeCaptainsManager = new PlaneCaptainsManager();//实例化机长管理器（反正为空）
@@ -38,6 +39,7 @@ public class InitManagers : MonoBehaviour
 
         //8实例化全局变量管理器
         this.globalVariable = new GlobalVariable();
+        this.dateEvents = new DateEvents();
         if (GlobalVariable.GameDate == null)
         {
             GlobalVariable.GameDate = new Date(1970, 1, 1);

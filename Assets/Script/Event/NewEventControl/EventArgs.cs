@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventArgs : MonoBehaviour
+public class EventArgs
 {
     /// <summary> 事件类型 </summary>
     public readonly string type;

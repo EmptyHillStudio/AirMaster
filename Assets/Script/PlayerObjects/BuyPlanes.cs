@@ -27,7 +27,6 @@ public class BuyPlanes : MonoBehaviour
         List<Transform> lst = new List<Transform>();
         string clickname = CompanyBtn.transform.name;
         Debug.Log("µã»÷Ãû" + clickname);
-        int num = 0;
         foreach (Transform child in PlanesContent.transform)
         {
             string childName = child.gameObject.GetComponent<Owner>().ownerName;
