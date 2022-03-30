@@ -10,7 +10,7 @@ public class Researchcontrol : MonoBehaviour
     private static ResearchManager rmanager;
     private void Start()
     {
-        rmanager = DataLoader.GetResearchesManager();
+        rmanager = GlobalVariable.DefaultManager.researchesManager;
     }
     public void Clickitem(string UID)
     {

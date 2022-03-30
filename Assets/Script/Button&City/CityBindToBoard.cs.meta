@@ -3,7 +3,18 @@ guid: 7900905fbfe388145aa71b82372711dc
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - CityName: {instanceID: 0}
+  - Economy_index: {instanceID: 0}
+  - Toursm_index: {instanceID: 0}
+  - Talents_index: {instanceID: 0}
+  - Board: {instanceID: 0}
+  - Thumbnail: {instanceID: 0}
+  - sprite1: {fileID: 21300000, guid: 77f95425cf9c747419ea6406daa2e2bd, type: 3}
+  - sprite2: {fileID: 21300000, guid: 811aef9a60857ab4fa928296c2e0471e, type: 3}
+  - sprite3: {fileID: 21300000, guid: a49341f3c700dcb49be8861747f93e97, type: 3}
+  - sprite4: {fileID: 21300000, guid: 892bf2be9ce23a4489ecf611d8b76193, type: 3}
+  - sprite5: {fileID: 21300000, guid: 4e8b6a37a9dc7b842b24fa36854cd6a2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

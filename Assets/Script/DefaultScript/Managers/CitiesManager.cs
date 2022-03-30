@@ -23,7 +23,9 @@ public class City
     public float economy;//经济指数
     public float tourism;//旅游指数
     public float personnel;//人才指数
-    public string getScale()
+    public Sprite ScaleImage;//规模或特征图像
+    public City_Scale Scale { set; get; }
+    public string GetScaleString()
     {
         double fraction = Math.Round((economy + 1.2 * tourism + 0.8 * personnel) / 3, 2);
         if (fraction < 350)
@@ -44,6 +46,27 @@ public class City
         }
         else return City_Scale.HUGE.ToString();
     }
+    public City_Scale GetScale()
+    {
+        double fraction = Math.Round((economy + 1.2 * tourism + 0.8 * personnel) / 3, 2);
+        if (fraction < 350)
+        {
+            return City_Scale.TINY;
+        }
+        else if (fraction < 450)
+        {
+            return City_Scale.SMALL;
+        }
+        else if (fraction < 500)
+        {
+            return City_Scale.MIDDLE;
+        }
+        else if (fraction < 550)
+        {
+            return City_Scale.LARGE;
+        }
+        else return City_Scale.HUGE;
+    }
     public City(int id, string name, string country, float x, float y, float economy, float tourism, float personnel)
     {
         this.id = id;
@@ -54,6 +77,8 @@ public class City
         this.economy = economy;
         this.tourism = tourism;
         this.personnel = personnel;
+        this.Scale = this.GetScale();
+        this.ScaleImage = CitiesManager.GetCitySprite(this);
     }
     
     public string getName()
@@ -83,9 +108,48 @@ public class City
 
 public class CitiesManager
 {//所有城市的管理器，提供获取城市的一些方法
+    public static string DefaultImagePath = "CityThumbnail/Default";
+    public static string SpecialImagePath = "CityThumbnail/Special";
+    public static Dictionary<string, Sprite> ScaleImageManager;
+    public static Dictionary<City_Scale, Sprite> DefaultImage;
     List<City> Cities;
     public CitiesManager()
     {
+        ScaleImageManager = new Dictionary<string, Sprite>();
+        DefaultImage = new Dictionary<City_Scale, Sprite>();
+        object[] images = Resources.LoadAll(DefaultImagePath);
+        foreach(object i in images)
+        {
+            Sprite s;
+            try
+            {
+                //Debug.Log("it's " + i.ToString());
+                s = (Sprite)i;
+            }
+            catch(Exception)
+            {
+                continue;
+                //Nothing
+            }
+            DefaultImage.Add(GetScaleByNumber(s.name), s);
+        }
+        images = Resources.LoadAll(SpecialImagePath);
+        foreach (object i in images)
+        {
+            Sprite s;
+            try
+            {
+                //Debug.Log("it's " + i.ToString());
+                s = (Sprite)i;
+            }
+            catch (Exception)
+            {
+                continue;
+                //Nothing
+            }
+            ScaleImageManager.Add(s.name, s);
+        }
+
         this.Cities = new List<City>();
     }
     public City getCityByName(string name)
@@ -99,6 +163,16 @@ public class CitiesManager
         }
         return null;
     }
+
+    public static Sprite GetCitySprite(City c)
+    {
+        if (ScaleImageManager.ContainsKey(c.name))
+        {
+            return ScaleImageManager[c.name];
+        }
+        else return DefaultImage[c.Scale];
+    }
+
     public void add(City c)
     {
         this.Cities.Add(c);
@@ -114,5 +188,21 @@ public class CitiesManager
             }
         }
         return allCities;
+    }
+    public static City_Scale GetScaleByNumber(string num)
+    {
+        switch (num)
+        {
+            case "2":
+                return City_Scale.SMALL;
+            case "3":
+                return City_Scale.MIDDLE;
+            case "4":
+                return City_Scale.LARGE;
+            case "5":
+                return City_Scale.HUGE;
+            default:
+                return City_Scale.TINY;
+        }
     }
 }

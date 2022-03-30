@@ -9,6 +9,7 @@ public class ReserchClick : MonoBehaviour
     {
         string name = gameObject.name;
         print(name);
+        Debug.Log(name);
         rc.Clickitem(name);
     }
 }

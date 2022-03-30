@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1611,9 +1611,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2a31470b12177489b95cc0006213c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: {fileID: 2099518658}
-  time: {fileID: 489795658}
-  intro: {fileID: 1420790824}
+  money: {fileID: 0}
+  time: {fileID: 0}
+  intro: {fileID: 0}
 --- !u!4 &764271349
 Transform:
   m_ObjectHideFlags: 0
@@ -4391,6 +4391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1476336671}
+  - component: {fileID: 1476336672}
   m_Layer: 5
   m_Name: ServiceBoard
   m_TagString: Untagged
@@ -4449,6 +4450,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1476336672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476336670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2a31470b12177489b95cc0006213c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 2099518658}
+  time: {fileID: 489795658}
+  intro: {fileID: 1420790824}
 --- !u!1 &1485786146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6326,4 +6342,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c242aa0cfe6918d47b50b990bf13122b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rControl: {fileID: 0}

@@ -20,7 +20,7 @@ public class CreateLines : MonoBehaviour
         string CityName = cityname.GetComponent<Text>().text;
         tCity = cManager.getCityByName(CityName);
         GlobalVariable.ChooseCity = GlobalChooseCityState.CREATELINE;
-        Debug.Log(tCity.name);
+        //Debug.Log(tCity.name);
         Temp.tempLine = new Line(GlobalVariable.DefaultManager.lines_manager.id);
         Temp.tempLine.SetPoints(0, tCity);
         selectCity.SetActive(false);

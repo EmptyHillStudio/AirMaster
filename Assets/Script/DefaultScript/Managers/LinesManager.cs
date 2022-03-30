@@ -3,6 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CreatingState
+{
+    CREATING,
+    CONFIRMED,
+    CANCEL
+}
+
 public class Line
 {
     private int id;
