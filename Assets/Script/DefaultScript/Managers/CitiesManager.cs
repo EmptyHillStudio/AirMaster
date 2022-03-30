@@ -23,8 +23,6 @@ public class City
     public float economy;//经济指数
     public float tourism;//旅游指数
     public float personnel;//人才指数
-    public bool begin;
-    public bool end;
     public string getScale()
     {
         double fraction = Math.Round((economy + 1.2 * tourism + 0.8 * personnel) / 3, 2);
@@ -62,30 +60,19 @@ public class City
     {
         return this.name;
     }
-    public static void GetDistance(City c1, City c2)//计算两点间距离
+    public static float Earth_R = 6371f;
+    public static double GetDistance(City c1, City c2)//计算两点间距离
     {
-
-    }
-    public void SetBegin(City city)
-    {
-        city.begin = true;
-    }
-    public void SetEnd(City city)
-    {
-        city.end = true;
-    }
-    public bool GetBegin()
-    {
-        return this.begin;
-    }
-    public bool Getend()
-    {
-        return this.end;
-    }
-    public void Reset()
-    {
-        this.begin = false;
-        this.end = false;
+        double lat1 = double.Parse(c1.x.ToString());
+        double lat2 = double.Parse(c2.x.ToString());
+        double lon1 = double.Parse(c1.y.ToString());
+        double lon2 = double.Parse(c2.y.ToString());
+        double del1 = Math.Round(Math.Abs(lat1 -lat2),2);//lat
+        double del2 = Math.Round(Math.Abs(lon1 - lon2), 2); ;//lon
+        //Debug.Log("Del_Lat = " + del1 + "Del_Lon = " + del2);
+        double dis = Math.Acos(Math.Cos(lat1)*Math.Cos(lat2)*Math.Cos(del2)+Math.Sin(lat1)*Math.Sin(lat2));
+        dis = Math.Round(dis * Earth_R, 2);
+        return dis;
     }
     public string GetCountry()
     {
@@ -115,17 +102,6 @@ public class CitiesManager
     public void add(City c)
     {
         this.Cities.Add(c);
-    }
-    public City getBeginCity()
-    {
-        foreach (var c in Cities)
-        {
-            if (c.GetBegin() == true)
-            {
-                return c;
-            }
-        }
-        return null;
     }
     public List<City> GetCityListByCountryName(string name)
     {

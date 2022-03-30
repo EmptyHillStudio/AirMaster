@@ -21,10 +21,6 @@ public class ConfirmCreate : MonoBehaviour
         CityName = cityname.GetComponent<Text>().text;
         tCity = cManager.getCityByName(CityName);
         lManager = GlobalVariable.DefaultManager.lines_manager;
-        lManager.add(cManager.getBeginCity(), tCity);
-        Debug.Log(cManager.getBeginCity().name);
-        cManager.getBeginCity().Reset();
-        tCity.Reset();
         Debug.Log("Ìí¼Ó³É¹¦");
         cityinfo.SetActive(false);
     }

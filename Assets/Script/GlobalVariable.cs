@@ -163,6 +163,9 @@ public class GlobalVariable
     public static int SpeedTime = 1;
     public static string CompanyName = "Debug Mode";
 
+    //全局城市选择状态
+    public static GlobalChooseCityState ChooseCity = GlobalChooseCityState.NORMAL;
+
     //全局管理器
     public static InitManagers DefaultManager;
     //进入城市按钮将CityName传递
@@ -327,4 +330,15 @@ public class PlayerPoints
         plus.value = p1.GetValue() / value;
         return plus;
     }
+}
+
+public enum GlobalChooseCityState
+{
+    ///<summary>
+    ///NORMAL普通类型，选择后直接打开面板；
+    ///CREATELINE创建航线时的类型，选择后会给一个
+    ///</summary>
+    NORMAL,
+    CREATELINE
+
 }

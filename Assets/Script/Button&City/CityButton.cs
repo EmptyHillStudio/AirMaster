@@ -8,9 +8,10 @@ using System;
 using UnityEngine.SceneManagement;
 
 
+
 public class CityButton : MonoBehaviour , IPointerClickHandler
 {
-    public CityBindToBoard InfomationBoard;
+    public TempVariable Temp;
     private static CitiesManager cManager;
     private string CityName;
     private City tCity;
@@ -35,11 +36,11 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
                 if (i % 2 == 0)
                 {
                     cityList.Add(cols[i].name);
-                    Debug.Log(cols[i].name);
+                    //Debug.Log(cols[i].name);
                 }
                 
             }
-            Debug.Log(cols.Length);
+            //Debug.Log(cols.Length);
             dropdown.GetComponent<Dropdown>().captionText.text = "选择城市";
             dropdown.GetComponent<Dropdown>().AddOptions(cityList);
             
@@ -49,38 +50,18 @@ public class CityButton : MonoBehaviour , IPointerClickHandler
                 if (i % 2 == 0)
                 {
                     cityList.Remove(cols[i].name);
-                    
                 }
-
             }
-            
         }
         else
         {
             cManager = GlobalVariable.DefaultManager.cities_manager;
             string CityName = this.name;
             tCity = cManager.getCityByName(CityName);
-            if (cManager.getBeginCity() != null)
-            {
-                if (cManager.getBeginCity().name.Equals(CityName))
-                {
-                    Debug.Log("请选择终点");
-                }
-                else
-                {
-                    InfomationBoard.UpdateContent(tCity);
-                    cityinfo.SetActive(true);
-                    confirmcreate.SetActive(true);
-                    operationcom.SetActive(false);
-                }
-                
-            }
-            else
-            {
-                confirmcreate.SetActive(false );
-                operationcom.SetActive(true );
-                InfomationBoard.UpdateContent(tCity);
-            }
+            confirmcreate.SetActive(false);
+            operationcom.SetActive(true);
+            //更新操作可以统一修改
+            Temp.Oper(tCity);
         }
     }
     
