@@ -59,6 +59,13 @@ public class ResearchManager
         this.Researches = new Dictionary<string, Research>();
     }
 
+    public Research getResearchByUID(string UID)//¸ù¾ÝUID²éÕÒR
+    {
+        Research r;
+        Researches.TryGetValue(UID, out r);
+        return r;
+    }
+
     public void Add(Research research)
     {
         this.Researches.Add(research.UID, research);
