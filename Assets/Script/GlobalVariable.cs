@@ -178,6 +178,10 @@ public class GlobalVariable
     public static float px = 0f;
     public static float py = -10f;
     public static float pz = 150f;
+    //飞机和飞机数量的dic
+    public static Dictionary<Plane, int> planeDic = new Dictionary<Plane, int>();
+    //读取plane.ini文件中保存的plane数据
+
 }
 
 public class PlayerPoints

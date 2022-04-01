@@ -44,6 +44,7 @@ public class InitManagers : MonoBehaviour
         {
             GlobalVariable.GameDate = new Date(1970, 1, 1);
         }
+        
     }
 
     // Update is called once per frame

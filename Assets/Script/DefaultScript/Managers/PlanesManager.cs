@@ -59,6 +59,14 @@ public class Plane
                 return PlaneSize.NULL;
         }
     }
+    public string GetSeries()
+    {
+        return this.series;
+    }
+    public string GetSub()
+    {
+        return this.sub;
+    }
 }
 
 public enum PlaneSize
@@ -103,5 +111,26 @@ public class PlanesManager
     public List<Plane> GetPlanes()
     {
         return Planes;
+    }
+    //购买飞机
+    
+    public void  buyPlane(Plane plane, int num)
+    {
+        int flag = 0;//表明dic里不存在该飞机
+        Dictionary<Plane, int>.KeyCollection keyCol = GlobalVariable.planeDic.Keys;
+        foreach(Plane key in keyCol)
+        {
+            string keyId = key.GetSeries() + "-" + key.GetSub();
+            string planeId = plane.GetSeries() + "-" + plane.GetSub();
+            if (keyId == planeId)
+            {
+                GlobalVariable.planeDic[plane] += num;
+                flag = 1;//dic里有plane
+            }
+        }
+        if(flag==0)
+        {
+            GlobalVariable.planeDic.Add(plane, num);
+        }
     }
 }
