@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 220496323}
   - component: {fileID: 220496322}
   - component: {fileID: 220496321}
+  - component: {fileID: 220496324}
   m_Layer: 5
   m_Name: StanderedImage
   m_TagString: Untagged
@@ -641,6 +642,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220496319}
   m_CullTransparentMesh: 1
+--- !u!114 &220496324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220496319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82e41404faf3914792e95b5758eeb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &247919660
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +907,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &470333541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470333542}
+  - component: {fileID: 470333544}
+  - component: {fileID: 470333543}
+  m_Layer: 5
+  m_Name: Info_null
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &470333542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470333541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1294099690}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &470333543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470333541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: This company has registered, but there are not civil aircraft in the market.
+--- !u!222 &470333544
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470333541}
+  m_CullTransparentMesh: 1
 --- !u!1 &535278449
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,6 +1073,7 @@ GameObject:
   - component: {fileID: 575692128}
   - component: {fileID: 575692127}
   - component: {fileID: 575692126}
+  - component: {fileID: 575692131}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1072,6 +1165,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &575692131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575692125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5146836fde1032a42a11cdbdbb856e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Primary: {fileID: 839343990}
+  Content: {fileID: 1265876477}
+  Attention: {fileID: 1135639233}
+  CompanyImage: {fileID: 2124141587}
+  NullText: {fileID: 470333541}
+  CompanyName_text: {fileID: 1427642760}
+  CompanyIntro: {fileID: 279322535}
+  ChooseBoard: {fileID: 65902550}
+  CompanyName: {fileID: 0}
 --- !u!1 &640998503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1678,7 @@ GameObject:
   - component: {fileID: 839343994}
   - component: {fileID: 839343993}
   - component: {fileID: 839343992}
+  - component: {fileID: 839343995}
   m_Layer: 5
   m_Name: Standered
   m_TagString: Untagged
@@ -1634,7 +1749,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 839343993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 839343995}
+        m_TargetAssemblyTypeName: CompanyBindedInBuying, Assembly-CSharp
+        m_MethodName: OnChoose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &839343993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,6 +1800,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839343990}
   m_CullTransparentMesh: 1
+--- !u!114 &839343995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839343990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbdf62f6324a1424e910fb1563e308fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CompanyIcon: {fileID: 0}
 --- !u!1 &1037013847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,7 +2806,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1265876478}
   - component: {fileID: 1265876479}
-  - component: {fileID: 1265876480}
   - component: {fileID: 1265876481}
   m_Layer: 5
   m_Name: Companies
@@ -2719,20 +2858,6 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 30}
   m_Constraint: 0
   m_ConstraintCount: 3
---- !u!114 &1265876480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265876477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5146836fde1032a42a11cdbdbb856e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Primary: {fileID: 839343990}
-  Content: {fileID: 1265876477}
 --- !u!114 &1265876481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2777,6 +2902,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 470333542}
   - {fileID: 2073009842}
   m_Father: {fileID: 65902551}
   m_RootOrder: 1
@@ -4121,6 +4247,7 @@ GameObject:
   - component: {fileID: 1922303669}
   - component: {fileID: 1922303671}
   - component: {fileID: 1922303670}
+  - component: {fileID: 1922303672}
   m_Layer: 5
   m_Name: Scen
   m_TagString: Untagged
@@ -4187,6 +4314,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922303668}
   m_CullTransparentMesh: 1
+--- !u!114 &1922303672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922303668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5fa82ebe90a344d8970b9915b19d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CopiedGameObject: {fileID: 220496319}
 --- !u!1 &1938313556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,7 +4558,6 @@ GameObject:
   - component: {fileID: 2073009842}
   - component: {fileID: 2073009844}
   - component: {fileID: 2073009843}
-  - component: {fileID: 2073009845}
   m_Layer: 5
   m_Name: Planes
   m_TagString: Untagged
@@ -4439,7 +4578,7 @@ RectTransform:
   m_Children:
   - {fileID: 220496320}
   m_Father: {fileID: 1294099690}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4484,22 +4623,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 1
   m_VerticalFit: 1
---- !u!114 &2073009845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073009841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf5fa82ebe90a344d8970b9915b19d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlaneItem: {fileID: 220496319}
-  Parent: {fileID: 2073009841}
-  PlanesBoard: {fileID: 65902550}
-  PrimaryText: {fileID: 1135639233}
 --- !u!1 &2118457911
 GameObject:
   m_ObjectHideFlags: 0

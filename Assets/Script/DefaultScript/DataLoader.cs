@@ -19,7 +19,7 @@ public class DataLoader
         cManager = new CitiesManager();
         GameObject db3 = GameObject.Find("3DButton");
         Vector3 db3_Position = db3.transform.position;
-        var buttonParent = GameObject.Find("Buttons");
+        GameObject parent = GameObject.Find("CitiesButton");
         int ci_num = 0;
         foreach (var line in Datas)//按行读取，每一行是一个城市的各项数据
         {
@@ -49,6 +49,7 @@ public class DataLoader
             GameObject go = GameObject.Instantiate(db3, v, Quaternion.identity) as GameObject;
             go.transform.localEulerAngles = new Vector3(rx, ry, rz);
             go.name = line[2];
+            go.transform.SetParent(parent.transform);
             ci_num++;
         }
         Debug.Log(ci_num + " cities has been loaded!");
@@ -66,6 +67,7 @@ public class DataLoader
         {
             planes_num++;
             Plane temp = new Plane(line[0], line[1], line[2], line[3], line[4], line[5], line[6], line[7], line[8], line[10], line[11], line[12], line[13]);
+            //Debug.Log(line[6]);
             planesManager.Add(temp);
         }
         Debug.Log(planes_num + " planes has been loaded!");

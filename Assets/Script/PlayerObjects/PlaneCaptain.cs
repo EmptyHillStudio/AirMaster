@@ -4,9 +4,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CaptainState
+{
+    INLINE,
+    FREE
+}
+
 public class PlaneCaptain
 {
     //机长对象，表示某机长的各项能力和数值。
+    public CaptainState state;
     public string name;
     public int age;
     public string sex;
@@ -23,7 +30,7 @@ public class PlaneCaptain
 
     public PlaneCaptain()
     {
-
+        this.state = CaptainState.FREE;
     }
 
     public void Info()

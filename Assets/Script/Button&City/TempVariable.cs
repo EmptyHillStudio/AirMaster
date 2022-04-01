@@ -12,6 +12,8 @@ public class TempVariable : MonoBehaviour
     public Text distance, distance_real;
     public Line tempLine;
     public City TempCity;
+
+    public Dropdown captains;
     public TempVariable()
     {
         this.tempLine = new Line(0);
@@ -31,14 +33,41 @@ public class TempVariable : MonoBehaviour
             case GlobalChooseCityState.CREATELINE:
                 tempLine.SetPoints(1, TempCity);
                 //Debug.Log("选择成功，选择的起点为：" + tempLine.GetPoints()[0].name + "，终点为：" + tempLine.GetPoints()[1].name + "，两地距离为：" + tempLine.GetDistance());
+                //设置起点和终点名
                 City bCity = tempLine.GetPoints()[0], eCity = tempLine.GetPoints()[1];
                 City_begin.text = bCity.name;
                 City_end.text = eCity.name;
+                //设置起点和终点的图像
                 BeginScale.sprite = bCity.ScaleImage;
-                Debug.Log(bCity.ScaleImage.name);
+                //Debug.Log(bCity.ScaleImage.name);
                 EndScale.sprite = eCity.ScaleImage;
-                distance.text = tempLine.distance.ToString();
-                distance_real.text = tempLine.real_distance.ToString();
+                //设置距离和真实距离
+                distance.text = "距离：" + tempLine.distance.ToString() + " km";
+                distance_real.text = "真实距离：" + tempLine.real_distance.ToString() + " km";
+                //增加机长选项
+                Dictionary<int, PlaneCaptain> caps = GlobalVariable.DefaultManager.planeCaptainsManager.captains;
+                List<Dropdown.OptionData> capOptions = new List<Dropdown.OptionData>();
+                foreach(KeyValuePair<int, PlaneCaptain> pc in caps)
+                {
+                    if(pc.Value.state == CaptainState.FREE)
+                    {
+                        int an = pc.Key + 1;
+                        capOptions.Add(new Dropdown.OptionData(pc.Value.name));
+                        //Debug.Log(pc.Key + "\t" + pc.Value.name);
+                    }
+                }
+                //读取服务
+
+                //设置界面按钮状态（检测相关的科技是否解锁）
+
+                //设置按钮的状态为全局变量的选择状态
+
+                //计算预计满意度
+
+                //设置下一步按钮的可用性
+
+                captains.AddOptions(capOptions);
+                
 
                 LineCreate.SetActive(true);
                 

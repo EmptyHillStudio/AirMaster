@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Company
 {
+    public List<Plane> planes;
     public Company_Type type;
     public string name;
     public Date register;
     public Date end;
     public Country owner;
+    public Sprite icon;
     public Company(string name, Country country, Date reg, Date end, Company_Type type)
     {
         this.name = name;
@@ -16,8 +19,13 @@ public class Company
         this.register = reg;
         this.end = end;
         this.type = type;
+        this.icon = Resources.Load<Sprite>("Companies/" + name);
     }
 
+    public Company GetCopiedCompany()
+    {
+        return (Company)this.MemberwiseClone();
+    }
     public Company(string name, string country, string reg, string end, string type)
     {
         this.name = name;
@@ -25,6 +33,7 @@ public class Company
         this.register = new Date(reg);
         this.end = new Date(end);
         this.type = Company.GetType(type);
+        this.icon = Resources.Load<Sprite>("Companies/" + name);
     }
 
     public static Company_Type GetType(string data)

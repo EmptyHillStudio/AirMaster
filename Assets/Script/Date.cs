@@ -10,7 +10,7 @@ public class Date
     private int[] standerd_month = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public string[] monthname = { "Jen", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" };
     private bool Leap = false; public bool isLeap() { return this.Leap; }
-    private int year, month, day;
+    public int year, month, day;
     private bool Lack;public bool isLack() { return this.Lack; }//缺省日期
 
     public Date(int year, int month, int day)
@@ -46,7 +46,6 @@ public class Date
             this.Leap = true;
         }
     }
-
     public static Date FormatDate(string Standered)//标准化日期，月/日/年
     {
         string[] ymd = Standered.Split('/');

@@ -12,16 +12,16 @@ public class Plane
     public string sub;//副型号
     public PlaneSize Size;//大小
     public Date Launch;//发售时间
+    public Date end;
     public int age;//出售年间
     public int mileage;//里程
     public int capacity;//载客量
     public int speed;//速度，自主研制的飞机靠系统计算
-    //public Company manufacturer; //生产商
     public float price;//售价
     public int classes;//舱位级数
     public float consumption;//油耗
     public float depreciation;//折旧，自主研制的飞机靠系统计算
-    public Image icon;//飞机的图片
+    public Sprite icon;//飞机的图片
     public Plane(string creater, string model, string series, string sub, string Size, string launch, string age, string mileage, string speed, string capacity, string price, string classes, string consumption)
     {
         this.creater = GlobalVariable.DefaultManager.companiesManager.GetCompany(creater);
@@ -32,12 +32,14 @@ public class Plane
         this.Size = GetSize(Size);
         this.Launch = Date.FormatDate(launch);
         this.age = Convert.ToInt32(age);
+        end = new Date(Launch.year + this.age, Launch.month, Launch.day);
         this.mileage = Convert.ToInt32(mileage);
         this.speed = Convert.ToInt32(speed);
         this.capacity = Convert.ToInt32(capacity);
         this.price = Convert.ToSingle(price);
         this.classes = Convert.ToInt32(classes);
         this.consumption = Convert.ToSingle(consumption);
+        this.icon = Resources.Load<Sprite>("Planes/" + series);
     }
     public static PlaneSize GetSize(string size)
     {
@@ -71,14 +73,20 @@ public enum PlaneSize
 
 public class PlanesManager
 {
+    /// <summary>
+    /// 已加载飞机的管理器，用于储存所有数据中的飞机。
+    /// </summary>
     private List<Plane> Planes;
+    public Dictionary<string, Plane> CompanyPlanes;
     public PlanesManager()
     {
         this.Planes = new List<Plane>();
+        this.CompanyPlanes = new Dictionary<string, Plane>();
     }
     public void Add(Plane p)
     {
         this.Planes.Add(p);
+
     }
     public List<Plane> GetPlanesByCompany(string CompanyName)
     {
