@@ -19,15 +19,11 @@ public class LoadingPlanes : MonoBehaviour
             GameObject go = Instantiate(CopiedGameObject);
             BoardBindedInPlaneBuying pbb = go.GetComponent<BoardBindedInPlaneBuying>();
             go.transform.SetParent(CopiedGameObject.transform.parent);
+            BuyPlaneBoardOpening bpbo = go.GetComponentInChildren<BuyPlaneBoardOpening>();
+            bpbo.bbpb = pbb;
             pbb.BindedPlane = p;
             go.name = p.series + "-" + p.sub;
             CompaniesShowing.PlanesBoard.Add(go);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

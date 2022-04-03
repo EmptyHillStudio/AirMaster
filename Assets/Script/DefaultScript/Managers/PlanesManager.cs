@@ -29,7 +29,9 @@ public class Plane
         this.series = series;
         //Debug.Log(series);
         this.sub = sub;
+        //Debug.Log(Size);
         this.Size = GetSize(Size);
+        //Debug.Log(this.Size.ToString());
         this.Launch = Date.FormatDate(launch);
         this.age = Convert.ToInt32(age);
         end = new Date(Launch.year + this.age, Launch.month, Launch.day);
