@@ -88,4 +88,14 @@ public class DebugCommands : MonoBehaviour
 		else Debug.Log("未找到名为 \"" + name + "\" 的GameObject"); 
 
 	}
+	[ConsoleMethod("ShowPlaneNum", "Show your planes number.")]
+	public static void ShowPlaneNum()
+	{
+		int sum = 0;
+		foreach (int i in GlobalVariable.planeDic.Values)
+		{
+			sum += i;
+		}
+		Debug.Log("飞机数量：" + sum);
+	}
 }

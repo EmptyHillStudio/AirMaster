@@ -8,6 +8,7 @@ public class LoadingPlanes : MonoBehaviour
 {
     public static int Planes_num;
     public GameObject CopiedGameObject;
+    public static BoardBindedInPlaneBuying tradeBoard;
 
     //刚开始时加载所有飞机并隐藏起来，显示初始文本
     void Start()

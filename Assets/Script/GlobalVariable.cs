@@ -144,7 +144,6 @@ public class GlobalVariable
         Prestige = new PlayerPoints();
         ResearchPoints = new PlayerPoints();
         Personnel = new PlayerPoints();
-        planeDic = new Dictionary<Plane, int>();
         
     }
 
@@ -181,6 +180,8 @@ public class GlobalVariable
     public static float pz = 150f;
     //飞机和飞机数量的dic
     public static Dictionary<Plane, int> planeDic;
+    //使用中飞机何其数量的Dic
+    public static Dictionary<Plane, int> BusyPlanesDic;
     //读取plane.ini文件中保存的plane数据
 
 }

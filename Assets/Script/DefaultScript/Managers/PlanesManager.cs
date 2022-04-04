@@ -69,6 +69,10 @@ public class Plane
     {
         return this.sub;
     }
+    public string GetName()
+    {
+        return series + "-" + sub;
+    }
 }
 
 public enum PlaneSize
@@ -90,12 +94,14 @@ public class PlanesManager
     public Dictionary<string, Plane> CompanyPlanes;
     public PlanesManager()
     {
+        GlobalVariable.planeDic = new Dictionary<Plane, int>();
         this.Planes = new List<Plane>();
         this.CompanyPlanes = new Dictionary<string, Plane>();
     }
     public void Add(Plane p)
     {
         this.Planes.Add(p);
+        GlobalVariable.planeDic.Add(p, 0);
 
     }
     public List<Plane> GetPlanesByCompany(string CompanyName)

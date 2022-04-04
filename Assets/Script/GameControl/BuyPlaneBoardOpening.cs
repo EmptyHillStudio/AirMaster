@@ -25,6 +25,7 @@ public class BuyPlaneBoardOpening : MonoBehaviour
         Speed.text = "Speed(km/h): " + p.speed;
         Capacity.text = "Passenger Capacity: " + p.capacity;
         CabinG.text = "Cabin Gradation: " + p.classes;
+        LoadingPlanes.tradeBoard = bbpb;
         InfoBoard.SetActive(true);
     }
 }
