@@ -95,6 +95,7 @@ public class PlanesManager
     public PlanesManager()
     {
         GlobalVariable.planeDic = new Dictionary<Plane, int>();
+        GlobalVariable.BusyPlanesDic = new Dictionary<Plane, int>();
         this.Planes = new List<Plane>();
         this.CompanyPlanes = new Dictionary<string, Plane>();
     }
@@ -141,4 +142,5 @@ public class PlanesManager
             GlobalVariable.planeDic.Add(plane, num);
         }
     }
+    
 }
