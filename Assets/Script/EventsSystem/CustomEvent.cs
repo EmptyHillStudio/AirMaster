@@ -36,4 +36,5 @@ public class CustomEvent
     {
         Debug.Log("1970年2月2日触发了该事件 Debugs_Accurate");
     }
+    
 }

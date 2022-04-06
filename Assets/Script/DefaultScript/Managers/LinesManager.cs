@@ -17,7 +17,12 @@ public class Line
     public double distance; //航线长度
     public double real_distance;
     public bool IsTemp; //在确认创建前该bool值为true，表示为临时创建，返回时会根据该bool值决定是否删除该航线，如果不删除则加入LinesManager中。
-    //public List<Service> services; //航线配套服务，目前还未定义Service类
+    public List<Service> services; //航线配套服务
+    public Plane usingPlane;//航线使用的飞机
+    public PlaneCaptain captain;//航线上的机长
+    public bool FuelSton;//固定燃油
+    public bool CheckSlu;//加强检查
+    public bool Priority;//优先廊桥
     /*
      * 根据策划和数学模型再定义和构建每条航线的各项成员变量和属性
      */
