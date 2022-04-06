@@ -11,7 +11,7 @@ public class Date
     public string[] monthname = { "Jen", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" };
     private bool Leap = false; public bool isLeap() { return this.Leap; }
     public int year, month, day;
-    private bool Lack;public bool isLack() { return this.Lack; }//缺省日期
+    private bool Lack; public bool isLack() { return this.Lack; }//缺省日期
 
     public Date(int year, int month, int day)
     {
@@ -24,7 +24,7 @@ public class Date
         }
         this.Lack = false;
     }
-    public Date(int year,int month)//没有具体时间的日期
+    public Date(int year, int month)//没有具体时间的日期
     {
         setYear(year);
         setMonth(month);
@@ -46,11 +46,12 @@ public class Date
             this.Leap = true;
         }
     }
+
     public static Date FormatDate(string Standered)//标准化日期，月/日/年
     {
         string[] ymd = Standered.Split('/');
         List<int> ymdInt = new List<int>();
-        foreach(string s in ymd)
+        foreach (string s in ymd)
         {
             ymdInt.Add(Convert.ToInt32(s));
         }
@@ -60,10 +61,11 @@ public class Date
 
     public static bool InRange(Date reg, Date end, Date now)
     {
-        if (reg.getYear()<now.getYear()&&end.getYear()>now.getYear())
+        if (reg.getYear() < now.getYear() && end.getYear() > now.getYear())
         {
             return true;
-        }else if (reg.getYear() == now.getYear() && end.getYear() == now.getYear())
+        }
+        else if (reg.getYear() == now.getYear() && end.getYear() == now.getYear())
         {
             if (reg.getMonth() < now.getMonth() && end.getMonth() > now.getMonth())
             {
@@ -81,7 +83,45 @@ public class Date
         }
         else return false;
     }
-
+    public static int TimeDifference(Date start, Date now)//计算现在与起始时间的时间差
+    {
+        int Differ = 0;
+        if (start.getYear() < now.getYear())//如果跨年
+        {
+            if (start.Leap == false)
+            {
+                Differ = Differ + start.standerd_month[start.getMonth() - 1] - start.getDay();
+                for (int i = start.getMonth() + 1; i <= 12; i++)
+                    Differ = Differ + now.standerd_month[i - 1];
+            }
+            else
+            {
+                Differ = Differ + start.standerd_month_leap[start.getMonth() - 1] - start.getDay();
+                for (int i = start.getMonth() + 1; i <= 12; i++)
+                    Differ = Differ + now.standerd_month_leap[i - 1];
+            }
+            start.year = now.year;
+            start.month = 1;
+            start.day = 1;
+        }
+        if (now.Leap == false)//同年计算
+        {
+            if (start.month < now.month)
+                Differ = Differ + start.standerd_month[start.getMonth() - 1] - start.getDay();
+            for (int i = start.getMonth() + 1; i < now.getMonth(); i++)
+                Differ = Differ + now.standerd_month[i - 1];
+            Differ = Differ + now.getDay();
+        }
+        else
+        {
+            if (start.month < now.month)
+                Differ = Differ + start.standerd_month_leap[start.getMonth() - 1] - start.getDay();
+            for (int i = start.getMonth() + 1; i < now.getMonth(); i++)
+                Differ = Differ + now.standerd_month_leap[i - 1];
+            Differ = Differ + now.getDay();
+        }
+        return Differ;
+    }
     public static Date GetPutOff(Date date, int year)
     {
         return new Date(date.getYear() + year, date.getMonth(), date.getDay());

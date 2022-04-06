@@ -11,9 +11,16 @@ public enum ResearchType
     MANAGEMENT,
     NULL
 }
+public enum ResearchStatus
+{
+    UNSTARTED,
+    PROGRESSING,
+    FINISHED
+}
 
 public class Research
 {
+
     public ResearchType Type; //研究的类别
     public string Introduce; //介绍
     public string Name;
@@ -21,7 +28,8 @@ public class Research
     public int Money_cost;//金钱花费
     public int Time_cost;//时间花费
     public string[] Pre_researches;//前置研究
-    public bool Researched; //是否已研究
+    public ResearchStatus Status;//研究状态
+    public Date Starttime;
     public Research(string UID, string name, string introduce, string moneycost, string type, string timecost, string pre)
     {
         this.UID = UID;
