@@ -179,9 +179,9 @@ public class GlobalVariable
     public static float py = -10f;
     public static float pz = 150f;
     //飞机和飞机数量的dic
-    public static Dictionary<Plane, int> planeDic;
+    public static Dictionary<Plane, int> planeDic= new Dictionary<Plane, int>();
     //使用中飞机何其数量的Dic
-    public static Dictionary<Plane, int> BusyPlanesDic;
+    public static Dictionary<Plane, int> BusyPlanesDic= new Dictionary<Plane, int>();
     //读取plane.ini文件中保存的plane数据
 
 }

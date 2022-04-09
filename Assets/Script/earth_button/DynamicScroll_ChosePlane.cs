@@ -6,13 +6,28 @@ using UnityEngine.UI;
 public class DynamicScroll_ChosePlane : MonoBehaviour
 {
     private static PlanesManager planemanager;
-    public GameObject Item;
-    public GameObject Content;
-    public GameObject Noneimage;
-    public GameObject ChoseImage;
+    public  GameObject Item;
+    public  GameObject Noneimage;
+    public  GameObject parent;
+    Vector2 contentSize;
+    float itemHeight;
+    Vector3 itemLocalPos;
     List<GameObject> itemList = new List<GameObject>();
     void Start()
     {
+        //GlobalVariable gv = new GlobalVariable();
+        int IsHas = 0;//æ²¡æœ‰å¯ä½¿ç”¨çš„é£æœº
+        parent = GameObject.Find("Content");
+        contentSize = parent.GetComponent<RectTransform>().sizeDelta;
+        itemHeight = Item.GetComponent<RectTransform>().rect.height;
+        itemLocalPos = Item.transform.localPosition;
+        List<Plane> planes = new List<Plane>();
+        planes =ListOfDic();
+        ShowAllPlane(planes);
+        
+        
+        
+        /*
         if (GlobalVariable.planeDic == null)
         {
             Debug.Log("null");
@@ -21,26 +36,26 @@ public class DynamicScroll_ChosePlane : MonoBehaviour
         }
         else
         {
+            int _count = PlanesManager.LengthOfDic();
             List<Plane> list = new List<Plane>(GlobalVariable.planeDic.Keys);
-            int _count = GlobalVariable.BusyPlanesDic.Count;
             Debug.Log(_count);
-            //Ïú»ÙÖ®Ç°µÄÉú³ÉµÄitem£¬Çå³ıÁĞ±í
+            //ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Éµï¿½itemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½
             itemList.Clear();
 
-            //ÔÚ Content ÀïÉú³É _count ¸öitem
+            //ï¿½ï¿½ Content ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ _count ï¿½ï¿½item
             if (_count > 0)
             {
-                Item.SetActive(true);   //µÚÒ»¸öitemÊµÀıÒÑ¾­·ÅÔÚÁĞ±íµÚÒ»¸öÎ»ÖÃ£¬Ö±½Ó¼¤»î
+                Item.SetActive(true);   //ï¿½ï¿½Ò»ï¿½ï¿½itemÊµï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½Ã£ï¿½Ö±ï¿½Ó¼ï¿½ï¿½ï¿½
                 itemList.Add(Item);
                 int i = 1;
 
                 while (i < _count)
                 {
+                    int IsUse = 0;//ï¿½Ã·É»ï¿½È«ï¿½ï¿½Î´ï¿½ï¿½Ê¹ï¿½ï¿½
                     GameObject a = GameObject.Instantiate(Item) as GameObject;
-                    a.transform.parent = Content.transform;  //ÉèÖÃÎª Content µÄ×Ó¶ÔÏó
                     itemList.Add(a);
-                    RectTransform t = itemList[i - 1].GetComponent<RectTransform>();  //»ñÈ¡Ç°Ò»¸ö item µÄÎ»ÖÃ                
-                                                                                      //µ±Ç° item Î»ÖÃ·ÅÔÚÔÚÇ°Ò»¸ö item ÏÂ·½                
+                    RectTransform t = itemList[i - 1].GetComponent<RectTransform>();  //ï¿½ï¿½È¡Ç°Ò»ï¿½ï¿½ item ï¿½ï¿½Î»ï¿½ï¿½                
+                                                                                      //ï¿½ï¿½Ç° item Î»ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ò»ï¿½ï¿½ item ï¿½Â·ï¿½                
                     a.GetComponent<RectTransform>().localPosition = new Vector3(t.localPosition.x, t.localPosition.y - t.rect.height, t.localPosition.z);
                     a.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
                     i++;
@@ -55,21 +70,88 @@ public class DynamicScroll_ChosePlane : MonoBehaviour
                         if (kvp.Key.GetName() == planeName.GetComponent<Text>().text)
                         {
                             UsingNum.GetComponent<Text>().text = kvp.Value.ToString();
+                            IsUse = 1;//ï¿½Ã·É»ï¿½ï¿½Ğ±ï¿½Ê¹ï¿½ï¿½
                             break;
                         }
+                    }
+                    if(IsUse==0)
+                    {
+                        UsingNum.GetComponent<Text>().text = 0.ToString();
                     }
                     int Total = System.Convert.ToInt32(TotalNum.GetComponent<Text>().text);
                     int use = System.Convert.ToInt32(UsingNum.GetComponent<Text>().text);
                     LeisureNum.GetComponent<Text>().text = (Total - use).ToString();
 
                 }
-                //¸ù¾İµ±Ç° item ¸öÊı¸üĞÂ Content ¸ß¶È 
-                Content.GetComponent<RectTransform>().sizeDelta = new Vector2(Content.GetComponent<RectTransform>().sizeDelta.x, itemList.Count * 80);
+                
             }
-            else
+        }*/
+    }
+    public static List<Plane> ListOfDic()
+    {
+        List<Plane> planes = new List<Plane>();
+        int length = 0;
+        foreach (KeyValuePair<Plane, int> kvp in GlobalVariable.planeDic)
+        {
+            if (kvp.Value != 0)
             {
-                Item.SetActive(false);
+                planes.Add(kvp.Key);
+            }
+        }
+        return planes;
+    }
+    public  void ShowAllPlane(List<Plane> planes)
+    {
+        if (planes.Count == 0)//æ²¡æœ‰å¯ä½¿ç”¨çš„é£æœº
+        {
+            Noneimage.SetActive(true);
+        }
+        else
+        {
+
+            for (int i = 0; i < planes.Count; i++)
+            {
+                Debug.Log(planes.Count);
+                int IsUse = 0;//è¯¥é£æœºå…¨éƒ½æœªè¢«ä½¿ç”¨
+                GameObject a = GameObject.Instantiate(Item) as GameObject;
+                itemList.Add(a);
+                //RectTransform t = itemList[i - 1].GetComponent<RectTransform>();  
+                //a.GetComponent<RectTransform>().localPosition = new Vector3(t.localPosition.x, t.localPosition.y - t.rect.height, t.localPosition.z);
+                //a.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                a.transform.localPosition = new Vector3(itemLocalPos.x, itemLocalPos.y - (i + 1) * 80, 0);
+                Debug.Log(a.transform.localPosition);
+                a.GetComponent<Transform>().SetParent(parent.GetComponent<Transform>(), false);
+                GameObject planeName = a.transform.Find("PlaneName_text").gameObject;
+                GameObject TotalNum = a.transform.Find("TotalNum_text").gameObject;
+                GameObject UsingNum = a.transform.Find("Using_text").gameObject;
+                GameObject LeisureNum = a.transform.Find("LeisureNum_text").gameObject;
+                planeName.GetComponent<Text>().text = planes[i].GetName();
+                Debug.Log(planes[i].GetName());
+                TotalNum.GetComponent<Text>().text = GlobalVariable.planeDic[planes[i]].ToString();
+                foreach (KeyValuePair<Plane, int> Bpd in GlobalVariable.BusyPlanesDic)
+                {
+                    if (Bpd.Key.GetName() == planeName.GetComponent<Text>().text)
+                    {
+                        UsingNum.GetComponent<Text>().text = Bpd.Value.ToString();
+                        IsUse = 1;//è¯¥é£æœºæœ‰è¢«ä½¿ç”¨
+                        break;
+                    }
+                }
+                if (IsUse == 0)
+                {
+                    UsingNum.GetComponent<Text>().text = 0.ToString();
+                }
+                int Total = System.Convert.ToInt32(TotalNum.GetComponent<Text>().text);
+                int use = System.Convert.ToInt32(UsingNum.GetComponent<Text>().text);
+                LeisureNum.GetComponent<Text>().text = (Total - use).ToString();
+
+                if (contentSize.y <= itemList.Count * itemHeight)//å¢åŠ å†…å®¹é«˜åº¦
+                {
+                    parent.GetComponent<RectTransform>().sizeDelta = new Vector2(contentSize.x, itemList.Count * itemHeight);
+                }
             }
         }
     }
+
+
 }
