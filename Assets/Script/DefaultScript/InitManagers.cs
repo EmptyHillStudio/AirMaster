@@ -19,6 +19,10 @@ public class InitManagers : MonoBehaviour
     public DateEvents dateEvents;
     void Start()
     {
+        if (GlobalVariable.DefaultManager != null)
+        {
+            return;
+        }
         this.planeCaptainsManager = new PlaneCaptainsManager();//实例化机长管理器（反正为空）
         GlobalVariable.DefaultManager = this;
         //读取数据的顺序一定不能乱，否则会报NullPointerException
