@@ -146,7 +146,6 @@ public class PlanesManager
     public static List<Plane> ListOfDic()
     {
         List<Plane> planes = new List<Plane>();
-        int length = 0;
         foreach(KeyValuePair<Plane,int> kvp in GlobalVariable.planeDic)
         {
             if(kvp.Value!=0)

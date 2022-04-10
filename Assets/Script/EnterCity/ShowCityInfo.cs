@@ -26,7 +26,6 @@ public class ShowCityInfo : MonoBehaviour
         Talents_index.GetComponent<Text>().text = tCity.personnel.ToString();
         Datas = new List<string[]>();
         List<string> Airports = new List<string>();
-        loadFile(Application.dataPath + "/Res/Data", "Airports.csv");
         Airports.Add("进入机场");
         foreach (var line in Datas)
         {
@@ -43,26 +42,5 @@ public class ShowCityInfo : MonoBehaviour
     void Update()
     {
         
-    }
-    public static void loadFile(string path, string fileName)
-    {
-        Datas.Clear();
-        StreamReader sr = null;
-        try
-        {
-            sr = File.OpenText(path + "/" + fileName);
-            Debug.Log("file " + path + "/" + fileName + " is finded!");
-        }
-        catch
-        {
-            Debug.Log("file don't exist!");
-        }
-        string line;
-        while ((line = sr.ReadLine()) != null)
-        {
-            Datas.Add(line.Split(','));
-        }
-        sr.Close();
-        sr.Dispose();
     }
 }

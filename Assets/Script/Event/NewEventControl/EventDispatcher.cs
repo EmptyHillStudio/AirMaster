@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventDispatcher : MonoBehaviour
+public class EventDispatcher
 {
     //// <summary> ÊÂ¼þMap </summary>
     private Dictionary<string, EventListener> dic = new Dictionary<string, EventListener>();

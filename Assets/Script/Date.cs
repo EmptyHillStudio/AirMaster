@@ -153,7 +153,6 @@ public class Date
     }
     public void dayPlus()
     {//当前天数加一，检查当前天数
-        this.day++;
         //Debug.Log(DateEvents.DayMethods[0]);
         for (int i = 0; i < DateEvents.DayMethods.Count; i++)
         {
@@ -178,6 +177,7 @@ public class Date
             //Debug.Log(DateEvents.DayMethods[i]);
             mi.Invoke(ev, null);
         }
+        this.day++;
         daycheck();
     }
     private void daycheck()
@@ -219,17 +219,16 @@ public class Date
     {
         for (int i = 0; i < DateEvents.MonthMethods.Count; i++)
         {
-            month++;
             CustomEvent ev = new CustomEvent();
             Type t = typeof(CustomEvent);
             MethodInfo mi = t.GetMethod(DateEvents.MonthMethods[i]);
             mi.Invoke(ev, null);
         }
+        month++;
     }
 
     private void yearPlus()
     {
-        year++;
         for (int i = 0; i < DateEvents.YearMethods.Count; i++)
         {
             CustomEvent ev = new CustomEvent();
@@ -237,6 +236,7 @@ public class Date
             MethodInfo mi = t.GetMethod(DateEvents.YearMethods[i]);
             mi.Invoke(ev, null);
         }
+        year++;
     }
 
     public static bool operator <(Date d1, Date d2)
@@ -274,6 +274,34 @@ public class Date
             else return false;
         }
         else return false;
+    }
+    /// <summary>
+    /// 判断两日期的天数之差
+    /// </summary>
+    /// <param name="d1">日期1</param>
+    /// <param name="d2">日期2</param>
+    /// <returns>天数差值</returns>
+    public static int operator -(Date d1, Date d2)
+    {
+        //Debug.Log(d1.ToDateTime());
+        //Debug.Log(d1.ToString());
+        DateTime da1 = Convert.ToDateTime(d1.ToDateTime());
+        DateTime da2 = Convert.ToDateTime(d2.ToDateTime());
+        return da1.Subtract(da2).Days;
+    }
+    public string ToDateTime()
+    {
+        string dd = day.ToString();
+        if (day < 10)
+        {
+            dd = dd.PadLeft(2, '0');
+        }
+        string mm = month.ToString();
+        if (month < 10)
+        {
+            mm = mm.PadLeft(2, '0');
+        }
+        return year + "-" + mm + "-" + dd;
     }
     public override string ToString()
     {

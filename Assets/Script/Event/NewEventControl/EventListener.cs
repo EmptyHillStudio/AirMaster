@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventListener : MonoBehaviour
+public class EventListener
 {
     /// <summary> 事件处理器委托 </summary>
     public delegate void EventHandler(EventArgs eventArgs);

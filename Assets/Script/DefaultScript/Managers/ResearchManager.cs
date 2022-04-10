@@ -39,6 +39,7 @@ public class Research
         this.Time_cost = Convert.ToInt32(timecost);
         this.Type = GetType(type);
         this.Pre_researches = pre.Split(';');
+        Status = ResearchStatus.UNSTARTED;//默认未开始研究
         //Debug.Log("Research \"" + name + "\" is loaded! ");
     }
     public static ResearchType GetType(string type)
@@ -57,14 +58,29 @@ public class Research
                 return ResearchType.NULL;
         }
     }
+    public bool IsLocked()
+    {
+        if (this.Pre_researches.Length == 0) return false;
+        ResearchManager rm = GlobalVariable.DefaultManager.researchesManager;
+        foreach (string r in this.Pre_researches)
+        {
+            if (rm.getResearchByUID(r) == null)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 public class ResearchManager
 {
+    public static SortedDictionary<string, Research> Researching;//研究中的科技
     public Dictionary<string, Research> Researches;
     public ResearchManager()
     {
         this.Researches = new Dictionary<string, Research>();
+        Researching = new SortedDictionary<string, Research>();
     }
 
     public Research getResearchByUID(string UID)//根据UID查找R

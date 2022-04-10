@@ -5,11 +5,7 @@ using Trigger;
 
 public class PredefinedEvent
 {
-    [TriggerMode(TriggerMode.DATE, "month")]
-    public void ProfitCalculation()
-    {
-
-    }
+    
 }
 
 public class Income

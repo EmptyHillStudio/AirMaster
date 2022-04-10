@@ -16,7 +16,6 @@ public class DynamicScroll_ChosePlane : MonoBehaviour
     void Start()
     {
         //GlobalVariable gv = new GlobalVariable();
-        int IsHas = 0;//没有可使用的飞机
         parent = GameObject.Find("Content");
         contentSize = parent.GetComponent<RectTransform>().sizeDelta;
         itemHeight = Item.GetComponent<RectTransform>().rect.height;
@@ -90,7 +89,6 @@ public class DynamicScroll_ChosePlane : MonoBehaviour
     public static List<Plane> ListOfDic()
     {
         List<Plane> planes = new List<Plane>();
-        int length = 0;
         foreach (KeyValuePair<Plane, int> kvp in GlobalVariable.planeDic)
         {
             if (kvp.Value != 0)

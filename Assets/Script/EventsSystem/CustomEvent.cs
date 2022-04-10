@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Trigger;
 
@@ -36,5 +37,23 @@ public class CustomEvent
     {
         Debug.Log("1970年2月2日触发了该事件 Debugs_Accurate");
     }
+
     
+    [TriggerMode(TriggerMode.DATE, "day")]
+    public void ResearchComplete()
+    {
+        List<string> uids = ResearchManager.Researching.Keys.ToList<string>();
+        for (int i = 0; i < uids.Count; i++) 
+        {
+            Research r = ResearchManager.Researching[uids[i]];
+            if (r.Time_cost - (GlobalVariable.GameDate - r.Starttime) <= 0) 
+            {
+                r.Status = ResearchStatus.FINISHED;
+                GlobalVariable.DefaultManager.researchesManager.getResearchByUID(uids[i]).Status = ResearchStatus.FINISHED;
+                Debug.Log("Research" + r.Name + " Complete!");
+                ResearchManager.Researching.Remove(uids[i]);
+            }
+            else Debug.Log("科技 " + r.Name + " 剩余 " + (r.Time_cost - (GlobalVariable.GameDate - r.Starttime)) + "天");
+        }
+    }
 }
